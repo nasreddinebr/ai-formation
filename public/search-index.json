@@ -1,0 +1,690 @@
+[
+  {
+    "id": "0-qu-est-ce-que-l-ia",
+    "moduleId": 0,
+    "moduleTitle": "Comprendre l'IA — Les Fondamentaux",
+    "sectionId": "qu-est-ce-que-l-ia",
+    "sectionTitle": "Qu'est-ce que l'Intelligence Artificielle ?",
+    "snippet": "L'IA est un ensemble de techniques permettant à une machine d'imiter certaines capacités cognitives humaines : comprendre du texte, reconnaître des images, prendre des décisions, générer du contenu. A..."
+  },
+  {
+    "id": "0--la-carte-mentale-de-l-ia",
+    "moduleId": 0,
+    "moduleTitle": "Comprendre l'IA — Les Fondamentaux",
+    "sectionId": "-la-carte-mentale-de-l-ia",
+    "sectionTitle": "🗺️ La Carte Mentale de l'IA",
+    "snippet": "--"
+  },
+  {
+    "id": "0-les-d-finitions-essentielles-expliqu-es-simplement",
+    "moduleId": 0,
+    "moduleTitle": "Comprendre l'IA — Les Fondamentaux",
+    "sectionId": "les-d-finitions-essentielles-expliqu-es-simplement",
+    "sectionTitle": "Les Définitions Essentielles Expliquées Simplement",
+    "snippet": "### 🤖 IA vs Machine Learning vs Deep Learning vs IA Générative  Concept  Définition simple  Exemple concret   IA  Toute machine simulant l'intelligence  Filtres spam d'email   Machine Learning  La ma..."
+  },
+  {
+    "id": "1-objectifs-p-dagogiques",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils de Base",
+    "sectionId": "objectifs-p-dagogiques",
+    "sectionTitle": "Objectifs pédagogiques",
+    "snippet": "Maîtriser Python pour la data science et l'IA Savoir manipuler, analyser et visualiser des données Comprendre l'écosystème d'outils IA"
+  },
+  {
+    "id": "1-pr-requis",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils de Base",
+    "sectionId": "pr-requis",
+    "sectionTitle": "Prérequis",
+    "snippet": "Aucun. Ce module part de zéro."
+  },
+  {
+    "id": "1-difficult-",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils de Base",
+    "sectionId": "difficult-",
+    "sectionTitle": "Difficulté : ⭐☆☆☆☆ → ⭐⭐☆☆☆",
+    "snippet": "--"
+  },
+  {
+    "id": "1-1-1-python",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils de Base",
+    "sectionId": "1-1-python",
+    "sectionTitle": "1.1 — Python",
+    "snippet": "Temps estimé : 3 semaines Notions théoriques à maîtriser : Variables, types, conditions, boucles Fonctions, classes, modules Listes, dictionnaires, tuples, sets Gestion des fichiers (CSV, JSON) Enviro..."
+  },
+  {
+    "id": "1-1-2-numpy",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils de Base",
+    "sectionId": "1-2-numpy",
+    "sectionTitle": "1.2 — NumPy",
+    "snippet": "Temps estimé : 1 semaine NumPy est la bibliothèque de calcul numérique. Toutes les opérations ML/DL passent par des matrices et vecteurs — NumPy est la base. Concepts clés : Arrays N-dimensionnels (nd..."
+  },
+  {
+    "id": "1-1-3-pandas",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils de Base",
+    "sectionId": "1-3-pandas",
+    "sectionTitle": "1.3 — Pandas",
+    "snippet": "Temps estimé : 1 semaine Pandas = Excel dans Python. Manipulation de tableaux de données (DataFrames). Concepts clés : DataFrames et Series Lecture CSV, Excel, JSON Nettoyage des données (valeurs manq..."
+  },
+  {
+    "id": "1-1-4-matplotlib-seaborn",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils de Base",
+    "sectionId": "1-4-matplotlib-seaborn",
+    "sectionTitle": "1.4 — Matplotlib & Seaborn",
+    "snippet": "Temps estimé : 1 semaine Visualiser = comprendre. Les données non visualisées cachent des insights essentiels. --"
+  },
+  {
+    "id": "1-1-5-scikit-learn",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils de Base",
+    "sectionId": "1-5-scikit-learn",
+    "sectionTitle": "1.5 — Scikit-learn",
+    "snippet": "Temps estimé : 2 semaines La bibliothèque ML de référence. Interface simple, modèles nombreux. Modèles à connaître : Régression linéaire / logistique Arbres de décision Random Forest SVM K-Nearest Nei..."
+  },
+  {
+    "id": "1-1-6-git-github",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils de Base",
+    "sectionId": "1-6-git-github",
+    "sectionTitle": "1.6 — Git & GitHub",
+    "snippet": "Temps estimé : 3 jours Indispensable pour tout développeur. Git = versionner ton code. GitHub = partager ton code. Commandes essentielles : --"
+  },
+  {
+    "id": "1-1-7-docker",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils de Base",
+    "sectionId": "1-7-docker",
+    "sectionTitle": "1.7 — Docker",
+    "snippet": "Temps estimé : 1 semaine Docker permet d'empaqueter ton application et ses dépendances dans un conteneur portable. \"Ça marche sur ma machine\" devient \"ça marche partout\". --"
+  },
+  {
+    "id": "2-objectifs-p-dagogiques",
+    "moduleId": 2,
+    "moduleTitle": "Mathematiques pour l'IA",
+    "sectionId": "objectifs-p-dagogiques",
+    "sectionTitle": "Objectifs pédagogiques",
+    "snippet": "Comprendre les fondements mathématiques sans lesquels l'IA reste une boîte noire."
+  },
+  {
+    "id": "2-difficult-",
+    "moduleId": 2,
+    "moduleTitle": "Mathematiques pour l'IA",
+    "sectionId": "difficult-",
+    "sectionTitle": "Difficulté : ⭐⭐⭐☆☆",
+    "snippet": ""
+  },
+  {
+    "id": "2-pr-requis",
+    "moduleId": 2,
+    "moduleTitle": "Mathematiques pour l'IA",
+    "sectionId": "pr-requis",
+    "sectionTitle": "Prérequis",
+    "snippet": "Lycée (terminale scientifique ou équivalent) --"
+  },
+  {
+    "id": "2-2-1-alg-bre-lin-aire",
+    "moduleId": 2,
+    "moduleTitle": "Mathematiques pour l'IA",
+    "sectionId": "2-1-alg-bre-lin-aire",
+    "sectionTitle": "2.1 — Algèbre Linéaire",
+    "snippet": "Temps estimé : 3 semaines C'est le langage des données et des réseaux de neurones. Concepts essentiels :  Concept  Utilité en IA  Exemple   Vecteurs  Représenter des données  [2.5, 1.0, 0.8] = caracté..."
+  },
+  {
+    "id": "2-2-2-calcul-diff-rentiel",
+    "moduleId": 2,
+    "moduleTitle": "Mathematiques pour l'IA",
+    "sectionId": "2-2-calcul-diff-rentiel",
+    "sectionTitle": "2.2 — Calcul Différentiel",
+    "snippet": "Temps estimé : 2 semaines La descente de gradient (comment un modèle apprend) repose sur les dérivées. Concepts clés : Dérivées et dérivées partielles Gradient : vecteur de toutes les dérivées partiel..."
+  },
+  {
+    "id": "2-2-3-probabilit-s-statistiques",
+    "moduleId": 2,
+    "moduleTitle": "Mathematiques pour l'IA",
+    "sectionId": "2-3-probabilit-s-statistiques",
+    "sectionTitle": "2.3 — Probabilités & Statistiques",
+    "snippet": "Temps estimé : 2 semaines Concepts clés : Probabilité conditionnelle (P(AB)) Loi normale (distribution gaussienne) Théorème de Bayes Espérance, variance, écart-type Corrélation vs causalité Tests d'hy..."
+  },
+  {
+    "id": "2-2-4-optimisation",
+    "moduleId": 2,
+    "moduleTitle": "Mathematiques pour l'IA",
+    "sectionId": "2-4-optimisation",
+    "sectionTitle": "2.4 — Optimisation",
+    "snippet": "Temps estimé : 1 semaine Algorithmes d'optimisation clés :  Algorithme  Description  Usage   SGD  Stochastic Gradient Descent  Base de tout   Adam  Adaptive moment estimation  Standard en DL   RMSprop..."
+  },
+  {
+    "id": "3-objectifs-p-dagogiques",
+    "moduleId": 3,
+    "moduleTitle": "Machine Learning",
+    "sectionId": "objectifs-p-dagogiques",
+    "sectionTitle": "Objectifs pédagogiques",
+    "snippet": "Comprendre les algorithmes ML classiques Savoir choisir le bon algorithme selon le problème Maîtriser le cycle complet : données → modèle → évaluation"
+  },
+  {
+    "id": "3-difficult-",
+    "moduleId": 3,
+    "moduleTitle": "Machine Learning",
+    "sectionId": "difficult-",
+    "sectionTitle": "Difficulté : ⭐⭐☆☆☆ → ⭐⭐⭐☆☆",
+    "snippet": ""
+  },
+  {
+    "id": "3-pr-requis",
+    "moduleId": 3,
+    "moduleTitle": "Machine Learning",
+    "sectionId": "pr-requis",
+    "sectionTitle": "Prérequis",
+    "snippet": "Modules 1 et 2 --"
+  },
+  {
+    "id": "3-3-1-types-de-probl-mes-ml",
+    "moduleId": 3,
+    "moduleTitle": "Machine Learning",
+    "sectionId": "3-1-types-de-probl-mes-ml",
+    "sectionTitle": "3.1 — Types de problèmes ML",
+    "snippet": "Type  Données  Objectif  Algorithmes   Classification  X + labels catégoriels  Prédire une catégorie  RF, SVM, LR   Régression  X + labels numériques  Prédire une valeur  Ridge, Lasso, GBM   Clusterin..."
+  },
+  {
+    "id": "3-3-2-le-cycle-ml-complet",
+    "moduleId": 3,
+    "moduleTitle": "Machine Learning",
+    "sectionId": "3-2-le-cycle-ml-complet",
+    "sectionTitle": "3.2 — Le Cycle ML Complet",
+    "snippet": "--"
+  },
+  {
+    "id": "3-3-3-viter-l-overfitting",
+    "moduleId": 3,
+    "moduleTitle": "Machine Learning",
+    "sectionId": "3-3-viter-l-overfitting",
+    "sectionTitle": "3.3 — Éviter l'Overfitting",
+    "snippet": "L'overfitting = modèle qui \"mémorise\" les données d'entraînement au lieu d'apprendre les patterns généraux. Signes : accuracy très élevée sur train, basse sur test. Solutions : Plus de données d'entra..."
+  },
+  {
+    "id": "3-3-4-m-triques-d-valuation",
+    "moduleId": 3,
+    "moduleTitle": "Machine Learning",
+    "sectionId": "3-4-m-triques-d-valuation",
+    "sectionTitle": "3.4 — Métriques d'évaluation",
+    "snippet": "Pour la classification : Accuracy : % de bonnes prédictions (attention aux classes déséquilibrées !) Precision : parmi les prédictions positives, combien sont vraiment positives ? Recall : parmi les v..."
+  },
+  {
+    "id": "3-3-5-projets-r-els-ml",
+    "moduleId": 3,
+    "moduleTitle": "Machine Learning",
+    "sectionId": "3-5-projets-r-els-ml",
+    "sectionTitle": "3.5 — Projets réels ML",
+    "snippet": "1. Prédiction du churn client — quel client va résilier son abonnement ? 2. Détection de fraude bancaire — transactions anormales 3. Système de recommandation — films, produits 4. Prédiction immobiliè..."
+  },
+  {
+    "id": "4-objectifs-p-dagogiques",
+    "moduleId": 4,
+    "moduleTitle": "Deep Learning & PyTorch",
+    "sectionId": "objectifs-p-dagogiques",
+    "sectionTitle": "Objectifs pédagogiques",
+    "snippet": "Comprendre les réseaux de neurones profonds Maîtriser PyTorch (framework de référence) Créer des CNN, RNN, et architectures custom"
+  },
+  {
+    "id": "4-difficult-",
+    "moduleId": 4,
+    "moduleTitle": "Deep Learning & PyTorch",
+    "sectionId": "difficult-",
+    "sectionTitle": "Difficulté : ⭐⭐⭐☆☆ → ⭐⭐⭐⭐☆",
+    "snippet": ""
+  },
+  {
+    "id": "4-pr-requis",
+    "moduleId": 4,
+    "moduleTitle": "Deep Learning & PyTorch",
+    "sectionId": "pr-requis",
+    "sectionTitle": "Prérequis",
+    "snippet": "Modules 1, 2, 3 --"
+  },
+  {
+    "id": "4-4-1-pourquoi-pytorch-plut-t-que-tensorflow-",
+    "moduleId": 4,
+    "moduleTitle": "Deep Learning & PyTorch",
+    "sectionId": "4-1-pourquoi-pytorch-plut-t-que-tensorflow-",
+    "sectionTitle": "4.1 — Pourquoi PyTorch plutôt que TensorFlow ?",
+    "snippet": "PyTorch  TensorFlow   Popularité recherche  ★★★★★  ★★★☆☆   Popularité entreprise  ★★★★☆  ★★★★☆   Courbe d'apprentissage  Plus facile  Plus difficile   Debugging  Pythonique et intuitif  Moins intuitif..."
+  },
+  {
+    "id": "4-4-2-les-bases-de-pytorch",
+    "moduleId": 4,
+    "moduleTitle": "Deep Learning & PyTorch",
+    "sectionId": "4-2-les-bases-de-pytorch",
+    "sectionTitle": "4.2 — Les Bases de PyTorch",
+    "snippet": "--"
+  },
+  {
+    "id": "4-4-3-cnn-convolutional-neural-networks-",
+    "moduleId": 4,
+    "moduleTitle": "Deep Learning & PyTorch",
+    "sectionId": "4-3-cnn-convolutional-neural-networks-",
+    "sectionTitle": "4.3 — CNN (Convolutional Neural Networks)",
+    "snippet": "Spécialisés pour les images. L'idée : scanner l'image avec des filtres pour détecter des patterns locaux (bords, textures, formes…). --"
+  },
+  {
+    "id": "4-4-4-architectures-pr-entra-n-es-transfer-learning-",
+    "moduleId": 4,
+    "moduleTitle": "Deep Learning & PyTorch",
+    "sectionId": "4-4-architectures-pr-entra-n-es-transfer-learning-",
+    "sectionTitle": "4.4 — Architectures pré-entraînées (Transfer Learning)",
+    "snippet": "Au lieu de partir de zéro, utiliser un modèle déjà entraîné sur ImageNet (1.2M images) et l'adapter à ton problème. Architectures importantes : ResNet, VGG, EfficientNet → classification d'images YOLO..."
+  },
+  {
+    "id": "4-4-5-projets-deep-learning",
+    "moduleId": 4,
+    "moduleTitle": "Deep Learning & PyTorch",
+    "sectionId": "4-5-projets-deep-learning",
+    "sectionTitle": "4.5 — Projets Deep Learning",
+    "snippet": "1. Classification d'images (chats vs chiens) 2. Reconnaissance de chiffres manuscrits (MNIST) 3. Détection de tumeurs dans des images médicales 4. Classification de plantes malades 5. Style Transfer (..."
+  },
+  {
+    "id": "5-objectifs-p-dagogiques",
+    "moduleId": 5,
+    "moduleTitle": "NLP & Large Language Models",
+    "sectionId": "objectifs-p-dagogiques",
+    "sectionTitle": "Objectifs pédagogiques",
+    "snippet": "Comprendre comment les machines traitent le langage Maîtriser Hugging Face Utiliser et fine-tuner des LLMs"
+  },
+  {
+    "id": "5-difficult-",
+    "moduleId": 5,
+    "moduleTitle": "NLP & Large Language Models",
+    "sectionId": "difficult-",
+    "sectionTitle": "Difficulté : ⭐⭐⭐☆☆ → ⭐⭐⭐⭐⭐",
+    "snippet": ""
+  },
+  {
+    "id": "5-pr-requis",
+    "moduleId": 5,
+    "moduleTitle": "NLP & Large Language Models",
+    "sectionId": "pr-requis",
+    "sectionTitle": "Prérequis",
+    "snippet": "Modules 1, 2, 3, 4 --"
+  },
+  {
+    "id": "5-5-1-evolution-du-nlp",
+    "moduleId": 5,
+    "moduleTitle": "NLP & Large Language Models",
+    "sectionId": "5-1-evolution-du-nlp",
+    "sectionTitle": "5.1 — Evolution du NLP",
+    "snippet": "--"
+  },
+  {
+    "id": "5-5-2-tokenisation",
+    "moduleId": 5,
+    "moduleTitle": "NLP & Large Language Models",
+    "sectionId": "5-2-tokenisation",
+    "sectionTitle": "5.2 — Tokenisation",
+    "snippet": "Avant qu'un LLM puisse traiter du texte, il le convertit en tokens (morceaux de mots). Règle pratique : 1 token ≈ 0.75 mot en anglais, un peu moins en français. --"
+  },
+  {
+    "id": "5-5-3-hugging-face",
+    "moduleId": 5,
+    "moduleTitle": "NLP & Large Language Models",
+    "sectionId": "5-3-hugging-face",
+    "sectionTitle": "5.3 — Hugging Face",
+    "snippet": "Hugging Face = le GitHub de l'IA. Des milliers de modèles pré-entraînés, datasets, et outils. Les bibliothèques clés : : modèles pré-entraînés (BERT, GPT, T5, Mistral…) : datasets prêts à l'emploi : f..."
+  },
+  {
+    "id": "5-5-4-l-architecture-transformer-en-d-tail",
+    "moduleId": 5,
+    "moduleTitle": "NLP & Large Language Models",
+    "sectionId": "5-4-l-architecture-transformer-en-d-tail",
+    "sectionTitle": "5.4 — L'Architecture Transformer en Détail",
+    "snippet": "Composants principaux : 1. Tokenisation + Embedding → texte converti en vecteurs numériques 2. Positional Encoding → indiquer la position de chaque mot 3. Self-Attention → chaque mot \"regarde\" tous le..."
+  },
+  {
+    "id": "5-5-5-fine-tuning-avec-lora-qlora",
+    "moduleId": 5,
+    "moduleTitle": "NLP & Large Language Models",
+    "sectionId": "5-5-fine-tuning-avec-lora-qlora",
+    "sectionTitle": "5.5 — Fine-Tuning avec LoRA/QLoRA",
+    "snippet": "LoRA (Low-Rank Adaptation) permet de fine-tuner un LLM de 7B paramètres sur un GPU de 16GB au lieu de nécessiter des centaines de GB. --"
+  },
+  {
+    "id": "5-5-6-projets-nlp",
+    "moduleId": 5,
+    "moduleTitle": "NLP & Large Language Models",
+    "sectionId": "5-6-projets-nlp",
+    "sectionTitle": "5.6 — Projets NLP",
+    "snippet": "1. Analyse de sentiment de commentaires clients 2. Résumé automatique d'articles (abstractive summarization) 3. Traduction automatique 4. Extraction d'informations (NER) 5. Chatbot basé sur BERT/Mistr..."
+  },
+  {
+    "id": "6-objectifs-p-dagogiques",
+    "moduleId": 6,
+    "moduleTitle": "IA Generative",
+    "sectionId": "objectifs-p-dagogiques",
+    "sectionTitle": "Objectifs pédagogiques",
+    "snippet": "Maîtriser les APIs des grands LLMs Comprendre les modèles de diffusion Créer des applications IA génératives"
+  },
+  {
+    "id": "6-difficult-",
+    "moduleId": 6,
+    "moduleTitle": "IA Generative",
+    "sectionId": "difficult-",
+    "sectionTitle": "Difficulté : ⭐⭐☆☆☆ → ⭐⭐⭐⭐☆",
+    "snippet": "--"
+  },
+  {
+    "id": "6-6-1-les-grands-llms-en-comparaison",
+    "moduleId": 6,
+    "moduleTitle": "IA Generative",
+    "sectionId": "6-1-les-grands-llms-en-comparaison",
+    "sectionTitle": "6.1 — Les Grands LLMs en Comparaison",
+    "snippet": "Modèle  Créateur  Forces  Accès   GPT-4o  OpenAI  Multimodal, très capable  API payante   Claude 3.7  Anthropic  Sécurité, long contexte, raisonnement  API payante   Gemini Ultra  Google  Multimodal n..."
+  },
+  {
+    "id": "6-6-2-openai-api",
+    "moduleId": 6,
+    "moduleTitle": "IA Generative",
+    "sectionId": "6-2-openai-api",
+    "sectionTitle": "6.2 — OpenAI API",
+    "snippet": "--"
+  },
+  {
+    "id": "6-6-3-anthropic-api-claude-",
+    "moduleId": 6,
+    "moduleTitle": "IA Generative",
+    "sectionId": "6-3-anthropic-api-claude-",
+    "sectionTitle": "6.3 — Anthropic API (Claude)",
+    "snippet": "--"
+  },
+  {
+    "id": "6-6-4-ollama-llms-en-local",
+    "moduleId": 6,
+    "moduleTitle": "IA Generative",
+    "sectionId": "6-4-ollama-llms-en-local",
+    "sectionTitle": "6.4 — Ollama — LLMs en Local",
+    "snippet": "Ollama permet de faire tourner des LLMs directement sur ta machine, gratuitement et sans envoyer tes données sur internet. --"
+  },
+  {
+    "id": "6-6-5-g-n-ration-d-images",
+    "moduleId": 6,
+    "moduleTitle": "IA Generative",
+    "sectionId": "6-5-g-n-ration-d-images",
+    "sectionTitle": "6.5 — Génération d'Images",
+    "snippet": "Stable Diffusion (open-source) : Plateformes en ligne : Midjourney : meilleure qualité artistique DALL-E 3 : intégré à ChatGPT Stable Diffusion : open-source, local Adobe Firefly : pour les profession..."
+  },
+  {
+    "id": "6-6-6-prompting-avanc-",
+    "moduleId": 6,
+    "moduleTitle": "IA Generative",
+    "sectionId": "6-6-prompting-avanc-",
+    "sectionTitle": "6.6 — Prompting Avancé",
+    "snippet": "Techniques de prompting : --"
+  },
+  {
+    "id": "6-6-7-ia-no-code-vs-ia-avec-code",
+    "moduleId": 6,
+    "moduleTitle": "IA Generative",
+    "sectionId": "6-7-ia-no-code-vs-ia-avec-code",
+    "sectionTitle": "6.7 — IA No-Code vs IA avec Code",
+    "snippet": "IA No-Code  IA avec Code   Exemples  Zapier, Make, n8n, Voiceflow  Python, LangChain, API directe   Vitesse  ✅ Très rapide  ❌ Plus long   Flexibilité  ❌ Limitée  ✅ Illimitée   Coût  ❌ Abonnements  ✅ M..."
+  },
+  {
+    "id": "7-objectifs-p-dagogiques",
+    "moduleId": 7,
+    "moduleTitle": "Computer Vision",
+    "sectionId": "objectifs-p-dagogiques",
+    "sectionTitle": "Objectifs pédagogiques",
+    "snippet": "Créer des systèmes de reconnaissance d'images Implémenter la détection d'objets Faire de la segmentation sémantique"
+  },
+  {
+    "id": "7-difficult-",
+    "moduleId": 7,
+    "moduleTitle": "Computer Vision",
+    "sectionId": "difficult-",
+    "sectionTitle": "Difficulté : ⭐⭐⭐☆☆ → ⭐⭐⭐⭐☆",
+    "snippet": "--"
+  },
+  {
+    "id": "7-7-1-t-ches-de-computer-vision",
+    "moduleId": 7,
+    "moduleTitle": "Computer Vision",
+    "sectionId": "7-1-t-ches-de-computer-vision",
+    "sectionTitle": "7.1 — Tâches de Computer Vision",
+    "snippet": "Tâche  Description  Modèle type   Classification  \"C'est un chat\"  ResNet, EfficientNet   Détection  \"Il y a un chat à (x,y,w,h)\"  YOLO, DETR   Segmentation  Délimiter pixel par pixel  U-Net, SAM   Po..."
+  },
+  {
+    "id": "7-7-2-yolo-d-tection-temps-r-el-",
+    "moduleId": 7,
+    "moduleTitle": "Computer Vision",
+    "sectionId": "7-2-yolo-d-tection-temps-r-el-",
+    "sectionTitle": "7.2 — YOLO (Détection temps réel)",
+    "snippet": "--"
+  },
+  {
+    "id": "7-7-3-projets-computer-vision",
+    "moduleId": 7,
+    "moduleTitle": "Computer Vision",
+    "sectionId": "7-3-projets-computer-vision",
+    "sectionTitle": "7.3 — Projets Computer Vision",
+    "snippet": "1. Reconnaissance de plantes malades 2. Comptage de véhicules sur une autoroute (YOLO) 3. Détection d'EPI sur chantier (casques, gilets) 4. Lecture automatique de documents (OCR) 5. Détection de défau..."
+  },
+  {
+    "id": "8-objectifs-p-dagogiques",
+    "moduleId": 8,
+    "moduleTitle": "Agents IA & Systemes RAG",
+    "sectionId": "objectifs-p-dagogiques",
+    "sectionTitle": "Objectifs pédagogiques",
+    "snippet": "Créer des agents IA autonomes Implémenter un système RAG complet Maîtriser LangChain et les bases vectorielles"
+  },
+  {
+    "id": "8-difficult-",
+    "moduleId": 8,
+    "moduleTitle": "Agents IA & Systemes RAG",
+    "sectionId": "difficult-",
+    "sectionTitle": "Difficulté : ⭐⭐⭐⭐☆",
+    "snippet": ""
+  },
+  {
+    "id": "8-pr-requis",
+    "moduleId": 8,
+    "moduleTitle": "Agents IA & Systemes RAG",
+    "sectionId": "pr-requis",
+    "sectionTitle": "Prérequis",
+    "snippet": "Modules 1, 5, 6 --"
+  },
+  {
+    "id": "8-8-1-langchain",
+    "moduleId": 8,
+    "moduleTitle": "Agents IA & Systemes RAG",
+    "sectionId": "8-1-langchain",
+    "sectionTitle": "8.1 — LangChain",
+    "snippet": "LangChain est le framework principal pour créer des applications LLM complexes. --"
+  },
+  {
+    "id": "8-8-2-syst-me-rag-complet",
+    "moduleId": 8,
+    "moduleTitle": "Agents IA & Systemes RAG",
+    "sectionId": "8-2-syst-me-rag-complet",
+    "sectionTitle": "8.2 — Système RAG Complet",
+    "snippet": "--"
+  },
+  {
+    "id": "8-8-3-bases-vectorielles",
+    "moduleId": 8,
+    "moduleTitle": "Agents IA & Systemes RAG",
+    "sectionId": "8-3-bases-vectorielles",
+    "sectionTitle": "8.3 — Bases Vectorielles",
+    "snippet": "Base vectorielle  Forces  Usage recommandé   ChromaDB  Simple, open-source, local  Dev/prototypage   Pinecone  Cloud, scalable, managed  Production   Weaviate  Hybride (vecteur + filtre)  Recherche co..."
+  },
+  {
+    "id": "8-8-4-agents-ia-autonomes",
+    "moduleId": 8,
+    "moduleTitle": "Agents IA & Systemes RAG",
+    "sectionId": "8-4-agents-ia-autonomes",
+    "sectionTitle": "8.4 — Agents IA Autonomes",
+    "snippet": "Un agent a : Un LLM (cerveau) Des outils (capacités) Une mémoire (contexte) Un objectif (tâche) L'agent va automatiquement : 1. Chercher la population de Paris 2. Extraire le chiffre 3. Calculer 5% av..."
+  },
+  {
+    "id": "8-8-5-projets-agents-rag",
+    "moduleId": 8,
+    "moduleTitle": "Agents IA & Systemes RAG",
+    "sectionId": "8-5-projets-agents-rag",
+    "sectionTitle": "8.5 — Projets Agents & RAG",
+    "snippet": "1. Assistant personnel RAG sur tes propres notes Obsidian 2. Chatbot support client sur la documentation d'un produit 3. Agent de recherche qui lit des papers académiques et fait un résumé 4. Agent tr..."
+  },
+  {
+    "id": "9-objectifs-p-dagogiques",
+    "moduleId": 9,
+    "moduleTitle": "Deploiement & MLOps",
+    "sectionId": "objectifs-p-dagogiques",
+    "sectionTitle": "Objectifs pédagogiques",
+    "snippet": "Déployer un modèle IA en production Créer des APIs IA robustes Mettre en place le monitoring"
+  },
+  {
+    "id": "9-difficult-",
+    "moduleId": 9,
+    "moduleTitle": "Deploiement & MLOps",
+    "sectionId": "difficult-",
+    "sectionTitle": "Difficulté : ⭐⭐⭐☆☆ → ⭐⭐⭐⭐☆",
+    "snippet": "--"
+  },
+  {
+    "id": "9-9-1-fastapi-pour-les-apis-ia",
+    "moduleId": 9,
+    "moduleTitle": "Deploiement & MLOps",
+    "sectionId": "9-1-fastapi-pour-les-apis-ia",
+    "sectionTitle": "9.1 — FastAPI pour les APIs IA",
+    "snippet": "FastAPI est le standard pour créer des APIs Python modernes et performantes. --"
+  },
+  {
+    "id": "9-9-2-d-ploiement-cloud",
+    "moduleId": 9,
+    "moduleTitle": "Deploiement & MLOps",
+    "sectionId": "9-2-d-ploiement-cloud",
+    "sectionTitle": "9.2 — Déploiement Cloud",
+    "snippet": "Options de déploiement :  Platform  Prix  Facilité  Scalabilité   Hugging Face Spaces  Gratuit (limité)  ⭐⭐⭐⭐⭐  Moyen   Railway  ~5$/mois  ⭐⭐⭐⭐☆  Bon   Render  Gratuit (limité)  ⭐⭐⭐⭐☆  Bon   AWS EC2/E..."
+  },
+  {
+    "id": "9-9-3-mlops-g-rer-les-mod-les-en-production",
+    "moduleId": 9,
+    "moduleTitle": "Deploiement & MLOps",
+    "sectionId": "9-3-mlops-g-rer-les-mod-les-en-production",
+    "sectionTitle": "9.3 — MLOps — Gérer les Modèles en Production",
+    "snippet": "MLOps = DevOps appliqué au Machine Learning. Outils MLOps essentiels :  Outil  Usage  Gratuit ?   MLflow  Tracking des expériences, versionning modèles  ✅   Weights & Biases  Tracking avancé, visualis..."
+  },
+  {
+    "id": "9-9-4-monitoring-en-production",
+    "moduleId": 9,
+    "moduleTitle": "Deploiement & MLOps",
+    "sectionId": "9-4-monitoring-en-production",
+    "sectionTitle": "9.4 — Monitoring en Production",
+    "snippet": "Surveiller un modèle IA en production pour détecter : Data drift : les données d'entrée changent par rapport à l'entraînement Concept drift : la relation input-output change Dégradation des performanc..."
+  },
+  {
+    "id": "10-comp-tences-recherch-es-sur-le-march-en-2025",
+    "moduleId": 10,
+    "moduleTitle": "Cursus Ingenieur IA",
+    "sectionId": "comp-tences-recherch-es-sur-le-march-en-2025",
+    "sectionTitle": "Compétences recherchées sur le marché en 2025",
+    "snippet": "Hard skills (techniques) : Python avancé (classes, async, optimisation) PyTorch / TensorFlow Architecture LLMs et fine-tuning MLOps (MLflow, Docker, Kubernetes, CI/CD) Cloud (AWS/GCP/Azure) Bases vect..."
+  },
+  {
+    "id": "10-les-m-tiers-de-l-ia",
+    "moduleId": 10,
+    "moduleTitle": "Cursus Ingenieur IA",
+    "sectionId": "les-m-tiers-de-l-ia",
+    "sectionTitle": "Les Métiers de l'IA",
+    "snippet": "Métier  Salaire FR (junior)  Salaire FR (senior)  Compétences clés   Data Scientist  40–50k€  65–90k€  Stats, ML, Python, viz   ML Engineer  45–55k€  70–100k€  MLOps, déploiement, scale   AI/LLM Engin..."
+  },
+  {
+    "id": "10-certifications",
+    "moduleId": 10,
+    "moduleTitle": "Cursus Ingenieur IA",
+    "sectionId": "certifications",
+    "sectionTitle": "Certifications Utiles",
+    "snippet": "Certification  Organisme  Valeur marché  Coût   AWS Certified ML Specialty  Amazon  ★★★★☆  ~300$   Google Professional ML Engineer  Google  ★★★★☆  ~200$   DeepLearning.AI Specialization  Coursera  ★★★..."
+  },
+  {
+    "id": "10-sujets-avanc-s-ing-nieur-ia",
+    "moduleId": 10,
+    "moduleTitle": "Cursus Ingenieur IA",
+    "sectionId": "sujets-avanc-s-ing-nieur-ia",
+    "sectionTitle": "Sujets Avancés Ingénieur IA",
+    "snippet": "Data Engineering : Apache Spark (traitement de données à grande échelle) Apache Kafka (streaming de données) dbt (transformation de données) Data Lakes et Data Warehouses Cloud IA : AWS : SageMaker, B..."
+  },
+  {
+    "id": "10-les-meilleurs-projets-portfolio-pour-l-emploi",
+    "moduleId": 10,
+    "moduleTitle": "Cursus Ingenieur IA",
+    "sectionId": "les-meilleurs-projets-portfolio-pour-l-emploi",
+    "sectionTitle": "Les Meilleurs Projets Portfolio pour l'Emploi",
+    "snippet": "1. RAG complet déployé — Chatbot sur une base de connaissances, API FastAPI, déployé sur cloud 2. Fine-tuning LLM — Mistral ou LLaMA fine-tuné sur un domaine spécifique, avec évaluation 3. Système de ..."
+  },
+  {
+    "id": "11-cr-er-un-chatbot-ia-de-a-z",
+    "moduleId": 11,
+    "moduleTitle": "Creer son Modele, Chatbot, SaaS IA",
+    "sectionId": "cr-er-un-chatbot-ia-de-a-z",
+    "sectionTitle": "Créer un Chatbot IA de A à Z",
+    "snippet": "Stack minimale recommandée : --"
+  },
+  {
+    "id": "11-cr-er-un-saas-ia",
+    "moduleId": 11,
+    "moduleTitle": "Creer son Modele, Chatbot, SaaS IA",
+    "sectionId": "cr-er-un-saas-ia",
+    "sectionTitle": "Créer un SaaS IA",
+    "snippet": "Structure d'un SaaS IA : Idées de SaaS IA rentables : Générateur de contenu pour e-commerce Outil d'analyse de contrats juridiques Assistant IA pour comptables Chatbot de support client personnalisé O..."
+  },
+  {
+    "id": "12-portfolio",
+    "moduleId": 12,
+    "moduleTitle": "Portfolio, Emploi & Freelance IA",
+    "sectionId": "portfolio",
+    "sectionTitle": "Construire un Portfolio IA Solide",
+    "snippet": "Ce que les recruteurs veulent voir : 1. Du code propre sur GitHub — README clair, structure logique, commentaires 2. Des projets déployés — pas juste dans un notebook, mais en ligne 3. Des vrais probl..."
+  },
+  {
+    "id": "12-d-crocher-son-premier-emploi-en-ia",
+    "moduleId": 12,
+    "moduleTitle": "Portfolio, Emploi & Freelance IA",
+    "sectionId": "d-crocher-son-premier-emploi-en-ia",
+    "sectionTitle": "Décrocher son Premier Emploi en IA",
+    "snippet": "Timeline recommandée : Où chercher des emplois IA en France : LinkedIn (filtre \"Intelligence Artificielle\", \"Machine Learning\") Welcome to the Jungle Malt (pour le freelance) Glassdoor AFJV (Jeux Vidé..."
+  },
+  {
+    "id": "12-freelancer",
+    "moduleId": 12,
+    "moduleTitle": "Portfolio, Emploi & Freelance IA",
+    "sectionId": "freelancer",
+    "sectionTitle": "Freelancer avec l'IA",
+    "snippet": "Services IA très demandés en freelance :  Service  Tarif journalier  Difficulté   Chatbot RAG sur mesure  400–800€/jour  Intermédiaire   Fine-tuning LLM  600–1200€/jour  Avancé   Automatisation IA (n8..."
+  },
+  {
+    "id": "13-les-10-erreurs-qui-bloquent-la-progression",
+    "moduleId": 13,
+    "moduleTitle": "Erreurs Frequentes & Apprendre Efficacement",
+    "sectionId": "les-10-erreurs-qui-bloquent-la-progression",
+    "sectionTitle": "Les 10 Erreurs qui Bloquent la Progression",
+    "snippet": "1. Trop de théorie, pas assez de pratique — Coder 70%, lire 30% 2. Suivre trop de cours en même temps — Un seul cours à la fois, jusqu'au bout 3. Copier-coller sans comprendre — Toujours retaper le co..."
+  },
+  {
+    "id": "13-comment-apprendre-efficacement-l-ia",
+    "moduleId": 13,
+    "moduleTitle": "Erreurs Frequentes & Apprendre Efficacement",
+    "sectionId": "comment-apprendre-efficacement-l-ia",
+    "sectionTitle": "Comment Apprendre Efficacement l'IA",
+    "snippet": "Méthode recommandée : Learn → Build → Teach Rythme optimal : 1-2 heures de pratique par jour > 8 heures le weekend La régularité bat l'intensité Faire des pauses (le cerveau consolide pendant le repos..."
+  },
+  {
+    "id": "13-tendances-ia-des-prochaines-ann-es",
+    "moduleId": 13,
+    "moduleTitle": "Erreurs Frequentes & Apprendre Efficacement",
+    "sectionId": "tendances-ia-des-prochaines-ann-es",
+    "sectionTitle": "Tendances IA des Prochaines Années",
+    "snippet": "Court terme (2025-2026) : Agents IA autonomes dans les entreprises Multimodalité généralisée (texte + image + son + vidéo) IA embarquée (on-device, smartphones) LLMs spécialisés par domaine Moyen term..."
+  }
+]

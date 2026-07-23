@@ -14,11 +14,19 @@ const defaultProgress: ProgressData = {
   completedSections: {},
 };
 
+let cachedProgress: ProgressData = defaultProgress;
+let cachedProgressRaw: string | null = null;
+
 function getSnapshot(): ProgressData {
   try {
     const stored = localStorage.getItem(PROGRESS_KEY);
-    return stored ? JSON.parse(stored) : defaultProgress;
+    if (stored === cachedProgressRaw) return cachedProgress;
+    cachedProgressRaw = stored;
+    cachedProgress = stored ? JSON.parse(stored) : defaultProgress;
+    return cachedProgress;
   } catch {
+    cachedProgressRaw = null;
+    cachedProgress = defaultProgress;
     return defaultProgress;
   }
 }
@@ -27,13 +35,17 @@ function getServerSnapshot(): ProgressData {
   return defaultProgress;
 }
 
-function subscribe(): () => void {
-  return () => {};
+function subscribe(callback: () => void): () => void {
+  const handler = () => callback();
+  window.addEventListener("storage", handler);
+  return () => window.removeEventListener("storage", handler);
 }
 
 function saveProgress(data: ProgressData) {
   try {
     localStorage.setItem(PROGRESS_KEY, JSON.stringify(data));
+    cachedProgressRaw = null;
+    cachedProgress = null;
     window.dispatchEvent(new Event("storage"));
   } catch {
     // Silently fail

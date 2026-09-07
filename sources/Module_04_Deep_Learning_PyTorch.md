@@ -1,10 +1,15 @@
-# 🎓 FORMATION IA — MODULE 4
-# Deep Learning & PyTorch
-### Comprendre et construire des réseaux de neurones profonds
+## 🎓 MODULE 4 — Deep Learning & PyTorch
 
-> **Professeur :** Dr. IA — Formation Complète  
 > **Durée estimée :** 8 semaines (1–2h par jour)  
 > **Prérequis :** Module 1 (Python, POO), Module 2 (Mathématiques), Module 3 (Machine Learning)
+> **Objectifs pédagogiques :** Comprendre et construire des réseaux de neurones profonds
+    - Comprendre les réseaux de neurones profonds
+    - Maîtriser PyTorch (framework de référence)
+    - Créer des CNN, RNN, et architectures custom
+
+---
+
+## Difficulté : ⭐⭐⭐☆☆ → ⭐⭐⭐⭐☆
 
 ---
 

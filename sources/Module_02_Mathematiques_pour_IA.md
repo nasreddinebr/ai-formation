@@ -1,11 +1,15 @@
-# 🎓 FORMATION IA — MODULE 2
-# Mathématiques pour l'Intelligence Artificielle
-### Version accessible — conçue pour les non-matheux
+## 🎓 MODULE 2 — Mathématiques pour l'Intelligence Artificielle
 
-> **Professeur :** Dr. IA — Formation Complète  
+**(Version accessible — conçue pour les non-matheux)**
+
 > **Durée estimée :** 8 semaines (1–2h par jour)  
 > **Niveau :** Aucun prérequis mathématique avancé  
 > **Prérequis :** Module 1 (Python, NumPy)
+> **Objectifs pédagogiques :** Comprendre les fondements mathématiques sans lesquels l'IA reste une boîte noire.
+
+---
+
+## Difficulté : ⭐⭐⭐☆☆
 
 ---
 

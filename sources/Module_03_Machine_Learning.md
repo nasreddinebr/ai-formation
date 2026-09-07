@@ -1,10 +1,15 @@
-# 🎓 FORMATION IA — MODULE 3
-# Machine Learning
-### Comprendre en profondeur les algorithmes que tu utilises déjà
+## 🎓 MODULE 3 — Machine Learning
 
-> **Professeur :** Dr. IA — Formation Complète  
 > **Durée estimée :** 8 semaines (1–2h par jour)  
 > **Prérequis :** Module 1 (Python, Scikit-learn) et Module 2 (Mathématiques)
+> **Objectifs pédagogiques :** Comprendre en profondeur les algorithmes que tu utilises déjà
+   - Comprendre les algorithmes ML classiques
+   - Savoir choisir le bon algorithme selon le problème
+   - Maîtriser le cycle complet : données → modèle → évaluation
+
+---
+
+## Difficulté : ⭐⭐☆☆☆ → ⭐⭐⭐☆☆
 
 ---
 

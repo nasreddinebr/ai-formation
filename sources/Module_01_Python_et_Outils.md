@@ -1,4 +1,4 @@
-# 🎓 MODULE 1 — Python & Outils Essentiels pour l'Intelligence Artificielle
+## 🎓 MODULE 1 — Python & Outils Essentiels pour l'Intelligence Artificielle
  
 > **Durée estimée :** 9 semaines (1–2h par jour)  
 > **Prérequis :** Zéro prérequis. Ce module part de zéro.  

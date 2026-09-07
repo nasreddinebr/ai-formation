@@ -1,10 +1,15 @@
-# 🎓 FORMATION IA — MODULE 5
-# NLP & Large Language Models
-### Comprendre en profondeur les Transformers et les LLMs modernes
+## 🎓 MODULE 5 — NLP & Large Language Models
 
-> **Professeur :** Dr. IA — Formation Complète  
 > **Durée estimée :** 8 semaines (1–2h par jour)  
 > **Prérequis :** Module 1 (Python), Module 2 (Mathématiques), Module 4 (Deep Learning & PyTorch)
+> **Objectifs pédagogiques :** Comprendre en profondeur les Transformers et les LLMs modernes
+   - Comprendre comment les machines traitent le langage
+   - Maîtriser Hugging Face
+   - Utiliser et fine-tuner des LLMs
+
+---
+
+## Difficulté : ⭐⭐⭐☆☆ → ⭐⭐⭐⭐⭐
 
 ---
 
@@ -39,12 +44,9 @@ Ce module est celui où tu vas enfin comprendre **exactement** ce qui se passe q
 
 ---
 
----
+## 📘 CHAPITRE 5.1 — TOKENISATION : Transformer le Texte en Nombres
 
-# 📘 CHAPITRE 5.1 — TOKENISATION
-## Transformer le Texte en Nombres
-
-## Durée : 1 semaine
+**Durée : 1 semaine**
 
 ---
 
@@ -275,10 +277,9 @@ Ce mot serait très probablement découpé en **plusieurs tokens**, car BPE fusi
 
 ---
 
-# 📘 CHAPITRE 5.2 — LES EMBEDDINGS
-## Donner un Sens Géométrique aux Mots
+## 📘 CHAPITRE 5.2 — LES EMBEDDINGS : Donner un Sens Géométrique aux Mots
 
-## Durée : 1 semaine
+**Durée : 1 semaine**
 
 ---
 

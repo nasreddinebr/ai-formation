@@ -1,4 +1,4 @@
-## 🎓 MODULE 3 — Machine Learning
+# 🎓 MODULE 3 — Machine Learning
 
 > **Durée estimée :** 8 semaines (1–2h par jour)  
 > **Prérequis :** Module 1 (Python, Scikit-learn) et Module 2 (Mathématiques)
@@ -46,12 +46,9 @@ Ne saute jamais la section "Explication" pour aller directement au code — c'es
 
 ---
 
----
+# 📘 CHAPITRE 3.1 — INTRODUCTION AU MACHINE LEARNING : Généralisation, Validation et le Compromis Biais-Variance
 
-# 📘 CHAPITRE 3.1 — INTRODUCTION AU MACHINE LEARNING
-## Généralisation, Validation et le Compromis Biais-Variance
-
-## Durée : 1 semaine
+**Durée : 1 semaine**
 
 ---
 

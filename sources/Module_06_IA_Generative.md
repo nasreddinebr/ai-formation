@@ -1,10 +1,15 @@
-# 🎓 FORMATION IA — MODULE 6
-# IA Générative
-### APIs des grands modèles, génération d'images, prompting avancé et automatisation
+# 🎓 MODULE 6 — IA Générative 
 
-> **Professeur :** Dr. IA — Formation Complète  
 > **Durée estimée :** 7 semaines (1–2h par jour)  
 > **Prérequis :** Module 2 (Mathématiques), Module 4 (Deep Learning), Module 5 (NLP & LLMs)
+> **Objectifs pédagogiques :** APIs des grands modèles, génération d'images, prompting avancé et automatisation
+    - Maîtriser les APIs des grands LLMs
+    - Comprendre les modèles de diffusion
+    - Créer des applications IA génératives
+
+---
+
+## Difficulté : ⭐⭐☆☆☆ → ⭐⭐⭐⭐☆
 
 ---
 
@@ -38,11 +43,9 @@ Ce module te fait passer de "comprendre comment fonctionne un Transformer" (Modu
 
 ---
 
----
-
 # 📘 CHAPITRE 6.1 — PANORAMA DES GRANDS MODÈLES DE LANGAGE
 
-## Durée : 0.5 semaine
+**Durée : 0.5 semaine**
 
 ---
 

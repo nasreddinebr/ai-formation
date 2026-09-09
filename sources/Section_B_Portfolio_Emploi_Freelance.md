@@ -1,10 +1,8 @@
-# 🎓 FORMATION IA — SECTION TRANSVERSALE B
-# Portfolio, Emploi & Freelance IA
-### Transformer ses compétences en carrière
+# 🎓 SECTION TRANSVERSALE B — Portfolio, Emploi & Freelance IA
 
-> **Professeur :** Dr. IA — Formation Complète  
 > **Durée estimée :** 6 semaines (1–2h par jour)  
 > **Prérequis :** L'ensemble des Modules 1 à 10, Section Transversale A
+> **Objectifs pédagogiques :** Transformer ses compétences en carrière
 
 ---
 

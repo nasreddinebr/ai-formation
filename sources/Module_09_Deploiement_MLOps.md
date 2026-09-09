@@ -1,10 +1,15 @@
-# 🎓 FORMATION IA — MODULE 9
-# Déploiement & MLOps
-### Faire passer un modèle du notebook à une application fiable en production
+# 🎓 MODULE 9 — Déploiement & MLOps
 
-> **Professeur :** Dr. IA — Formation Complète  
 > **Durée estimée :** 7 semaines (1–2h par jour)  
 > **Prérequis :** Module 1 (Docker, Git), Module 3 (Machine Learning), Module 6 (Quantification)
+> **Objectifs pédagogiques :** Faire passer un modèle du notebook à une application fiable en production
+   - Déployer un modèle IA en production
+   - Créer des APIs IA robustes
+   - Mettre en place le monitoring
+
+---
+
+### Difficulté : ⭐⭐⭐☆☆ → ⭐⭐⭐⭐☆
 
 ---
 

@@ -1,10 +1,12 @@
-# 🎓 FORMATION IA — MODULE 10
-# Cursus Ingénieur IA
-### Data Engineering, Cloud, Architectures Avancées, Sécurité et Carrière
+# 🎓 FORMATION IA  MODULE 10 — Cursus Ingénieur IA
 
-> **Professeur :** Dr. IA — Formation Complète  
 > **Durée estimée :** 8 semaines (1–2h par jour)  
 > **Prérequis :** L'ensemble des Modules 1 à 9
+> **Objectifs pédagogiques :** Data Engineering, Cloud, Architectures Avancées, Sécurité et Carrière
+
+---
+
+### Difficulté : ⭐⭐⭐⭐☆ → ⭐⭐⭐⭐⭐
 
 ---
 
@@ -1606,6 +1608,93 @@ Tu as maintenant parcouru l'intégralité des dix modules de cette formation, de
 | Viser toutes les certifications possibles sans projets pratiques | CV chargé mais peu convaincant en entretien technique | Prioriser un portfolio solide, complété par des certifications ciblées |
 | Disperser son temps sur 5 projets portfolio superficiels | Aucun projet suffisamment abouti pour impressionner | Approfondir un ou deux projets alignés avec son objectif de carrière précis |
 | Omettre les limites connues d'un projet dans son README | Perception de manque de recul ou de rigueur | Toujours inclure une section honnête sur les limites du système |
+
+---
+
+## Bonus
+
+### Compétences recherchées sur le marché en 2025
+
+**Hard skills (techniques) :**
+- Python avancé (classes, async, optimisation)
+- PyTorch / TensorFlow
+- Architecture LLMs et fine-tuning
+- MLOps (MLflow, Docker, Kubernetes, CI/CD)
+- Cloud (AWS/GCP/Azure)
+- Bases vectorielles et RAG
+- Systèmes distribués
+- SQL et bases de données
+
+**Soft skills :**
+- Communication (expliquer l'IA à des non-techniques)
+- Gestion de projet agile
+- Pensée critique et scientifique
+- Veille technologique
+
+---
+
+### Les Métiers de l'IA
+
+| Métier | Salaire FR (junior) | Salaire FR (senior) | Compétences clés |
+|---|---|---|---|
+| **Data Scientist** | 40–50k€ | 65–90k€ | Stats, ML, Python, viz |
+| **ML Engineer** | 45–55k€ | 70–100k€ | MLOps, déploiement, scale |
+| **AI/LLM Engineer** | 50–65k€ | 80–120k€ | LLMs, RAG, agents, APIs |
+| **Data Engineer** | 42–52k€ | 65–85k€ | Spark, SQL, pipelines |
+| **AI Researcher** | 50–70k€ | 80–150k€ | Maths, publications, PhD |
+| **NLP Engineer** | 48–60k€ | 75–110k€ | Transformers, fine-tuning |
+| **Computer Vision Engineer** | 45–58k€ | 70–100k€ | CNN, YOLO, OpenCV |
+| **AI Product Manager** | 50–65k€ | 80–120k€ | IA + Produit + Business |
+
+---
+
+### Certifications Utiles
+
+| Certification | Organisme | Valeur marché | Coût |
+|---|---|---|---|
+| **AWS Certified ML Specialty** | Amazon | ★★★★☆ | ~300$ |
+| **Google Professional ML Engineer** | Google | ★★★★☆ | ~200$ |
+| **DeepLearning.AI Specialization** | Coursera | ★★★☆☆ | ~50$/mois |
+| **Hugging Face Certification** | Hugging Face | ★★★☆☆ | Gratuit |
+| **TensorFlow Developer Certificate** | Google | ★★★☆☆ | ~100$ |
+| **Azure AI Engineer Associate** | Microsoft | ★★★★☆ | ~165$ |
+
+---
+
+### Sujets Avancés Ingénieur IA
+
+**Data Engineering :**
+- Apache Spark (traitement de données à grande échelle)
+- Apache Kafka (streaming de données)
+- dbt (transformation de données)
+- Data Lakes et Data Warehouses
+
+**Cloud IA :**
+- AWS : SageMaker, Bedrock, Lambda, S3
+- GCP : Vertex AI, BigQuery ML, Cloud Storage
+- Azure : Azure ML, Azure OpenAI Service
+
+**Architecture IA Avancée :**
+- Mixture of Experts (MoE)
+- RLHF et Constitutional AI
+- Quantization (GPTQ, AWQ)
+- Model compression (pruning, distillation)
+
+**Sécurité IA :**
+- Prompt injection attacks
+- Jailbreaking et red teaming
+- Données d'entraînement poisoning
+- Confidentialité différentielle
+
+---
+
+### Les Meilleurs Projets Portfolio pour l'Emploi
+
+1. **RAG complet déployé** — Chatbot sur une base de connaissances, API FastAPI, déployé sur cloud
+2. **Fine-tuning LLM** — Mistral ou LLaMA fine-tuné sur un domaine spécifique, avec évaluation
+3. **Système de détection** — Computer Vision en production (YOLO + API)
+4. **Pipeline MLOps** — Entraînement → évaluation → déploiement automatisé
+5. **Agent IA** — Agent autonome avec plusieurs outils, mémoire, interface web
 
 ---
 

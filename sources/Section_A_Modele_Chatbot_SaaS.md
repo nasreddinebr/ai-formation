@@ -1,10 +1,12 @@
-# 🎓 FORMATION IA — SECTION TRANSVERSALE A
-# Créer son Modèle, son Chatbot, son SaaS IA
-### Du prototype validé à un produit réellement utilisable
+# 🎓 SECTION TRANSVERSALE A — Créer son Modèle, son Chatbot, son SaaS IA
 
-> **Professeur :** Dr. IA — Formation Complète  
 > **Durée estimée :** 6 semaines (1–2h par jour)  
 > **Prérequis :** L'ensemble des Modules 1 à 10
+> **Objectifs pédagogiques :** Du prototype validé à un produit réellement utilisable
+
+---
+
+### Difficulté : ⭐⭐⭐⭐☆ → ⭐⭐⭐⭐⭐
 
 ---
 

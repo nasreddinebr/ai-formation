@@ -1,4 +1,4 @@
-## 🎓 MODULE 5 — NLP & Large Language Models
+# 🎓 MODULE 5 — NLP & Large Language Models
 
 > **Durée estimée :** 8 semaines (1–2h par jour)  
 > **Prérequis :** Module 1 (Python), Module 2 (Mathématiques), Module 4 (Deep Learning & PyTorch)
@@ -44,7 +44,7 @@ Ce module est celui où tu vas enfin comprendre **exactement** ce qui se passe q
 
 ---
 
-## 📘 CHAPITRE 5.1 — TOKENISATION : Transformer le Texte en Nombres
+# 📘 CHAPITRE 5.1 — TOKENISATION : Transformer le Texte en Nombres
 
 **Durée : 1 semaine**
 

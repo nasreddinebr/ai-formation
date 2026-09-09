@@ -1,10 +1,8 @@
-# 🎓 FORMATION IA — SECTION TRANSVERSALE C
-# Erreurs Fréquentes & Comment Apprendre Efficacement
-### La science de l'apprentissage, appliquée à l'IA
+# 🎓 SECTION TRANSVERSALE C — Erreurs Fréquentes & Comment Apprendre Efficacement
 
-> **Professeur :** Dr. IA — Formation Complète  
 > **Durée estimée :** 5 semaines (1–2h par jour)  
 > **Prérequis :** Aucun — cette section peut être lue à tout moment du parcours
+> **Objectifs pédagogiques :** La science de l'apprentissage, appliquée à l'IA
 
 ---
 

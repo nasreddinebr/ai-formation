@@ -1,4 +1,4 @@
-## 🎓 MODULE 4 — Deep Learning & PyTorch
+# 🎓 MODULE 4 — Deep Learning & PyTorch
 
 > **Durée estimée :** 8 semaines (1–2h par jour)  
 > **Prérequis :** Module 1 (Python, POO), Module 2 (Mathématiques), Module 3 (Machine Learning)
@@ -43,11 +43,9 @@ Ce module est celui où **tout ce que tu as appris converge**. Le neurone que tu
 
 ---
 
----
-
 # 📘 CHAPITRE 4.1 — INTRODUCTION AU DEEP LEARNING ET PREMIERS PAS AVEC PYTORCH
 
-## Durée : 1 semaine
+**Durée : 1 semaine**
 
 ---
 

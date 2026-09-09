@@ -1,10 +1,15 @@
-# 🎓 FORMATION IA — MODULE 8
-# Agents IA & Systèmes RAG
-### Donner une mémoire externe et de l'autonomie à un LLM
+# 🎓 MODULE 8 — Agents IA & Systèmes RAG
 
-> **Professeur :** Dr. IA — Formation Complète  
 > **Durée estimée :** 7 semaines (1–2h par jour)  
-> **Prérequis :** Module 3 (Machine Learning), Module 5 (NLP & LLMs), Module 6 (IA Générative)
+> **Prérequis :** Module 1 (Python & Outils Essentiels pour l'Intelligence Artificielle), Module 3 (Machine Learning), Module 5 (NLP & LLMs), Module 6 (IA Générative)
+> **Objectifs pédagogiques :** Donner une mémoire externe et de l'autonomie à un LLM
+    - Créer des agents IA autonomes
+    - Implémenter un système RAG complet
+    - Maîtriser LangChain et les bases vectorielles
+
+---
+
+### Difficulté : ⭐⭐⭐⭐☆
 
 ---
 
@@ -34,6 +39,7 @@ Ce module répond à deux limites fondamentales d'un LLM "brut", que tu as déj�
 | **8.4** | Les Agents IA : le Pattern ReAct | 1.5 semaine |
 | **8.5** | Construire des Agents avec des Outils | 1 semaine |
 | **8.6** | Combiner RAG et Agents : Systèmes Avancés | 0.5 semaine |
+| **8.7** | Projets Agents & RAG | ++ |
 
 ---
 
@@ -1583,8 +1589,8 @@ Le RAG (Chapitres 8.1-8.3, avec son pipeline de chunking, embeddings, et retriev
 
 ---
 
-# 🎯 PROJET DE SYNTHÈSE DU MODULE 8
-## Un Assistant d'Entreprise Complet — RAG, Outils et Agent, de Bout en Bout
+# 🎯 8.7 — Projets Agents & RAG : PROJET DE SYNTHÈSE DU MODULE 8
+**Un Assistant d'Entreprise Complet — RAG, Outils et Agent, de Bout en Bout**
 
 **🔑 Pourquoi ce projet réunit tout le module**
 

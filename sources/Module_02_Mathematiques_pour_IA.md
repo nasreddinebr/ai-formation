@@ -1,4 +1,4 @@
-## 🎓 MODULE 2 — Mathématiques pour l'Intelligence Artificielle
+# 🎓 MODULE 2 — Mathématiques pour l'Intelligence Artificielle
 
 **(Version accessible — conçue pour les non-matheux)**
 
@@ -58,12 +58,9 @@ Je sais que le mot "mathématiques" peut faire peur. Beaucoup de gens qui réuss
 
 ---
 
----
+# 📘 CHAPITRE 2.1 — ALGÈBRE LINÉAIRE : Le langage dans lequel "parlent" les données et les modèles
 
-# 📘 CHAPITRE 2.1 — ALGÈBRE LINÉAIRE
-## Le langage dans lequel "parlent" les données et les modèles
-
-## Durée : 3 semaines
+**Durée : 3 semaines**
 
 ---
 

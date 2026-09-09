@@ -1,10 +1,13 @@
-# 🎓 FORMATION IA — MODULE 7
-# Computer Vision
-### Classification avancée, détection, segmentation, reconnaissance faciale et OCR
+# 🎓 MODULE 7 — Computer Vision
 
-> **Professeur :** Dr. IA — Formation Complète  
 > **Durée estimée :** 7 semaines (1–2h par jour)  
 > **Prérequis :** Module 2 (Mathématiques), Module 4 (Deep Learning & CNN), Module 5 (Transformers)
+> **Objectifs pédagogiques :** Classification avancée, détection, segmentation, reconnaissance faciale et OCR
+    - Créer des systèmes de reconnaissance d'images
+    - Implémenter la détection d'objets
+    - Faire de la segmentation sémantique
+
+## Difficulté : ⭐⭐⭐☆☆ → ⭐⭐⭐⭐☆
 
 ---
 
@@ -35,15 +38,13 @@ Au Module 4, tu as appris les fondations des CNN — convolution, pooling, trans
 | **7.4** | Reconnaissance Faciale et Estimation de Pose | 1.5 semaine |
 | **7.5** | OCR : Lire du Texte dans les Images | 1 semaine |
 | **7.6** | Déployer un Système de Vision en Production | 0.5 semaine |
+| **7.7** | Projets Computer Vision | ++ |
 
 ---
 
----
+# 📘 CHAPITRE 7.1 — CLASSIFICATION AVANCÉE : Architectures Modernes et Data Augmentation
 
-# 📘 CHAPITRE 7.1 — CLASSIFICATION AVANCÉE
-## Architectures Modernes et Data Augmentation
-
-## Durée : 1 semaine
+**Durée : 1 semaine**
 
 ---
 
@@ -1479,6 +1480,18 @@ Décris, en une chaîne d'étapes (sans code), comment tu combinerais la détect
 </details>
 
 ### Exercice 7.6.D — Interpréter un test de vitesse
+
+---
+
+---
+
+# 🎯 7.7 — Projets Computer Vision
+
+1. Reconnaissance de plantes malades
+2. Comptage de véhicules sur une autoroute (YOLO)
+3. Détection d'EPI sur chantier (casques, gilets)
+4. Lecture automatique de documents (OCR)
+5. Détection de défauts industriels
 
 Un ingénieur teste 3 tailles de YOLO et obtient : nano=8ms, small=15ms, medium=35ms par image. Pour une application vidéo nécessitant un traitement fluide à 30 images par seconde (donc un budget d'environ 33ms par image), quelle(s) taille(s) de modèle seraient compatibles, et pourquoi ?
 

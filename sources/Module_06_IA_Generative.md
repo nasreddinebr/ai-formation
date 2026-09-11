@@ -1,11 +1,11 @@
-# 🎓 MODULE 6 — IA Générative 
+# ✨ MODULE 6 — IA Générative 
 
 > **Durée estimée :** 7 semaines (1–2h par jour)  
 > **Prérequis :** Module 2 (Mathématiques), Module 4 (Deep Learning), Module 5 (NLP & LLMs)
 > **Objectifs pédagogiques :** APIs des grands modèles, génération d'images, prompting avancé et automatisation
-    - Maîtriser les APIs des grands LLMs
-    - Comprendre les modèles de diffusion
-    - Créer des applications IA génératives
+> * Maîtriser les APIs des grands LLMs
+> * Comprendre les modèles de diffusion
+> * Créer des applications IA génératives
 
 ---
 

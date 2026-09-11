@@ -1,4 +1,4 @@
-# 🎓 MODULE 2 — Mathématiques pour l'Intelligence Artificielle
+# 📐 MODULE 2 — Mathématiques pour l'Intelligence Artificielle
 
 **(Version accessible — conçue pour les non-matheux)**
 

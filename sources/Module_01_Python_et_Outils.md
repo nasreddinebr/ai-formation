@@ -1,11 +1,11 @@
-# 🎓 MODULE 1 — Python & Outils Essentiels pour l'Intelligence Artificielle
+# 📦 MODULE 1 — Python & Outils Essentiels pour l'Intelligence Artificielle
  
 > **Durée estimée :** 9 semaines (1–2h par jour)  
 > **Prérequis :** Zéro prérequis. Ce module part de zéro.  
 > **Objectifs pédagogiques :** Maîtriser tous les outils de base avant d'aborder l'IA
-    - Maîtriser Python pour la data science et l'IA
-    - Savoir manipuler, analyser et visualiser des données
-    - Comprendre l'écosystème d'outils IA
+> * Maîtriser Python pour la data science et l'IA
+> * Savoir manipuler, analyser et visualiser des données
+> * Comprendre l'écosystème d'outils IA
 
 ---
 

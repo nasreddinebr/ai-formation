@@ -1,11 +1,11 @@
-# 🎓 MODULE 7 — Computer Vision
+# 👁️ MODULE 7 — Computer Vision
 
 > **Durée estimée :** 7 semaines (1–2h par jour)  
 > **Prérequis :** Module 2 (Mathématiques), Module 4 (Deep Learning & CNN), Module 5 (Transformers)
 > **Objectifs pédagogiques :** Classification avancée, détection, segmentation, reconnaissance faciale et OCR
-    - Créer des systèmes de reconnaissance d'images
-    - Implémenter la détection d'objets
-    - Faire de la segmentation sémantique
+> * Créer des systèmes de reconnaissance d'images
+> * Implémenter la détection d'objets
+> * Faire de la segmentation sémantique
 
 ## Difficulté : ⭐⭐⭐☆☆ → ⭐⭐⭐⭐☆
 

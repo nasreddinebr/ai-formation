@@ -1,4 +1,4 @@
-# 🎓 SECTION TRANSVERSALE C — Erreurs Fréquentes & Comment Apprendre Efficacement
+# ⚠️ SECTION TRANSVERSALE C — Erreurs Fréquentes & Comment Apprendre Efficacement
 
 > **Durée estimée :** 5 semaines (1–2h par jour)  
 > **Prérequis :** Aucun — cette section peut être lue à tout moment du parcours

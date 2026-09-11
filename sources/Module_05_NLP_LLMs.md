@@ -1,11 +1,11 @@
-# 🎓 MODULE 5 — NLP & Large Language Models
+# 💬 MODULE 5 — NLP & Large Language Models
 
 > **Durée estimée :** 8 semaines (1–2h par jour)  
 > **Prérequis :** Module 1 (Python), Module 2 (Mathématiques), Module 4 (Deep Learning & PyTorch)
 > **Objectifs pédagogiques :** Comprendre en profondeur les Transformers et les LLMs modernes
-   - Comprendre comment les machines traitent le langage
-   - Maîtriser Hugging Face
-   - Utiliser et fine-tuner des LLMs
+> * Comprendre comment les machines traitent le langage
+> * Maîtriser Hugging Face
+> * Utiliser et fine-tuner des LLMs
 
 ---
 

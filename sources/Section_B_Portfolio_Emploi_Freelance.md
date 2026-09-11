@@ -1,4 +1,4 @@
-# 🎓 SECTION TRANSVERSALE B — Portfolio, Emploi & Freelance IA
+# 💼 SECTION TRANSVERSALE B — Portfolio, Emploi & Freelance IA
 
 > **Durée estimée :** 6 semaines (1–2h par jour)  
 > **Prérequis :** L'ensemble des Modules 1 à 10, Section Transversale A

@@ -327,81 +327,70 @@ Architecture IA · MLOps · Cloud · Recherche · Leadership
 
 ---
 
-<a name="module-1"></a>
-
-**Voir Fichier "sources/Module_01_Python_et_Outils.md3**
-
----
-
-<a name="module-2"></a>
-
-**Voir Fichier "sources/Module_02_Mathematiques_pour_IA.md**
+## <a href="/sources/Module_01_Python_et_Outils.md" name="module-1">📦 MODULE 1 — PYTHON & OUTILS DE BASE</a>
+**Voir Fichier "/sources/Module_01_Python_et_Outils.md3**
 
 ---
 
-<a name="module-3"></a>
 
-**Voir Fichier "sources/Module_03_Machine_Learning.md**
+## <a href="/sources/Module_02_Mathematiques_pour_IA.md" name="module-2">📐 MODULE 2 — MATHÉMATIQUES POUR L'IA</a>
 
----
-
-<a name="module-4"></a>
-
-**Voir Fichier "sources/Module_04_Deep_Learning_PyTorch.md**
+**Voir Fichier "/sources/Module_02_Mathematiques_pour_IA.md**
 
 ---
 
-<a name="module-5"></a>
-
-**Voir Fichier "sources/Module_05_NLP_LLMs.md**
-
----
-
-<a name="module-6"></a>
-
-**Voir Fichier "sources/Module_06_IA_Generative.md**
+## <a href="/sources/Module_03_Machine_Learning.md" name="module-3">🤖 MODULE 3 — MACHINE LEARNING</a>
+**Voir Fichier "/sources/Module_03_Machine_Learning.md**
 
 ---
 
-<a name="module-7"></a>
-
-**Voir Fichier "sources/Module_07_Computer_Vision.md**
-
----
-
-<a name="module-8"></a>
-
-**Voir Fichier "sources/Module_08_Agents_IA_RAG.md**
+## <a href="/sources/Module_04_Deep_Learning_PyTorch.md" name="module-4">🧠 MODULE 4 — DEEP LEARNING & PYTORCH</a>
+**Voir Fichier "/sources/Module_04_Deep_Learning_PyTorch.md**
 
 ---
 
-<a name="module-9"></a>
-
-**Voir Fichier "sources/Module_09_Deploiement_MLOps.md**
-
----
-
-<a name="module-10"></a>
-
-**Voir Fichier "sources/Module_10_Cursus_Ingenieur_IA.md**
+## <a href="/sources/Module_05_NLP_LLMs.md" name="module-5">💬 MODULE 5 — NLP & LARGE LANGUAGE MODELS</a>
+**Voir Fichier "/sources/Module_05_NLP_LLMs.md**
 
 ---
 
-<a name="SECTION TRANSVERSALE A"></a>
-
-**Voir Fichier "sources/Section_A_Modele_Chatbot_SaaS.md**
-
----
-
-<a name="SECTION TRANSVERSALE B"></a>
-
-**Voir Fichier "sources/Section_B_Portfolio_Emploi_Freelance.md**
+## <a href="/sources/Module_06_IA_Generative.md" name="module-6">✨ MODULE 6 — IA GÉNÉRATIVE</a>
+**Voir Fichier "/sources/Module_06_IA_Generative.md**
 
 ---
 
-<a name="SECTION TRANSVERSALE C"></a>
+## <a href="/sources/Module_07_Computer_Vision.md" name="module-7">👁️ MODULE 7 — COMPUTER VISION</a>
+**Voir Fichier "/sources/Module_07_Computer_Vision.md**
 
-**Voir Fichier "sources/Section_C_Erreurs_Apprentissage_Efficace.md**
+---
+
+## <a href="/sources/Module_08_Agents_IA_RAG.md" name="module-8">🤖 MODULE 8 — AGENTS IA & SYSTÈMES RAG</a>
+**Voir Fichier "/sources/Module_08_Agents_IA_RAG.md**
+
+---
+
+## <a href="/sources/Module_09_Deploiement_MLOps.md" name="module-9">🚀 MODULE 9 — DÉPLOIEMENT & MLOPS</a>
+**Voir Fichier "/sources/Module_09_Deploiement_MLOps.md**
+
+---
+
+## <a href="/sources/Module_10_Cursus_Ingenieur_IA.md" name="module-10">🎓 MODULE 10 — CURSUS INGÉNIEUR IA</a>
+**Voir Fichier "/sources/Module_10_Cursus_Ingenieur_IA.md**
+
+---
+
+## <a href="/sources/Section_A_Modele_Chatbot_SaaS.md" name="SECTION TRANSVERSALE A">🏗️ SECTION TRANSVERSALE A — Créer son Modèle, son Chatbot, son SaaS IA</a>
+**Voir Fichier "/sources/Section_A_Modele_Chatbot_SaaS.md**
+
+---
+
+## <a href="/sources/Section_B_Portfolio_Emploi_Freelance.md" name="SECTION TRANSVERSALE B">💼 SECTION TRANSVERSALE B — Portfolio, Emploi & Freelance IA</a>
+**Voir Fichier "/sources/Section_B_Portfolio_Emploi_Freelance.md**
+
+---
+
+## <a href="/sources/Section_C_Erreurs_Apprentissage_Efficace.md" name="SECTION TRANSVERSALE C">⚠️ SECTION TRANSVERSALE C — Erreurs Fréquentes & Comment Apprendre</a>
+**Voir Fichier "/sources/Section_C_Erreurs_Apprentissage_Efficace.md**
 
 ---
 

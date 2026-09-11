@@ -1,11 +1,11 @@
-# 🎓 MODULE 8 — Agents IA & Systèmes RAG
+# 🤖 MODULE 8 — Agents IA & Systèmes RAG
 
 > **Durée estimée :** 7 semaines (1–2h par jour)  
 > **Prérequis :** Module 1 (Python & Outils Essentiels pour l'Intelligence Artificielle), Module 3 (Machine Learning), Module 5 (NLP & LLMs), Module 6 (IA Générative)
 > **Objectifs pédagogiques :** Donner une mémoire externe et de l'autonomie à un LLM
-    - Créer des agents IA autonomes
-    - Implémenter un système RAG complet
-    - Maîtriser LangChain et les bases vectorielles
+> * Créer des agents IA autonomes
+> * Implémenter un système RAG complet
+> * Maîtriser LangChain et les bases vectorielles
 
 ---
 

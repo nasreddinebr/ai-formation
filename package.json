@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node --import tsx scripts/build-search-index.ts && next build",
+    "predev": "node --import tsx scripts/build-content.ts",
+    "build": "node --import tsx scripts/build-content.ts && next build",
     "start": "next start",
     "lint": "eslint",
-    "build:search": "node --import tsx scripts/build-search-index.ts"
+    "build:search": "node --import tsx scripts/build-content.ts"
   },
   "dependencies": {
     "flexsearch": "0.8.212",

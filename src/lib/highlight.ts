@@ -10,10 +10,18 @@ async function getHighlighter() {
       "python", "javascript", "typescript", "bash", "json",
       "yaml", "html", "css", "markdown", "sql",
       "rust", "go", "java", "c", "cpp",
+      "dockerfile", "nginx", "graphql", "shell", "plaintext",
     ],
   });
   return highlighter;
 }
+
+const LANG_ALIASES: Record<string, string> = {
+  gitignore: "plaintext",
+  sh: "bash",
+  py: "python",
+  zsh: "bash",
+};
 
 export async function highlightCode(
   code: string,
@@ -22,7 +30,8 @@ export async function highlightCode(
   try {
     const hl = await getHighlighter();
     const supportedLangs = hl.getLoadedLanguages();
-    const normalizedLang = supportedLangs.includes(lang) ? lang : "text";
+    const target = LANG_ALIASES[lang] ?? lang;
+    const normalizedLang = supportedLangs.includes(target) ? target : "text";
     return hl.codeToHtml(code, {
       lang: normalizedLang,
       theme: "github-dark",

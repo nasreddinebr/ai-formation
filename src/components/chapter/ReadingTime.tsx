@@ -4,7 +4,7 @@
 
 export function ReadingTime({ time }: ReadingTimeProps) {
   return (
-    <span className="flex items-center gap-1 text-xs text-muted">
+    <span className="flex items-center gap-1 text-xs text-ink2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="14"

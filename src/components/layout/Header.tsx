@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { useTheme } from "@/hooks/use-theme";
-import { NAV_LINKS, SITE_NAME } from "@/lib/constants";
+import { NAV_LINKS } from "@/lib/constants";
 import { SearchModal } from "@/components/search/SearchModal";
 
 export function Header() {
@@ -24,27 +24,43 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-sm">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-          <Link href="/" className="text-lg font-bold text-primary">
-            {SITE_NAME}
+      <header className="sticky top-0 z-50 border-b border-hair bg-background/85 backdrop-blur-md">
+        <div className="mx-auto flex min-h-16 max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-2">
+          <Link
+            href="/"
+            className="group flex items-center gap-3"
+            aria-label="Formation IA, retour à l'accueil"
+          >
+            <span className="flex h-9 w-9 items-center justify-center rounded-md bg-route font-display text-lg italic text-card shadow-sm transition-transform group-hover:-rotate-6">
+              IA
+            </span>
+            <span className="leading-tight">
+              <span className="block font-display text-base font-semibold tracking-tight text-ink">
+                Formation IA
+              </span>
+              <span className="block font-mono text-[0.62rem] uppercase tracking-[0.18em] text-ink2">
+                Parcours · de zéro à ingénieur
+              </span>
+            </span>
           </Link>
 
-          <nav className="flex items-center gap-6">
+          <nav className="flex flex-wrap items-center gap-x-5 gap-y-2" aria-label="Navigation principale">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-muted transition-colors hover:text-foreground"
+                className="font-mono text-[0.7rem] font-medium uppercase tracking-[0.14em] text-ink2 underline-offset-4 transition-colors hover:text-route-deep hover:underline"
               >
                 {link.label}
               </Link>
             ))}
+          </nav>
 
+          <div className="flex items-center gap-2">
             <button
               onClick={() => setSearchOpen(true)}
-              className="flex items-center gap-2 rounded-lg border border-border px-3 py-1.5 text-sm text-muted transition-colors hover:bg-accent/20"
-              aria-label="Rechercher"
+              className="flex items-center gap-2 rounded-md border border-hair bg-card px-3 py-1.5 text-sm text-ink transition-colors hover:border-route hover:bg-paper2"
+              aria-label="Rechercher dans la formation"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,12 +72,13 @@ export function Header() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                aria-hidden="true"
               >
                 <circle cx="11" cy="11" r="8" />
                 <path d="m21 21-4.3-4.3" />
               </svg>
               <span className="hidden sm:inline">Rechercher</span>
-              <kbd className="hidden rounded border border-border px-1 py-0.5 text-xs text-muted sm:inline">
+              <kbd className="hidden rounded border border-hair px-1 py-0.5 font-mono text-[0.65rem] text-ink2 md:inline">
                 ⌘K
               </kbd>
             </button>
@@ -69,7 +86,7 @@ export function Header() {
             {mounted && (
               <button
                 onClick={toggleTheme}
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-border transition-colors hover:bg-accent/20"
+                className="flex h-9 w-9 items-center justify-center rounded-md border border-hair bg-card text-ink transition-colors hover:border-route hover:bg-paper2"
                 aria-label={theme === "dark" ? "Passer en mode clair" : "Passer en mode sombre"}
               >
                 {theme === "dark" ? (
@@ -83,6 +100,7 @@ export function Header() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    aria-hidden="true"
                   >
                     <circle cx="12" cy="12" r="4" />
                     <path d="M12 2v2" />
@@ -105,13 +123,14 @@ export function Header() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    aria-hidden="true"
                   >
                     <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
                   </svg>
                 )}
               </button>
             )}
-          </nav>
+          </div>
         </div>
       </header>
 

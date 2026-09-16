@@ -18,19 +18,17 @@ export const NAV_LINKS = [
 ] as const;
 
 export const DIFFICULTY_LABELS: Record<string, string> = {
-  debutant: "Debutant",
-  intermediaire: "Intermediaire",
-  avance: "Avance",
+  debutant: "Débutant",
+  intermediaire: "Intermédiaire",
+  avance: "Avancé",
   expert: "Expert",
 };
 
 export const DIFFICULTY_COLORS: Record<string, string> = {
-  debutant: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
-  intermediaire:
-    "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
-  avance:
-    "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200",
-  expert: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200",
+  debutant: "bg-[color:var(--color-moss)]/15 text-[color:var(--color-moss)]",
+  intermediaire: "bg-[color:var(--color-route)]/15 text-[color:var(--color-route-deep)]",
+  avance: "bg-[color:var(--color-ink)]/10 text-[color:var(--color-ink)]",
+  expert: "bg-[color:var(--color-route)]/20 text-[color:var(--color-route-deep)]",
 };
 
 export const BOOKMARK_KEY = "ai-formation-last-visited";

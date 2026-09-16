@@ -7,32 +7,48 @@ import {
 
 interface ModuleCardProps {
   module: Module;
+  index: number;
 }
 
-export function ModuleCard({ module }: ModuleCardProps) {
+function waypoint(n: number): string {
+  return `0${n}`.slice(-2);
+}
+
+export function ModuleCard({ module, index }: ModuleCardProps) {
   return (
-    <Link
-      href={`/module/${module.id}`}
-      className="group flex flex-col rounded-xl border border-border bg-card p-5 transition-all hover:border-accent hover:shadow-md"
-    >
-      <div className="mb-3 flex items-center gap-3">
-        <span className="text-2xl">{module.icon}</span>
+    <li className="transition-all hover:translate-x-0.5 hover:shadow-[4px_4px_0_0_var(--color-hair)]">
+      <Link
+        href={`/module/${module.id}`}
+        className="grid grid-cols-[2.9rem_2rem_1fr] items-center gap-3 rounded-xl border border-hair bg-card p-4 transition-colors hover:border-route sm:grid-cols-[3.2rem_2.2rem_1fr_auto] sm:gap-4 sm:p-5"
+      >
         <span
-          className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${DIFFICULTY_COLORS[module.difficulty]}`}
+          className="font-display text-[1.7rem] italic leading-none text-route sm:text-3xl"
+          aria-hidden="true"
         >
-          {DIFFICULTY_LABELS[module.difficulty]}
+          {waypoint(index + 1)}
         </span>
-      </div>
-      <h3 className="mb-1 text-base font-semibold text-foreground group-hover:text-primary">
-        {module.title}
-      </h3>
-      <p className="mb-3 flex-1 text-sm text-muted line-clamp-2">
-        {module.description}
-      </p>
-      <div className="flex items-center justify-between text-xs text-muted">
-        <span>{module.sections.length} sections</span>
-        <span>{module.estimatedTime}</span>
-      </div>
-    </Link>
+        <span className="text-[1.4rem] leading-none" aria-hidden="true">
+          {module.icon}
+        </span>
+        <span className="min-w-0 text-left">
+          <span className="block text-base font-semibold tracking-[-0.01em] text-ink">
+            {module.title}
+          </span>
+          <span className="mt-0.5 block text-sm leading-snug text-ink2 line-clamp-2">
+            {module.description}
+          </span>
+        </span>
+        <span className="col-start-2 flex flex-wrap gap-2 sm:col-auto sm:justify-end">
+          <span
+            className={`rounded-full px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-[0.06em] ${DIFFICULTY_COLORS[module.difficulty]}`}
+          >
+            {DIFFICULTY_LABELS[module.difficulty]}
+          </span>
+          <span className="rounded-full border border-dashed border-hair px-2.5 py-1 font-mono text-[0.68rem] uppercase tracking-[0.06em] text-ink2">
+            {module.estimatedTime}
+          </span>
+        </span>
+      </Link>
+    </li>
   );
 }

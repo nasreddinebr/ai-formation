@@ -5,7 +5,7 @@
 export function ChapterContent({ html }: ChapterContentProps) {
   return (
     <div
-      className="prose prose-sm max-w-none dark:prose-invert"
+      className="atlas-article max-w-none"
       dangerouslySetInnerHTML={{ __html: html }}
     />
   );

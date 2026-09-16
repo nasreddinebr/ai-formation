@@ -45,7 +45,7 @@ function saveProgress(data: ProgressData) {
   try {
     localStorage.setItem(PROGRESS_KEY, JSON.stringify(data));
     cachedProgressRaw = null;
-    cachedProgress = null;
+    cachedProgress = defaultProgress;
     window.dispatchEvent(new Event("storage"));
   } catch {
     // Silently fail

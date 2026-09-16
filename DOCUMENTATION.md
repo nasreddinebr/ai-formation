@@ -1,7 +1,7 @@
 ﻿# DOCUMENTATION.md — AI Formation Website
 
-> Last updated: July 19, 2026
-> Version: 1.0.0
+> Last updated: September 15, 2026
+> Version: 2.0.0
 
 ---
 
@@ -9,11 +9,12 @@
 
 1. [Getting Started](#getting-started)
 2. [Local Development](#local-development)
-3. [Build & Deployment](#build--deployment)
-4. [Features Overview](#features-overview)
-5. [Architecture](#architecture)
-6. [Configuration](#configuration)
-7. [Contributing](#contributing)
+3. [Content Pipeline](#content-pipeline)
+4. [Build & Deployment](#build--deployment)
+5. [Features Overview](#features-overview)
+6. [Architecture](#architecture)
+7. [Styling & Design](#styling--design)
+8. [Contributing](#contributing)
 
 ---
 
@@ -28,21 +29,14 @@
 ### Quick Start
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/ai-formation.git
-cd ai-formation
-
 # Install dependencies
 npm install
 
-# Generate search index
-npm run build:search
-
-# Start development server
+# Start the dev server (predev auto-generates content data)
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
@@ -52,49 +46,57 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 | Command | Description |
 |---|---|
-| `npm run dev` | Start development server with Turbopack |
-| `npm run build` | Generate search index + build production bundle |
+| `npm run dev` | Start development server (runs content generator first) |
+| `npm run build` | Generate content + search index, then build production bundle |
 | `npm run start` | Start production server |
 | `npm run lint` | Run ESLint |
-| `npm run build:search` | Generate search index only |
+| `npm run build:search` | Re-run the content generator only |
+| `npx tsc --noEmit` | TypeScript type check |
 
 ### Project Structure
 
 ```
 ai-formation/
+├── sources/                  # Curriculum source of truth
+│   ├── formation-ia-complete.md    # module-0 inline anchor
+│   ├── Module_01..10_*.md          # 10 technical modules
+│   └── Section_A/B/C_*.md          # 3 transversal sections
 ├── src/
-│   ├── app/                    # Next.js App Router pages
-│   │   ├── layout.tsx          # Root layout (Header, Footer, metadata)
-│   │   ├── page.tsx            # Homepage
-│   │   ├── globals.css         # Tailwind v4 theme config
-│   │   ├── module/[id]/        # Dynamic chapter pages (SSG)
-│   │   ├── profile/            # User profile + progress
-│   │   └── auth/               # Auth skeletons (signin, signup)
-│   ├── components/
-│   │   ├── layout/             # Header, Footer
-│   │   ├── home/               # Hero, ModuleCard, ResumeBanner
-│   │   ├── chapter/            # ChapterContent, TableOfContents, ReadingTime, BackToTop, SaveBookmark
-│   │   ├── search/             # SearchModal
-│   │   └── profile/            # ProgressCard, SectionChecklist
-│   ├── data/                   # modules.ts, resources.ts, search-index.json
-│   ├── lib/                    # constants.ts, parse-chapter.ts, highlight.ts, reading-time.ts, search-index.ts
-│   └── hooks/                  # use-bookmark.ts, use-theme.ts, use-progress.ts
-├── scripts/                    # build-search-index.ts
-├── content/                    # formation-ia-complete.md (source curriculum)
-├── public/                     # Static assets, search-index.json
-└── .github/workflows/          # CI/CD pipeline
+│   ├── app/                  # layout, homepage, module/[id], profile, auth
+│   ├── components/           # layout, home, chapter, search, profile
+│   ├── data/                 # modules.ts (meta) + curriculum.gen.ts (GENERATED)
+│   ├── lib/                  # parse-chapter, curriculum, markdown, highlight…
+│   └── hooks/                # use-bookmark, use-theme, use-progress
+├── scripts/
+│   └── build-content.ts      # generator: gen data + search index
+├── public/
+│   └── search-index.json     # GENERATED, committed
+└── package.json
 ```
 
-### Content Management
+---
 
-The curriculum is stored in `content/formation-ia-complete.md`. Each module is identified by an anchor tag:
+## Content Pipeline
 
-```markdown
-<a name="module-0"></a>
-## MODULE 0 — TITLE
-```
+The curriculum lives in `sources/`. Build order:
 
-The `parse-chapter.ts` script extracts content between anchors at build time.
+1. `scripts/build-content.ts` (via `predev` / `build` / `build:search`):
+   - Parses each source, builds chapter/section structure (`src/lib/curriculum.ts`)
+   - Emits `src/data/curriculum.gen.ts` (14 modules, 78 chapters, 666 sections)
+   - Emits `public/search-index.json` (666 entries)
+2. SSG during `next build`:
+   - Each `/module/[id]` page calls `getChapterContent(id)` (`src/lib/parse-chapter.ts`)
+   - `MODULE_SOURCES` maps ids 0–13 → per-module file or the inline `module-0` anchor
+   - Markdown is rendered by the custom renderer (`src/lib/markdown.ts`) with `@@CODE:n@@` placeholders, then each block is highlighted with shiki (`src/lib/highlight.ts`)
+
+Both generated files are **committed**; regenerate whenever sources change.
+
+### Structure rules
+
+- **Chapters:** level-1 headings `# CHAPITRE X.Y` (letter + number allowed, e.g. `B.1`)
+- **Sections:** level-3 headings `###`. If a module has ≤4 level-3 headings, its `####` headings are promoted to sections (module 0 → 19 sections).
+- **Module title:** first level-1/level-2 heading matching `MODULE`/`SECTION`; cleaned of `MODULE N -` / `SECTION TRANSVERSALE X —` prefixes; ALL-CAPS titles fall back to the curated meta title.
+- URLs keep ids 0–13; section deep links are `/module/{id}#{sectionId}`.
 
 ---
 
@@ -103,10 +105,8 @@ The `parse-chapter.ts` script extracts content between anchors at build time.
 ### Local Build
 
 ```bash
-# Full build (search index + Next.js)
-npm run build
-
-# Output: .next/ directory (production-ready)
+npm run build        # generator + Next.js build (outputs .next/)
+npm run start        # serve the production build
 ```
 
 ### Environment Variables
@@ -120,187 +120,66 @@ npm run build
 
 1. Push to GitHub
 2. Import project on [vercel.com](https://vercel.com)
-3. Set environment variables in Vercel dashboard
-4. Deploy automatically on push to `main`
-
-### Deploy to Render
-
-1. Create a new **Web Service** on [render.com](https://render.com)
-2. Connect your GitHub repository
-3. Configure:
-   - **Build Command:** `npm run build`
-   - **Start Command:** `npm run start`
-   - **Node Version:** 24
-4. Add environment variables
-
-### Deploy to AWS (Manual)
-
-```bash
-# Build
-npm run build
-
-# Export static files (if needed)
-npx next export
-
-# Deploy to S3 + CloudFront
-aws s3 sync .next s3://your-bucket
-```
-
-### GitHub Actions CI/CD
-
-The pipeline (`.github/workflows/ci.yml`) runs:
-
-1. **Lint** — ESLint check
-2. **Type Check** — TypeScript compilation
-3. **Build** — Full production build
-4. **Deploy** — Auto-deploy to Vercel on `main` push
-
-Required GitHub Secrets:
-- `VERCEL_TOKEN`
-- `VERCEL_ORG_ID`
-- `VERCEL_PROJECT_ID`
-- `NEXT_PUBLIC_SITE_URL`
+3. Set environment variables
+4. Deploy automatically on push to `main` (GitHub Actions pipeline in `.github/workflows/ci.yml`)
 
 ---
 
 ## Features Overview
 
-### M9: Content Richness
+### Content richness
 
-#### Syntax Highlighting
+- **Syntax highlighting:** shiki 4.3.1 at build time, theme `github-dark`. Languages: Python, JavaScript, TypeScript, Bash, JSON, YAML, HTML, CSS, Markdown, SQL, Rust, Go, Java, C, C++, Dockerfile, Nginx, GraphQL, Shell, Plaintext. Aliases map `gitignore → plaintext`, `sh/zsh → bash`, `py → python`.
+- **Reading time:** custom word-count algorithm (`reading-time.ts`), ~200 words/min (French).
+- **Back-to-top:** appears after 400px, smooth-scroll, `aria-label="Retour en haut"`.
+- **Markdown renderer:** hand-rolled (`markdown.ts`) — headings, paragraphs, blockquotes, tables, nested lists + task checks, horizontal rules, and inline code/bold/italic/strikethrough/links/images.
 
-- **Technology:** shiki 4.3.1 (build-time)
-- **Languages supported:** Python, JavaScript, TypeScript, Bash, JSON, YAML, HTML, CSS, Markdown, SQL, Rust, Go, Java, C, C++
-- **Theme:** github-dark
-- **How it works:** Code blocks are highlighted at build time via `highlight.ts`, pre-rendered HTML served as-is (no client-side processing)
+### Profile & progress
 
-#### Reading Time Estimation
+- `useProgress` (useSyncExternalStore + localStorage, key `ai-formation-progress`)
+- `/profile`: ProgressCard (overall + per-module bars) and a collapsible SectionChecklist (per-section checkboxes)
+- Auth skeletons at `/auth/signin` & `/auth/signup` (disabled forms, link to `/profile`)
 
-- **Technology:** Custom word-count algorithm (`reading-time.ts`)
-- **Calculation:** 200 words/minute (French reading speed)
-- **Display:** Clock icon + "X min de lecture" badge in chapter header
-- **Component:** `ReadingTime.tsx`
+### Search
 
-#### Back-to-Top Button
+- **Index:** generated at build time → `public/search-index.json` (666 entries)
+- **Modal:** header button or `Cmd+K` / `Ctrl+K`
+- **Scoring:** title (3x) > section (2x) > content (1x); max 10 results
+- **Keyboard:** ↑↓ navigate, Enter opens `/module/{id}#{sectionId}`, Esc closes
 
-- **Behavior:** Appears after 400px scroll, smooth-scrolls to top
-- **Component:** `BackToTop.tsx`
-- **Accessibility:** `aria-label="Retour en haut"`
+### Bookmarks & theme
 
-### M10: Profile & Progress Tracking
-
-#### Progress Hook
-
-- **Technology:** `useSyncExternalStore` + localStorage
-- **Storage key:** `ai-formation-progress`
-- **Data structure:**
-  ```typescript
-  {
-    visitedModules: number[];
-    completedSections: Record<number, string[]>;
-  }
-  ```
-
-#### Profile Page (`/profile`)
-
-- **ProgressCard:** Shows overall progress bar + per-module progress
-- **SectionChecklist:** Checkbox list of all sections across all modules
-- **Persistence:** All data stored in localStorage (no backend)
-
-#### Auth Skeletons
-
-- **Sign-in/Sign-up pages:** Form skeletons with disabled inputs
-- **Links to:** `/profile` ("Continuer sans compte")
-
-### M11: Search
-
-#### Search Index
-
-- **Generation:** `scripts/build-search-index.ts` runs at build time
-- **Output:** `public/search-index.json` (86 entries)
-- **Content indexed:** Module titles, section titles, content snippets (200 chars)
-
-#### Search Modal
-
-- **Trigger:** Header search button or `Cmd+K` / `Ctrl+K`
-- **Technology:** Custom `SearchIndex` class with scoring algorithm
-- **Scoring:** Title match (3x) > Section match (2x) > Content match (1x)
-- **Keyboard navigation:** ↑↓ to navigate, Enter to select, Esc to close
-- **Results:** Max 10, sorted by relevance
+- `useBookmark` (`ai-formation-last-visited`) powers the ResumeBanner CTA
+- `useTheme` (`ai-formation-theme`) toggles the `dark` class on `<html>`; auto-detects system preference
 
 ---
 
 ## Architecture
 
-### Data Flow
-
 ```
-Build Time:
-  formation-ia-complete.md
-    → parse-chapter.ts (extract sections)
-    → highlight.ts (shiki syntax highlighting)
-    → reading-time.ts (word count)
-    → Static HTML pages
-
-  scripts/build-search-index.ts
-    → public/search-index.json
+Build time:
+  sources/ → build-content.ts → curriculum.gen.ts + search-index.json
+  sources/ → getChapterContent() → markdown.ts + highlight.ts + reading-time.ts → static HTML
 
 Runtime:
-  Homepage → useBookmark() → ResumeBanner
-  Module page → ChapterContent (pre-highlighted HTML)
-  Module page → ReadingTime badge
-  Module page → BackToTop button
-  Module page → useProgress() → Save section completion
-  Header → SearchModal (Cmd+K)
-  /profile → ProgressCard + SectionChecklist
+  Homepage    → RouteMap (SVG) + Hero + Manifest + 14 stage cards + ResumeBanner
+  /module/[id]→ TOC scroll-spy, ChapterContent, ReadingTime, resources, prev/next, BackToTop
+  Header      → SearchModal (Cmd+K) + theme toggle
+  /profile    → ProgressCard + SectionChecklist
 ```
 
-### State Management
-
-| Hook | Purpose | Storage |
-|---|---|---|
-| `useBookmark` | Last visited module | localStorage |
-| `useTheme` | Dark/light mode | localStorage + `class` on `<html>` |
-| `useProgress` | Section completion + modules visited | localStorage |
-
-All hooks use `useSyncExternalStore` for React 19 compatibility.
-
-### Styling
-
-- **Framework:** Tailwind CSS 4.3.3 (CSS-first config)
-- **Theme:** Custom light/dark tokens in `globals.css`
-- **Colors:** Primary `#355872`, Secondary `#7AAACE`, Accent `#9CD5FF`, Neutral `#F7F8F0`
+State hooks all use `useSyncExternalStore` (React 19) and persist to `localStorage`.
 
 ---
 
-## Configuration
+## Styling & Design
 
-### Tailwind CSS
-
-Custom theme defined in `src/app/globals.css`:
-
-```css
-@import "tailwindcss";
-
-@theme inline {
-  --color-primary: #355872;
-  --color-secondary: #7AAACE;
-  --color-accent: #9CD5FF;
-  --color-neutral: #F7F8F0;
-  --color-background: #ffffff;
-  --color-foreground: #1a1a1a;
-  --color-card: #ffffff;
-  --color-border: #e5e7eb;
-  --color-muted: #6b7280;
-}
-```
-
-### Dark Mode
-
-- **Strategy:** `class` on `<html>` element
-- **Toggle:** Header sun/moon button
-- **Persistence:** localStorage key `ai-formation-theme`
-- **System preference:** Auto-detected on first visit
+- **Framework:** Tailwind CSS 4.3.3 (CSS-first config, `@theme`)
+- **Brand:** "Le Parcours / Learning Atlas" — warm paper + ink + copper-route palette (see `sources/PROJECT_MAP.md` for the full token table)
+- **Atlas tokens:** `paper`, `paper2`, `card`, `ink`, `ink2`, `hair`, `route`, `route-deep`, `route-light`, `moss` — light + dark variants
+- **Legacy aliases** (`primary`, `secondary`, `accent`, `neutral`, `background`, `foreground`, `muted`, `border`, `card`) map onto the palette
+- **Fonts:** Fraunces (display), Inter (body), IBM Plex Mono (labels)
+- **Article typography:** `.atlas-article` in `globals.css` styles the rendered markdown (chapter/section headings, code `pre`, task lists, tables)
 
 ---
 
@@ -309,24 +188,25 @@ Custom theme defined in `src/app/globals.css`:
 ### Code Style
 
 - TypeScript strict mode
-- ESLint with `eslint-config-next`
+- ESLint with `eslint-config-next` (`npm run lint`, zero warnings)
 - No comments unless explicitly requested
-- Component-based architecture (feature folders)
+- Feature-folder component structure
 
-### Commit Convention
+### Changing the curriculum
 
-Use conventional commits:
-- `feat:` — New feature
-- `fix:` — Bug fix
-- `docs:` — Documentation
-- `chore:` — Maintenance
+1. Edit the relevant file(s) in `sources/`
+2. Run `npm run build:search` to regenerate `curriculum.gen.ts` + `search-index.json`
+3. Commit the generated files alongside your source change
 
 ### Testing
 
-Currently no test framework configured. When adding tests:
-1. Install `vitest` or `jest`
-2. Add test scripts to `package.json`
-3. Update CI/CD pipeline
+No test framework configured. Build-time verification:
+
+```bash
+npm run lint
+npx tsc --noEmit
+npm run build
+```
 
 ---
 

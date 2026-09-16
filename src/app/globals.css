@@ -1,23 +1,51 @@
 ﻿@import "tailwindcss";
 
 :root {
-  --color-primary: #355872;
-  --color-secondary: #7AAACE;
-  --color-accent: #9CD5FF;
-  --color-neutral: #F7F8F0;
-  --color-background: #ffffff;
-  --color-foreground: #1a1a1a;
-  --color-muted: #6b7280;
-  --color-border: #e5e7eb;
-  --color-card: #ffffff;
+  --color-primary: #22303c;
+  --color-secondary: #b4633b;
+  --color-accent: #b4633b;
+  --color-neutral: #e9e1cf;
+  --color-background: #f3eddf;
+  --color-foreground: #22303c;
+  --color-muted: #4a5a68;
+  --color-border: #d6cab0;
+  --color-card: #fbf6ea;
+
+  --color-paper: #f3eddf;
+  --color-paper2: #e9e1cf;
+  --color-hair: #d6cab0;
+  --color-ink: #22303c;
+  --color-ink2: #4a5a68;
+  --color-route: #b4633b;
+  --color-route-deep: #8a3d13;
+  --color-route-light: #dea375;
+  --color-moss: #5c7260;
+
+  --font-inter: var(--font-inter);
+  --font-mono-plex: var(--font-plex-mono);
+  --font-fraunces: var(--font-fraunces);
 }
 
 .dark {
-  --color-background: #0f172a;
-  --color-foreground: #e2e8f0;
-  --color-muted: #94a3b8;
-  --color-border: #1e293b;
-  --color-card: #1e293b;
+  --color-primary: #d98e62;
+  --color-secondary: #d98e62;
+  --color-accent: #d98e62;
+  --color-neutral: #222b34;
+  --color-background: #151a20;
+  --color-foreground: #ece5d4;
+  --color-muted: #a79e8d;
+  --color-border: #303a46;
+  --color-card: #1c232b;
+
+  --color-paper: #151a20;
+  --color-paper2: #222b34;
+  --color-hair: #303a46;
+  --color-ink: #ece5d4;
+  --color-ink2: #a79e8d;
+  --color-route: #d98e62;
+  --color-route-deep: #f0c5aa;
+  --color-route-light: #eab897;
+  --color-moss: #8aa080;
 }
 
 @theme inline {
@@ -30,21 +58,286 @@
   --color-muted: var(--color-muted);
   --color-border: var(--color-border);
   --color-card: var(--color-card);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-paper: var(--color-paper);
+  --color-paper2: var(--color-paper2);
+  --color-hair: var(--color-hair);
+  --color-ink: var(--color-ink);
+  --color-ink2: var(--color-ink2);
+  --color-route: var(--color-route);
+  --color-route-deep: var(--color-route-deep);
+  --color-route-light: var(--color-route-light);
+  --color-moss: var(--color-moss);
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-mono-plex);
+  --font-display: var(--font-fraunces);
 }
 
 body {
   background: var(--color-background);
   color: var(--color-foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-fraunces), Georgia, "Times New Roman", serif;
 }
 
 ::selection {
-  background: var(--color-accent);
-  color: var(--color-primary);
+  background: var(--color-route);
+  color: var(--color-card);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-route);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Rendu des chapitres                                                 */
+/* ------------------------------------------------------------------ */
+
+.atlas-article {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--color-ink);
+}
+
+.dark .atlas-article {
+  color: var(--color-ink);
+}
+
+.atlas-article h2.chapter-heading {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--color-hair);
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--color-route-deep);
+  scroll-margin-top: 6rem;
+}
+
+.atlas-article h3 {
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-ink);
+  scroll-margin-top: 6rem;
+}
+
+.atlas-article h3.section-heading {
+  margin-top: 2.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px dashed var(--color-hair);
+}
+
+.atlas-article h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-route-deep);
+  scroll-margin-top: 6rem;
+}
+
+.atlas-article p {
+  margin: 0.9rem 0;
+  color: var(--color-ink);
+}
+
+.atlas-article strong {
+  font-weight: 650;
+  color: var(--color-ink);
+}
+
+.atlas-article em {
+  font-style: italic;
+}
+
+.atlas-article a {
+  color: var(--color-route-deep);
+  text-decoration: underline;
+  text-decoration-color: var(--color-route-light);
+  text-underline-offset: 3px;
+}
+
+.atlas-article a:hover {
+  text-decoration-color: var(--color-route);
+}
+
+.atlas-article ul,
+.atlas-article ol {
+  margin: 0.9rem 0 0.9rem 1.4rem;
+  padding: 0;
+}
+
+.atlas-article ul {
+  list-style: disc;
+}
+
+.atlas-article ol {
+  list-style: decimal;
+}
+
+.atlas-article li {
+  margin: 0.3rem 0;
+}
+
+.atlas-article li > ul,
+.atlas-article li > ol {
+  margin: 0.3rem 0 0.3rem 1.4rem;
+}
+
+.atlas-article .task-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.05rem;
+  height: 1.05rem;
+  margin-right: 0.4rem;
+  border: 1px solid var(--color-hair);
+  border-radius: 3px;
+  font-size: 0.7rem;
+  line-height: 1;
+  color: var(--color-moss);
+  background: var(--color-card);
+  vertical-align: -0.15em;
+}
+
+.atlas-article blockquote {
+  margin: 1.25rem 0;
+  padding: 0.85rem 1.25rem;
+  border-left: 3px solid var(--color-route);
+  border-radius: 0 6px 6px 0;
+  background: color-mix(in oklab, var(--color-paper2) 60%, transparent);
+  color: var(--color-ink2);
+  font-style: italic;
+}
+
+.atlas-article blockquote p {
+  margin: 0.35rem 0;
+}
+
+.atlas-article hr {
+  margin: 2.25rem 0;
+  border: 0;
+  border-top: 1px solid var(--color-hair);
+}
+
+.atlas-article code {
+  font-family: var(--font-plex-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.82em;
+  color: var(--color-route-deep);
+  background: color-mix(in oklab, var(--color-paper2) 60%, transparent);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+
+.dark .atlas-article code {
+  color: #f0c5aa;
+}
+
+.atlas-article pre {
+  margin: 1.25rem 0;
+  display: block;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.atlas-article pre code {
+  display: block;
+  padding: 1rem 1.1rem;
+  background: transparent;
+  color: #d6e2ef;
+}
+
+.atlas-article pre.shiki {
+  background: #151a20;
+  border: 1px solid var(--color-hair);
+  box-shadow: 0 1px 0 color-mix(in oklab, var(--color-hair) 40%, transparent) inset;
+}
+
+.atlas-article .table-wrap {
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  border: 1px solid var(--color-hair);
+  border-radius: 8px;
+}
+
+.atlas-article table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.atlas-article th,
+.atlas-article td {
+  padding: 0.55rem 0.85rem;
+  border-bottom: 1px solid var(--color-hair);
+  text-align: left;
+  vertical-align: top;
+}
+
+.atlas-article thead th {
+  background: color-mix(in oklab, var(--color-paper2) 65%, transparent);
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-ink2);
+}
+
+.atlas-article tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.atlas-article tbody tr:hover td {
+  background: color-mix(in oklab, var(--color-paper2) 40%, transparent);
+}
+
+.atlas-article img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1.25rem 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Carte du parcours                                                   */
+/* ------------------------------------------------------------------ */
+
+.route-line {
+  stroke-dasharray: 6 7;
+  stroke-dashoffset: 0;
+  animation: route-dash 26s linear infinite;
+}
+
+@keyframes route-dash {
+  to {
+    stroke-dashoffset: -260;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-line {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }

@@ -1,0 +1,14 @@
+# Approbation explicite des scripts d'installation des dependances.
+# pnpm 11+ bloque par defaut tout script postinstall non declare ici
+# (`strictDepBuilds` vaut true par defaut).
+allowBuilds:
+  # Prisma : telechargement des engines + generation du client.
+  "@prisma/client": true
+  "@prisma/engines": true
+  prisma: true
+  # Next.js / tsx.
+  esbuild: true
+  # Optimisation d'images Next.js.
+  sharp: true
+  # Resolution d'alias pour eslint / eslint-config-next.
+  unrs-resolver: true

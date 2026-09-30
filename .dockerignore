@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------------------
+# Dependances
+# ---------------------------------------------------------------------------
+node_modules
+.pnpm-store
+
+# ---------------------------------------------------------------------------
+# Next.js — sortie reconstruite dans l'image
+# ---------------------------------------------------------------------------
+.next
+out
+next-env.d.ts
+*.tsbuildinfo
+
+# ---------------------------------------------------------------------------
+# Secrets
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+.vercel
+
+# ---------------------------------------------------------------------------
+# Fichiers non necessaires a l'image
+# ---------------------------------------------------------------------------
+.git
+.github
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+README.md
+DOCUMENTATION.md
+AGENTS.md
+CLAUDE.md
+.agents
+.claude
+.windsurf
+skills-lock.json
+
+# ---------------------------------------------------------------------------
+# Contenu genere — reconstruit par `pnpm build:search` dans l'image.
+# `src/data/curriculum.gen.ts` est deliberement conserve : le generateur
+# l'importe via `src/data/modules.ts` avant de pouvoir le reecrire.
+# ---------------------------------------------------------------------------
+public/search-index.json

@@ -1,0 +1,63 @@
+# ---------------------------------------------------------------------------
+# ai-formation — stack de production (VPS)
+#
+#   docker compose -f docker-compose.prod.yml up -d --build
+#
+# Build complet (build:search + next build -> sortie `standalone`), aucun
+# montage de sources, utilisateur non privilegie, port Postgres non expose.
+# Placez un reverse proxy (nginx / Caddy) devant le port 3000.
+#
+# Ce fichier est autonome : il ne fusionne pas avec docker-compose.yml.
+# ---------------------------------------------------------------------------
+
+services:
+  web:
+    build:
+      context: .
+      target: prod
+    image: ai-formation:prod
+    container_name: ai-formation-web
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+      HOSTNAME: 0.0.0.0
+      PORT: "3000"
+      DATABASE_URL: postgresql://${POSTGRES_USER:-ai_formation}:${POSTGRES_PASSWORD:-ai_formation_dev}@db:5432/${POSTGRES_DB:-ai_formation}?schema=public
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-https://ai-formation.dev}
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - ai-formation
+
+  db:
+    image: postgres:17-alpine
+    container_name: ai-formation-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-ai_formation}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ai_formation_dev}
+      POSTGRES_DB: ${POSTGRES_DB:-ai_formation}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    # Pas d'exposition de port : la base reste sur le reseau interne.
+    healthcheck:
+      test:
+        ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-ai_formation} -d ${POSTGRES_DB:-ai_formation}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - ai-formation
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  ai-formation:
+    driver: bridge

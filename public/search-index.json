@@ -24,44 +24,108 @@
     "snippet": "🤖 IA vs Machine Learning vs Deep Learning vs IA Générative Concept Définition simple Exemple concret IA Toute machine simulant l'intelligence Filtres spam d'email Machine Learning La machine apprend ..."
   },
   {
-    "id": "1-etape-1-installer-python",
+    "id": "1-intuition",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "etape-1-installer-python",
-    "sectionTitle": "Étape 1 — Installer Python",
-    "snippet": "Télécharge Python 3.11 ou supérieur depuis python.org. Vérifie l'installation :"
+    "sectionId": "intuition",
+    "sectionTitle": "💡 Intuition",
+    "snippet": "Tu connais l'explorateur de fichiers (Finder, Explorateur Windows) : tu cliques sur des dossiers. Le terminal fait la même chose, mais en écrivant des commandes. Pourquoi s'en soucier ? Parce que tous..."
   },
   {
-    "id": "1-etape-2-installer-un-editeur-de-code",
+    "id": "1-les-commandes-de-navigation",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "etape-2-installer-un-editeur-de-code",
-    "sectionTitle": "Étape 2 — Installer un éditeur de code",
-    "snippet": "Recommandation : Visual Studio Code (VS Code) Gratuit, léger, extensible. Installe les extensions : - Python (Microsoft) - Jupyter (Microsoft) - Pylance (autocomplétion intelligente)"
+    "sectionId": "les-commandes-de-navigation",
+    "sectionTitle": "Les commandes de navigation",
+    "snippet": "Action macOS / Linux Windows (PowerShell) Où suis-je ? (ou ) Lister les fichiers (ou ) Entrer dans un dossier Remonter d'un niveau Aller au dossier personnel Créer un dossier Créer un fichier vide Aff..."
   },
   {
-    "id": "1-etape-3-creer-un-environnement-virtuel",
+    "id": "1-chemins-absolus-et-relatifs",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "etape-3-creer-un-environnement-virtuel",
-    "sectionTitle": "Étape 3 — Créer un environnement virtuel",
-    "snippet": "Un environnement virtuel isole les dépendances de chaque projet. C'est une bonne pratique indispensable."
+    "sectionId": "chemins-absolus-et-relatifs",
+    "sectionTitle": "Chemins absolus et relatifs",
+    "snippet": "Un chemin absolu part de la racine du disque ( ou ). Un chemin relatif part du dossier courant ( , ). désigne « ici » et « le dossier parent »."
   },
   {
-    "id": "1-etape-4-installer-les-bibliotheques",
+    "id": "1-pieges-frequents",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "etape-4-installer-les-bibliotheques",
-    "sectionTitle": "Étape 4 — Installer les bibliothèques",
-    "snippet": ""
+    "sectionId": "pieges-frequents",
+    "sectionTitle": "⚠️ Pièges fréquents",
+    "snippet": "- Les espaces dans les noms : échoue (le terminal lit deux mots). Écris , ou mieux, évite les espaces et les accents dans les noms de dossiers de projet. - Se tromper de dossier : beaucoup d'erreurs «..."
   },
   {
-    "id": "1-etape-5-lancer-jupyter-notebook",
+    "id": "1-intuition-2",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "etape-5-lancer-jupyter-notebook",
-    "sectionTitle": "Étape 5 — Lancer Jupyter Notebook",
-    "snippet": "Jupyter ouvre un navigateur. C'est l'environnement interactif idéal pour apprendre : tu écris du code, tu l'exécutes immédiatement, tu vois le résultat. --- 📘 CHAPITRE 1.1 — PYTHON : FONDATIONS ABSOL..."
+    "sectionId": "intuition-2",
+    "sectionTitle": "💡 Intuition",
+    "snippet": "Python est un langage interprété : un programme appelé interpréteur lit ton code ligne par ligne et l'exécute. Tu peux l'utiliser de quatre manières : Mode Comment Quand l'utiliser REPL (mode interact..."
+  },
+  {
+    "id": "1-intuition-3",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "intuition-3",
+    "sectionTitle": "💡 Intuition",
+    "snippet": "Imagine que chaque projet est un atelier avec ses propres outils. Si tous les projets partagent le même atelier, un outil mis à jour pour l'un casse l'autre. Un environnement virtuel (virtual environm..."
+  },
+  {
+    "id": "1-sous-le-capot-que-fait-activer",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "sous-le-capot-que-fait-activer",
+    "sectionTitle": "🔍 Sous le capot : que fait « activer » ?",
+    "snippet": "L'activation ne « démarre » rien. Elle modifie temporairement le de ton terminal pour que la commande (et ) pointe vers ceux du dossier . Tu peux le vérifier :"
+  },
+  {
+    "id": "1-pieges-frequents-2",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "pieges-frequents-2",
+    "sectionTitle": "⚠️ Pièges fréquents",
+    "snippet": "- PowerShell bloque l'activation (« l'exécution de scripts est désactivée ») : lance une fois , ou utilise dans . - Oublier d'activer : tu installes alors les bibliothèques globalement. Vérifie le dan..."
+  },
+  {
+    "id": "1-quiz-de-fin-de-chapitre-1-0",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "quiz-de-fin-de-chapitre-1-0",
+    "sectionTitle": "🧠 Quiz de fin de Chapitre 1.0",
+    "snippet": "1. Quelle commande affiche le dossier dans lequel tu te trouves ? <details><summary>Réponse</summary> .</details> 2. Chemin absolu ou relatif : ? <details><summary>Réponse</summary>Relatif : il part d..."
+  },
+  {
+    "id": "1-mini-projet-1-0-ton-atelier-pret-a-lemploi",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "mini-projet-1-0-ton-atelier-pret-a-lemploi",
+    "sectionTitle": "🎯 MINI-PROJET 1.0 — Ton atelier prêt à l'emploi",
+    "snippet": "1. Crée le dossier , son , et active-le. 2. Installe . 3. Exécute : tu dois voir « ✅ Environnement prêt ! ». 4. Crée un notebook avec une cellule Markdown (ton nom, ton objectif de reconversion) et un..."
+  },
+  {
+    "id": "1-1-1-0-ton-premier-programme",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "1-1-0-ton-premier-programme",
+    "sectionTitle": "1.1.0 — Ton premier programme",
+    "snippet": "> 🎯 Objectif. Écrire, exécuter et lire un programme minimal ; comprendre l'indentation et les commentaires. Pour interagir avec l'utilisateur, on utilise , qui renvoie toujours une chaîne de caractèr..."
+  },
+  {
+    "id": "1-lindentation-en-python-elle-fait-partie-de-la-syntaxe",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "lindentation-en-python-elle-fait-partie-de-la-syntaxe",
+    "sectionTitle": "L'indentation : en Python, elle fait partie de la syntaxe",
+    "snippet": "Là où d'autres langages utilisent des accolades , Python utilise les espaces en début de ligne (4 par convention) pour délimiter un bloc : Une indentation incohérente provoque une . Configure ton édit..."
+  },
+  {
+    "id": "1-bien-ecrire-du-code-pep-8-lessentiel",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "bien-ecrire-du-code-pep-8-lessentiel",
+    "sectionTitle": "Bien écrire du code : PEP 8 (l'essentiel)",
+    "snippet": "PEP 8 est le guide de style officiel. Les cinq règles à retenir dès maintenant : 1. Noms de variables et fonctions en ( ), classes en ( ), constantes en ( ). 2. 4 espaces par niveau d'indentation, jam..."
   },
   {
     "id": "1-1-1-1-variables-et-types-de-donnees",
@@ -69,7 +133,7 @@
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
     "sectionId": "1-1-1-variables-et-types-de-donnees",
     "sectionTitle": "1.1.1 — Variables et Types de Données",
-    "snippet": "En Python, une variable est une étiquette qui pointe vers une valeur. Pas besoin de déclarer son type — Python le détecte automatiquement. Les opérations de base : Les chaînes de caractères en détail ..."
+    "snippet": "> 🎯 Objectif. Comprendre ce qu'est vraiment une variable en Python, connaître les types de base, savoir convertir, calculer et formater du texte. 💡 Intuition : des étiquettes, pas des boîtes Dans be..."
   },
   {
     "id": "1-1-1-2-structures-de-donnees",
@@ -77,7 +141,7 @@
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
     "sectionId": "1-1-2-structures-de-donnees",
     "sectionTitle": "1.1.2 — Structures de Données",
-    "snippet": "Les structures de données sont les conteneurs dans lesquels on stocke les données. Comprendre leurs différences est crucial. Les Listes — séquences ordonnées et modifiables List comprehension — syntax..."
+    "snippet": "> 🎯 Objectif. Choisir la bonne structure (liste, dictionnaire, tuple, ensemble) pour un problème donné, et comprendre les pièges de la mutabilité. Les structures de données sont les conteneurs dans l..."
   },
   {
     "id": "1-1-1-3-controle-du-flux",
@@ -85,7 +149,7 @@
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
     "sectionId": "1-1-3-controle-du-flux",
     "sectionTitle": "1.1.3 — Contrôle du Flux",
-    "snippet": "Conditions (if/elif/else) Boucles La boucle : La boucle : ---"
+    "snippet": "> 🎯 Objectif. Faire prendre des décisions à un programme ( ) et répéter des actions ( , ) sans se tromper de boucle. Valeurs « truthy » et « falsy » Toute valeur peut être évaluée comme vraie ou faus..."
   },
   {
     "id": "1-1-1-4-fonctions",
@@ -93,7 +157,7 @@
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
     "sectionId": "1-1-4-fonctions",
     "sectionTitle": "1.1.4 — Fonctions",
-    "snippet": "Une fonction est un bloc de code réutilisable avec un nom. C'est la base de tout code organisé. Fonctions lambda — fonctions anonymes en une ligne : ---"
+    "snippet": "> 🎯 Objectif. Écrire des fonctions claires, comprendre la portée des variables, utiliser les arguments par défaut/variables et les décorateurs, et vérifier son code avec . 💡 Intuition Une fonction e..."
   },
   {
     "id": "1-1-1-5-gestion-des-fichiers",
@@ -101,7 +165,7 @@
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
     "sectionId": "1-1-5-gestion-des-fichiers",
     "sectionTitle": "1.1.5 — Gestion des Fichiers",
-    "snippet": "La data science commence toujours par lire des fichiers. --- SEMAINE 2 — Programmation Orientée Objet"
+    "snippet": "> 🎯 Objectif. Lire et écrire des fichiers texte, CSV, JSON et JSONL de façon sûre (encodage, fermeture) et manipuler des chemins avec . La data science commence toujours par lire des fichiers. Le ges..."
   },
   {
     "id": "1-1-1-6-classes-et-objets",
@@ -109,7 +173,7 @@
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
     "sectionId": "1-1-6-classes-et-objets",
     "sectionTitle": "1.1.6 — Classes et Objets",
-    "snippet": "La POO est indispensable pour comprendre PyTorch, Scikit-learn et presque toutes les bibliothèques IA. Concept : Une classe est un moule. Un objet est une instance créée à partir de ce moule. Héritage..."
+    "snippet": "> 🎯 Objectif. Comprendre pourquoi et comment regrouper des données et des comportements dans une classe ; lire et écrire une classe avec , méthodes, propriétés, méthodes spéciales, héritage et compos..."
   },
   {
     "id": "1-1-1-7-gestion-des-erreurs-exceptions",
@@ -117,7 +181,7 @@
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
     "sectionId": "1-1-7-gestion-des-erreurs-exceptions",
     "sectionTitle": "1.1.7 — Gestion des Erreurs (Exceptions)",
-    "snippet": ""
+    "snippet": "> 🎯 Objectif. Lire un message d'erreur, prévoir et gérer les erreurs avec , lever ses propres exceptions et déboguer méthodiquement. 💡 Intuition Un programme rencontre inévitablement des imprévus : ..."
   },
   {
     "id": "1-1-1-8-modules-et-packages",
@@ -125,7 +189,7 @@
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
     "sectionId": "1-1-8-modules-et-packages",
     "sectionTitle": "1.1.8 — Modules et Packages",
-    "snippet": ""
+    "snippet": "> 🎯 Objectif. Organiser son code en modules, comprendre , utiliser la bibliothèque standard et écrire un petit programme en ligne de commande. 💡 Intuition Un module est un simple fichier ; un packag..."
   },
   {
     "id": "1-1-1-9-iterateurs-et-generateurs",
@@ -133,335 +197,1375 @@
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
     "sectionId": "1-1-9-iterateurs-et-generateurs",
     "sectionTitle": "1.1.9 — Itérateurs et Générateurs",
-    "snippet": "Les générateurs sont essentiels pour traiter de grandes quantités de données sans saturer la mémoire. --- 🏋️ EXERCICES — CHAPITRE 1.1"
+    "snippet": "> 🎯 Objectif. Comprendre comment fonctionne une boucle , distinguer évaluation immédiate et paresseuse, et écrire des générateurs pour traiter des données plus grandes que la mémoire. 💡 Intuition : ..."
   },
   {
-    "id": "1-exercice-1-1-a-calcul-de-statistiques",
+    "id": "1-1-1-10-qualite-du-code-tests-types-et-formatage",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "exercice-1-1-a-calcul-de-statistiques",
-    "sectionTitle": "Exercice 1.1.A — Calcul de statistiques",
-    "snippet": "Écris une fonction qui retourne un dictionnaire contenant : la moyenne, la médiane, le min, le max, et l'écart-type. N'utilise pas NumPy — fais tout à la main. Solution commentée : ---"
+    "sectionId": "1-1-10-qualite-du-code-tests-types-et-formatage",
+    "sectionTitle": "1.1.10 — Qualité du code : tests, types et formatage 🔸",
+    "snippet": "> 🎯 Objectif. Adopter dès maintenant trois réflexes professionnels : tester, typer, formater. 1) Tester avec . Un test est une petite fonction qui vérifie qu'un comportement est correct. (à installer..."
+  },
+  {
+    "id": "1-exercice-1-1-a-statistiques-a-la-main",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-1-a-statistiques-a-la-main",
+    "sectionTitle": "Exercice 1.1.A — Statistiques à la main ⭐⭐",
+    "snippet": "Écris une fonction qui retourne un dictionnaire contenant : la moyenne, la médiane, le min, le max et l'écart-type (population). N'utilise pas NumPy. Lève si la liste est vide. <details><summary>Solut..."
   },
   {
     "id": "1-exercice-1-1-b-analyseur-de-texte",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
     "sectionId": "exercice-1-1-b-analyseur-de-texte",
-    "sectionTitle": "Exercice 1.1.B — Analyseur de texte",
-    "snippet": "Écris une classe qui prend un texte en entrée et fournit des méthodes pour : compter les mots, trouver les 5 mots les plus fréquents, compter les phrases, calculer la \"lisibilité\" approximative (mots ..."
+    "sectionTitle": "Exercice 1.1.B — Analyseur de texte ⭐⭐",
+    "snippet": "Écris une classe qui prend un texte et fournit : le nombre de mots, les 5 mots les plus fréquents (hors mots vides), le nombre de phrases et un score de « lisibilité » approximatif (mots par phrase). ..."
+  },
+  {
+    "id": "1-exercice-1-1-c-exceptions-et-tracebacks",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-1-c-exceptions-et-tracebacks",
+    "sectionTitle": "Exercice 1.1.C — Exceptions et tracebacks ⭐",
+    "snippet": "Ce script plante si le chemin est invalide. Modifie-le pour gérer l'erreur avec un précis et afficher un message clair. Ensuite, diagnostique les trois tracebacks ci-dessous (quel type d'erreur ? quel..."
+  },
+  {
+    "id": "1-exercice-1-1-d-du-texte-au-jsonl",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-1-d-du-texte-au-jsonl",
+    "sectionTitle": "Exercice 1.1.D — Du texte au JSONL ⭐⭐",
+    "snippet": "Écris une fonction qui découpe un texte en phrases et écrit un fichier JSONL où chaque ligne est . Écris ensuite qui renvoie un générateur de dictionnaires. <details><summary>Solution</summary> </deta..."
+  },
+  {
+    "id": "1-exercice-1-1-e-compte-bancaire-poo-exceptions",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-1-e-compte-bancaire-poo-exceptions",
+    "sectionTitle": "Exercice 1.1.E — Compte bancaire (POO + exceptions) ⭐⭐",
+    "snippet": "Écris une classe (titulaire, solde initial ≥ 0) avec les méthodes , (lève si le solde est insuffisant, si le montant est ≤ 0), un , et un historique des opérations. <details><summary>Solution</summary..."
+  },
+  {
+    "id": "1-exercice-1-1-f-pipeline-de-generateurs",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-1-f-pipeline-de-generateurs",
+    "sectionTitle": "Exercice 1.1.F — Pipeline de générateurs ⭐⭐⭐",
+    "snippet": "Crée un fichier de 10 000 lignes (scores entre 0 et 100 aléatoires reproductibles). Sans jamais charger tout le fichier en mémoire, calcule : (1) la moyenne des scores supérieurs à 50, (2) le nombre d..."
+  },
+  {
+    "id": "1-quiz-de-fin-de-chapitre-1-1-20-questions",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "quiz-de-fin-de-chapitre-1-1-20-questions",
+    "sectionTitle": "🧠 Quiz de fin de Chapitre 1.1 (20 questions)",
+    "snippet": "> Réponds sans regarder le cours, puis vérifie. Objectif : 16/20. 1. Vrai ou faux : en Python, , et sont mutables. <details><summary>Réponse</summary>Faux : ils sont immuables. Toute « modification » ..."
   },
   {
     "id": "1-mini-projet-1-1-systeme-de-suivi-de-formation-ia",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
     "sectionId": "mini-projet-1-1-systeme-de-suivi-de-formation-ia",
-    "sectionTitle": "🎯 MINI-PROJET 1.1 — Système de Suivi de Formation IA",
-    "snippet": "Crée un programme complet de suivi de formation avec : - Une classe avec nom, modules complétés, scores - Une classe avec titre, durée, exercices - Une classe qui gère les étudiants et modules - Sauve..."
+    "sectionTitle": "🎯 MINI-PROJET 1.1 — Système de suivi de formation IA",
+    "snippet": "> Objectif. Modéliser une petite application avec plusieurs classes, la persister en JSON (sauvegarde et chargement), gérer proprement les erreurs et fournir des tests. > > Cahier des charges : > - (i..."
   },
   {
-    "id": "1-1-2-1-creer-des-arrays",
+    "id": "1-intuition-vecteurs-matrices-tenseurs",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-2-1-creer-des-arrays",
-    "sectionTitle": "1.2.1 — Créer des Arrays",
-    "snippet": "Les dtypes — le type des données stockées : ---"
+    "sectionId": "intuition-vecteurs-matrices-tenseurs",
+    "sectionTitle": "💡 Intuition : vecteurs, matrices, tenseurs",
+    "snippet": "Toute donnée en IA finit par devenir des nombres rangés dans des tableaux : - Une image en niveaux de gris est une matrice (hauteur × largeur) de pixels. - Un jeu de données tabulaire est une matrice ..."
   },
   {
-    "id": "1-1-2-2-indexation-et-slicing",
+    "id": "1-pourquoi-une-liste-python-ne-suffit-pas",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-2-2-indexation-et-slicing",
-    "sectionTitle": "1.2.2 — Indexation et Slicing",
-    "snippet": "---"
+    "sectionId": "pourquoi-une-liste-python-ne-suffit-pas",
+    "sectionTitle": "Pourquoi une liste Python ne suffit pas",
+    "snippet": "Liste Python NumPy Contenu types mélangés (chaque élément est un objet complet) un seul type ( ), valeurs brutes Mémoire éparpillée, avec un surcoût par objet bloc contigu compact Calcul boucle Python..."
   },
   {
-    "id": "1-1-2-3-operations-mathematiques",
+    "id": "1-sous-le-capot-la-vectorisation",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-2-3-operations-mathematiques",
-    "sectionTitle": "1.2.3 — Opérations Mathématiques",
-    "snippet": "---"
+    "sectionId": "sous-le-capot-la-vectorisation",
+    "sectionTitle": "🔍 Sous le capot : la vectorisation",
+    "snippet": "Vectoriser, c'est écrire sur des tableaux entiers au lieu d'une boucle sur chaque élément. NumPy exécute alors la boucle en C, sur une mémoire contiguë, souvent avec des instructions SIMD du processeu..."
   },
   {
-    "id": "1-1-2-4-broadcasting-la-magie-de-numpy",
+    "id": "1-le-dtype-le-type-des-elements",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-2-4-broadcasting-la-magie-de-numpy",
-    "sectionTitle": "1.2.4 — Broadcasting — La Magie de NumPy",
-    "snippet": "Le broadcasting permet d'effectuer des opérations entre tableaux de formes différentes sans copier les données. ---"
+    "sectionId": "le-dtype-le-type-des-elements",
+    "sectionTitle": "Le `dtype` : le type des éléments",
+    "snippet": "Tous les éléments d'un tableau ont le même type. Les principaux : , , , , , (entier non signé 0–255, typique des pixels d'images). En IA, le choix du dtype est un compromis : (précision suffisante, de..."
   },
   {
-    "id": "1-1-2-5-algebre-lineaire-avec-numpy",
+    "id": "1-les-axes-la-notion-qui-trompe-tout-le-monde",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-2-5-algebre-lineaire-avec-numpy",
-    "sectionTitle": "1.2.5 — Algèbre Linéaire avec NumPy",
-    "snippet": "---"
+    "sectionId": "les-axes-la-notion-qui-trompe-tout-le-monde",
+    "sectionTitle": "Les axes : la notion qui trompe tout le monde",
+    "snippet": "Une matrice de forme a deux axes : l'axe 0 (les lignes, vertical) et l'axe 1 (les colonnes, horizontal). Quand une fonction accepte , elle agrège (réduit) l'axe indiqué — cet axe disparaît du résultat..."
   },
   {
-    "id": "1-1-2-6-manipulation-de-formes",
+    "id": "1-vue-ou-copie-un-piege-de-memoire",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-2-6-manipulation-de-formes",
-    "sectionTitle": "1.2.6 — Manipulation de Formes",
-    "snippet": "---"
+    "sectionId": "vue-ou-copie-un-piege-de-memoire",
+    "sectionTitle": "Vue ou copie ? Un piège de mémoire",
+    "snippet": "Beaucoup d'opérations NumPy renvoient une vue : un tableau qui partage la même mémoire que l'original. Modifier la vue modifie l'original ! Opération Résultat Slicing , , (le plus souvent) vue Indexat..."
   },
   {
-    "id": "1-1-2-7-nombres-aleatoires-et-reproductibilite",
+    "id": "1-le-masque-booleen-filtrer-avec-une-condition",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-2-7-nombres-aleatoires-et-reproductibilite",
-    "sectionTitle": "1.2.7 — Nombres Aléatoires et Reproductibilité",
-    "snippet": "La graine aléatoire (seed) est essentielle en IA pour reproduire tes expériences. --- 🏋️ EXERCICES — CHAPITRE 1.2"
+    "sectionId": "le-masque-booleen-filtrer-avec-une-condition",
+    "sectionTitle": "Le masque booléen : filtrer avec une condition",
+    "snippet": "Une comparaison sur un tableau produit un tableau de booléens (le masque) ; utiliser ce masque comme indice ne garde que les éléments . C'est l'outil de filtrage n°1 en data science. ⚠️ Piège : on écr..."
   },
   {
-    "id": "1-exercice-1-2-a-regression-lineaire-from-scratch-avec-numpy",
+    "id": "1-np-where-argsort-argmax-unique",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "exercice-1-2-a-regression-lineaire-from-scratch-avec-numpy",
-    "sectionTitle": "Exercice 1.2.A — Régression Linéaire from Scratch avec NumPy",
-    "snippet": "Implémente la régression linéaire avec la formule analytique : --- --- 📘 CHAPITRE 1.3 — PANDAS : LA MANIPULATION DE DONNÉES Durée : 1 semaine --- Philosophie de Pandas Pandas est le couteau suisse de..."
+    "sectionId": "np-where-argsort-argmax-unique",
+    "sectionTitle": "`np.where`, `argsort`, `argmax`, `unique`",
+    "snippet": "Fancy indexing : indexer avec une liste ou un tableau d'indices (renvoie une copie) : > 🏋️ Pratique immédiate 1.2.2 > Soit . > (a) Combien de jours dépassent 25 °C ? (b) Quelle est la température moy..."
   },
   {
-    "id": "1-1-3-1-creer-et-charger-des-dataframes",
+    "id": "1-operations-terme-a-terme",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-3-1-creer-et-charger-des-dataframes",
-    "sectionTitle": "1.3.1 — Créer et Charger des DataFrames",
-    "snippet": "---"
+    "sectionId": "operations-terme-a-terme",
+    "sectionTitle": "Opérations terme à terme",
+    "snippet": ""
   },
   {
-    "id": "1-1-3-2-exploration-des-donnees-eda",
+    "id": "1-statistiques-et-agregations",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-3-2-exploration-des-donnees-eda",
-    "sectionTitle": "1.3.2 — Exploration des Données (EDA)",
-    "snippet": "L'EDA (Exploratory Data Analysis) est la première étape obligatoire sur tout nouveau dataset. ---"
+    "sectionId": "statistiques-et-agregations",
+    "sectionTitle": "Statistiques et agrégations",
+    "snippet": "⚠️ et . Par défaut NumPy divise par n (écart-type de la population, ). Pour l'estimateur d'un échantillon (division par n−1), écris . Pandas, lui, utilise par défaut : c'est une source classique de pe..."
   },
   {
-    "id": "1-1-3-3-selection-et-filtrage",
+    "id": "1-produit-terme-a-terme-vs-produit-matriciel",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-3-3-selection-et-filtrage",
-    "sectionTitle": "1.3.3 — Sélection et Filtrage",
-    "snippet": "---"
+    "sectionId": "produit-terme-a-terme-vs-produit-matriciel",
+    "sectionTitle": "Produit terme à terme vs produit matriciel",
+    "snippet": "C'est la confusion la plus fréquente : Le produit matriciel pas à pas : l'élément (i, j) de est le produit scalaire de la ligne i de A par la colonne j de B. Règle des dimensions : . Les dimensions « ..."
   },
   {
-    "id": "1-1-3-4-nettoyage-des-donnees",
+    "id": "1-deux-fonctions-de-ml-ecrites-en-numpy",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-3-4-nettoyage-des-donnees",
-    "sectionTitle": "1.3.4 — Nettoyage des Données",
-    "snippet": "Le nettoyage de données représente 60 à 80% du travail réel en data science. ---"
+    "sectionId": "deux-fonctions-de-ml-ecrites-en-numpy",
+    "sectionTitle": "Deux fonctions de ML écrites en NumPy",
+    "snippet": "1) Softmax — transforme des scores bruts (logits) en probabilités qui somment à 1 : 2) Similarité cosinus — mesure si deux vecteurs pointent dans la même direction (valeur entre −1 et 1) ; c'est la me..."
   },
   {
-    "id": "1-1-3-5-transformation-et-ingenierie-de-features",
+    "id": "1-intuition-7",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-3-5-transformation-et-ingenierie-de-features",
-    "sectionTitle": "1.3.5 — Transformation et Ingénierie de Features",
-    "snippet": "---"
+    "sectionId": "intuition-7",
+    "sectionTitle": "💡 Intuition",
+    "snippet": "Le broadcasting permet de calculer entre un tableau et un autre plus petit sans les dupliquer en mémoire : NumPy « étire virtuellement » le petit tableau. Exemple : soustraire la moyenne de chaque col..."
   },
   {
-    "id": "1-1-3-6-merge-et-join-fusionner-des-dataframes",
+    "id": "1-les-regles-a-lire-de-droite-a-gauche",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-3-6-merge-et-join-fusionner-des-dataframes",
-    "sectionTitle": "1.3.6 — Merge et Join (Fusionner des DataFrames)",
-    "snippet": "---"
+    "sectionId": "les-regles-a-lire-de-droite-a-gauche",
+    "sectionTitle": "Les règles (à lire de droite à gauche)",
+    "snippet": "NumPy compare les shapes en partant de la droite. Deux dimensions sont compatibles si : 1. elles sont égales, ou 2. l'une d'elles vaut 1 (elle est alors étirée), ou 3. l'une des shapes est plus courte..."
   },
   {
-    "id": "1-1-3-7-pipeline-complet-analyse-du-dataset-titanic",
+    "id": "1-application-normaliser-standardiser-des-donnees",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-3-7-pipeline-complet-analyse-du-dataset-titanic",
-    "sectionTitle": "1.3.7 — Pipeline Complet : Analyse du Dataset Titanic",
-    "snippet": "Le Titanic est le dataset de référence pour apprendre la data science. --- 🏋️ EXERCICES — CHAPITRE 1.3"
+    "sectionId": "application-normaliser-standardiser-des-donnees",
+    "sectionTitle": "Application : normaliser (standardiser) des données",
+    "snippet": "Standardiser une colonne = soustraire sa moyenne et diviser par son écart-type, pour que toutes les caractéristiques aient une échelle comparable. La plupart des modèles de ML en ont besoin (chapitre ..."
   },
   {
-    "id": "1-exercice-1-3-a-analyse-dun-dataset-ia",
+    "id": "1-exercice-1-2-a-vectoriser-trois-boucles",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "exercice-1-3-a-analyse-dun-dataset-ia",
-    "sectionTitle": "Exercice 1.3.A — Analyse d'un Dataset IA",
-    "snippet": "Crée un DataFrame représentant 50 modèles IA avec : nom, nbparamètres, datesortie, scoremmlu, scorehumaneval, opensource, entreprise. Effectue : 1. Les statistiques descriptives 2. Le taux de modèles ..."
+    "sectionId": "exercice-1-2-a-vectoriser-trois-boucles",
+    "sectionTitle": "Exercice 1.2.A — Vectoriser trois boucles ⭐",
+    "snippet": "Réécris chacune de ces boucles en une seule expression NumPy : <details><summary>Solution</summary> </details>"
   },
   {
-    "id": "1-1-4-1-matplotlib-la-base",
+    "id": "1-exercice-1-2-b-standardisation-a-la-main",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-4-1-matplotlib-la-base",
-    "sectionTitle": "1.4.1 — Matplotlib : La Base",
-    "snippet": "Les types de graphiques essentiels : ---"
+    "sectionId": "exercice-1-2-b-standardisation-a-la-main",
+    "sectionTitle": "Exercice 1.2.B — Standardisation à la main ⭐⭐",
+    "snippet": "Écris qui renvoie . Puis qui applique les mêmes moyennes et écarts à de nouvelles données. Explique pourquoi les statistiques doivent être calculées sur l'entraînement uniquement (nous y reviendrons a..."
   },
   {
-    "id": "1-1-4-2-seaborn-la-visualisation-statistique",
+    "id": "1-exercice-1-2-c-k-plus-proches-voisins-from-scratch",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-4-2-seaborn-la-visualisation-statistique",
-    "sectionTitle": "1.4.2 — Seaborn : La Visualisation Statistique",
-    "snippet": "Seaborn est construit sur Matplotlib et offre des graphiques statistiques avancés avec moins de code. ---"
+    "sectionId": "exercice-1-2-c-k-plus-proches-voisins-from-scratch",
+    "sectionTitle": "Exercice 1.2.C — k plus proches voisins *from scratch* ⭐⭐⭐",
+    "snippet": "Sans Scikit-learn, écris en broadcasting (pas de boucle sur les échantillons de test). Teste-le sur deux nuages de points gaussiens. <details><summary>Solution commentée</summary> peut être volumineux..."
   },
   {
-    "id": "1-1-4-3-visualisations-specifiques-a-lia",
+    "id": "1-exercice-1-2-d-regression-lineaire-multi-variables",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-4-3-visualisations-specifiques-a-lia",
-    "sectionTitle": "1.4.3 — Visualisations Spécifiques à l'IA",
-    "snippet": "--- 🏋️ EXERCICES — CHAPITRE 1.4"
+    "sectionId": "exercice-1-2-d-regression-lineaire-multi-variables",
+    "sectionTitle": "Exercice 1.2.D — Régression linéaire multi-variables ⭐⭐",
+    "snippet": "Génère de shape et . Retrouve les coefficients et l'intercept avec . Calcule ensuite le R² à la main : . <details><summary>Solution</summary> </details> ---"
   },
   {
-    "id": "1-exercice-1-4-a-dashboard-de-suivi-dentrainement",
+    "id": "1-quiz-de-fin-de-chapitre-1-2-15-questions",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "exercice-1-4-a-dashboard-de-suivi-dentrainement",
-    "sectionTitle": "Exercice 1.4.A — Dashboard de Suivi d'Entraînement",
-    "snippet": "Un modèle a été entraîné sur 30 époques. Crée un dashboard à 4 graphiques (2×2) montrant : la courbe de loss (train/val), la courbe d'accuracy (train/val), la distribution finale des erreurs de prédic..."
+    "sectionId": "quiz-de-fin-de-chapitre-1-2-15-questions",
+    "sectionTitle": "🧠 Quiz de fin de Chapitre 1.2 (15 questions)",
+    "snippet": "1. Pourquoi un tableau NumPy est-il plus rapide qu'une liste pour calculer ? <details><summary>Réponse</summary>Type unique, mémoire contiguë et boucle exécutée en C (vectorisation) au lieu d'une bouc..."
   },
   {
-    "id": "1-exercice-1-4-b-comparaison-visuelle-de-modeles-seaborn",
+    "id": "1-mini-projet-1-2-un-moteur-de-recherche-semantique-en-numpy",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "exercice-1-4-b-comparaison-visuelle-de-modeles-seaborn",
-    "sectionTitle": "Exercice 1.4.B — Comparaison Visuelle de Modèles (Seaborn)",
-    "snippet": "En utilisant le dataset de l'exercice 1.3.A (modèles IA), crée un Seaborn coloré par , puis un graphique en barres horizontales trié montrant le score MMLU par entreprise avec barres d'erreur (écart-t..."
+    "sectionId": "mini-projet-1-2-un-moteur-de-recherche-semantique-en-numpy",
+    "sectionTitle": "🎯 MINI-PROJET 1.2 — Un moteur de recherche sémantique en NumPy",
+    "snippet": "> Objectif. Implémenter le cœur d'un moteur de recherche par embeddings : un corpus de documents représentés par des vecteurs, une requête, et le classement des documents par similarité cosinus. Compa..."
   },
   {
-    "id": "1-1-5-1-le-pipeline-ml-complet",
+    "id": "1-intuition-8",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-5-1-le-pipeline-ml-complet",
-    "sectionTitle": "1.5.1 — Le Pipeline ML Complet",
-    "snippet": "Pourquoi ne pas fit le scaler sur le test ? ---"
+    "sectionId": "intuition-8",
+    "sectionTitle": "💡 Intuition",
+    "snippet": "Un ingénieur IA passe 60 à 80 % de son temps sur les données : les récupérer, les comprendre, les nettoyer. Pandas est l'outil de référence pour cela. Il ajoute à NumPy des étiquettes : des noms de co..."
   },
   {
-    "id": "1-1-5-2-pipeline-scikit-learn-production-ready",
+    "id": "1-la-demarche-dexploration-eda",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-5-2-pipeline-scikit-learn-production-ready",
-    "sectionTitle": "1.5.2 — Pipeline Scikit-learn (Production Ready)",
-    "snippet": "Un encapsule le prétraitement ET le modèle en un seul objet. C'est la bonne pratique en production. ---"
+    "sectionId": "la-demarche-dexploration-eda",
+    "sectionTitle": "La démarche d'exploration (EDA)",
+    "snippet": "L'analyse exploratoire des données (Exploratory Data Analysis) est la première étape de tout projet. Devant un nouveau jeu de données, pose-toi ces 10 questions : 1. Combien de lignes et de colonnes ?..."
   },
   {
-    "id": "1-1-5-3-comprendre-loverfitting-et-le-underfitting",
+    "id": "1-le-premier-diagnostic-en-5-lignes",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-5-3-comprendre-loverfitting-et-le-underfitting",
-    "sectionTitle": "1.5.3 — Comprendre l'Overfitting et le Underfitting",
-    "snippet": "---"
+    "sectionId": "le-premier-diagnostic-en-5-lignes",
+    "sectionTitle": "Le premier diagnostic en 5 lignes",
+    "snippet": "> ⚠️ affiche son résultat et renvoie : écrire affiche donc un parasite. est ton premier détecteur d'anomalies : un de −5 pour un âge, un de 999, un inférieur au nombre de lignes (des valeurs manquante..."
   },
   {
-    "id": "1-projet-final-module-1-5-prediction-de-churn-bancaire",
+    "id": "1-loc-par-etiquette-et-iloc-par-position",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "projet-final-module-1-5-prediction-de-churn-bancaire",
-    "sectionTitle": "🎯 PROJET FINAL MODULE 1.5 — Prédiction de Churn Bancaire",
-    "snippet": "--- --- 📘 CHAPITRE 1.6 — GIT & GITHUB Durée : 3 jours --- Pourquoi Git est Indispensable ? Git est un système de contrôle de version : il enregistre l'historique complet de ton code. C'est comme les ..."
+    "sectionId": "loc-par-etiquette-et-iloc-par-position",
+    "sectionTitle": "`loc` (par étiquette) et `iloc` (par position)",
+    "snippet": "Sélectionne par Bornes du slice Exemple étiquettes (noms de lignes/colonnes) fin incluse positions (entiers, comme NumPy) fin exclue ⚠️ Piège classique : après un filtrage ou un tri, l'index n'est plu..."
   },
   {
-    "id": "1-1-6-1-concepts-fondamentaux",
+    "id": "1-filtrer-avec-des-conditions-masques-booleens",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-6-1-concepts-fondamentaux",
-    "sectionTitle": "1.6.1 — Concepts Fondamentaux",
-    "snippet": "---"
+    "sectionId": "filtrer-avec-des-conditions-masques-booleens",
+    "sectionTitle": "Filtrer avec des conditions (masques booléens)",
+    "snippet": "Comme avec NumPy, on utilise , , avec des parenthèses : Trier : > 🏋️ Pratique immédiate 1.3.2 > Avec : (a) les noms des personnes de Lyon gagnant plus de 55 000 ; (b) la ligne du salaire maximal ; (c..."
   },
   {
-    "id": "1-1-6-2-commandes-essentielles",
+    "id": "1-le-piege-settingwithcopywarning-et-le-copy-on-write",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-6-2-commandes-essentielles",
-    "sectionTitle": "1.6.2 — Commandes Essentielles",
-    "snippet": "---"
+    "sectionId": "le-piege-settingwithcopywarning-et-le-copy-on-write",
+    "sectionTitle": "Le piège : `SettingWithCopyWarning` et le Copy-on-Write",
+    "snippet": "Quand tu extrais un sous-ensemble puis le modifies, s'agit-il d'une vue de l'original ou d'une copie ? Historiquement, Pandas ne le garantissait pas et affichait un : Depuis Pandas 3.0, le mode Copy-o..."
   },
   {
-    "id": "1-1-6-3-conventions-de-commit",
+    "id": "1-les-valeurs-manquantes",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-6-3-conventions-de-commit",
-    "sectionTitle": "1.6.3 — Conventions de Commit",
-    "snippet": "Les bons commits racontent l'histoire de ton projet. Convention Conventional Commits : Types courants : - Nouvelle fonctionnalité - Correction de bug - Documentation uniquement - Formatage (pas de cha..."
+    "sectionId": "les-valeurs-manquantes",
+    "sectionTitle": "Les valeurs manquantes",
+    "snippet": "💡 Intuition : pourquoi manque-t-il des valeurs ? Cela compte pour choisir quoi faire : - Manquantes au hasard : un capteur en panne, une case oubliée. Les supprimer ou les imputer est peu risqué. - M..."
   },
   {
-    "id": "1-1-6-4-le-gitignore-ce-quon-ne-versionne-pas",
+    "id": "1-les-doublons",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-6-4-le-gitignore-ce-quon-ne-versionne-pas",
-    "sectionTitle": "1.6.4 — Le .gitignore — Ce qu'on ne versionne PAS",
-    "snippet": "---"
+    "sectionId": "les-doublons",
+    "sectionTitle": "Les doublons",
+    "snippet": ""
   },
   {
-    "id": "1-1-6-5-workflow-professionnel",
+    "id": "1-corriger-les-types",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-6-5-workflow-professionnel",
-    "sectionTitle": "1.6.5 — Workflow Professionnel",
-    "snippet": "--- 🏋️ EXERCICE — CHAPITRE 1.6"
+    "sectionId": "corriger-les-types",
+    "sectionTitle": "Corriger les types",
+    "snippet": "transforme ce qui n'est pas convertible en : pratique, mais compte ensuite les NaN créés pour ne pas perdre d'information sans le savoir."
   },
   {
-    "id": "1-exercice-1-6-a-scenario-de-collaboration",
+    "id": "1-texte-sale-et-dates",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "exercice-1-6-a-scenario-de-collaboration",
-    "sectionTitle": "Exercice 1.6.A — Scénario de Collaboration",
-    "snippet": "Simule ce scénario en ligne de commande (dans un dossier de test) : 1. Initialise un dépôt Git et fais un premier commit avec un fichier vide 2. Crée une branche et ajoute une fonction de nettoyage de..."
+    "sectionId": "texte-sale-et-dates",
+    "sectionTitle": "Texte sale et dates",
+    "snippet": "Les accesseurs (texte) et (dates) appliquent une opération à toute la colonne, sans boucle."
   },
   {
-    "id": "1-1-7-1-concepts-cles",
+    "id": "1-les-valeurs-aberrantes-outliers",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-7-1-concepts-cles",
-    "sectionTitle": "1.7.1 — Concepts Clés",
-    "snippet": "---"
+    "sectionId": "les-valeurs-aberrantes-outliers",
+    "sectionTitle": "Les valeurs aberrantes (outliers)",
+    "snippet": "Une valeur aberrante est très éloignée des autres : une vraie valeur exceptionnelle, ou une erreur (âge de 999). Détecte-la, puis décide (corriger, supprimer, ou conserver) en fonction du contexte. Mé..."
   },
   {
-    "id": "1-1-7-2-ton-premier-dockerfile",
+    "id": "1-appliquer-une-fonction-la-hierarchie-des-performances",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-7-2-ton-premier-dockerfile",
-    "sectionTitle": "1.7.2 — Ton Premier Dockerfile",
-    "snippet": "requirements.txt : ---"
+    "sectionId": "appliquer-une-fonction-la-hierarchie-des-performances",
+    "sectionTitle": "Appliquer une fonction : la hiérarchie des performances",
+    "snippet": "Du plus rapide au plus lent : 1. Opérations vectorisées : , , , → à utiliser en priorité. 2. / sur une Series : pour des correspondances (dictionnaire). 3. avec une fonction Python : quand aucune opér..."
   },
   {
-    "id": "1-1-7-3-lapi-fastapi-a-dockeriser",
+    "id": "1-groupby-la-logique-decouper-appliquer-combiner",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-7-3-lapi-fastapi-a-dockeriser",
-    "sectionTitle": "1.7.3 — L'API FastAPI à Dockeriser",
-    "snippet": "---"
+    "sectionId": "groupby-la-logique-decouper-appliquer-combiner",
+    "sectionTitle": "`groupby` : la logique « découper – appliquer – combiner »",
+    "snippet": "💡 Intuition. fait trois étapes : (1) découper le tableau en groupes selon les valeurs d'une colonne, (2) appliquer un calcul à chaque groupe, (3) combiner les résultats en un nouveau tableau. réduit,..."
   },
   {
-    "id": "1-1-7-4-construire-et-lancer-le-conteneur",
+    "id": "1-tableaux-croises-pivot-table-et-crosstab",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-7-4-construire-et-lancer-le-conteneur",
-    "sectionTitle": "1.7.4 — Construire et Lancer le Conteneur",
-    "snippet": "---"
+    "sectionId": "tableaux-croises-pivot-table-et-crosstab",
+    "sectionTitle": "Tableaux croisés : `pivot_table` et `crosstab`",
+    "snippet": ""
   },
   {
-    "id": "1-1-7-5-docker-compose-orchestrer-plusieurs-services",
+    "id": "1-decouper-une-variable-numerique-en-classes",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "1-7-5-docker-compose-orchestrer-plusieurs-services",
-    "sectionTitle": "1.7.5 — Docker Compose — Orchestrer plusieurs services",
-    "snippet": "En IA, une application complète nécessite souvent plusieurs services : l'API, une base de données, un système de monitoring, etc. --- 🏋️ EXERCICE FINAL MODULE 1 — Projet Complet \"End-to-End\""
+    "sectionId": "decouper-une-variable-numerique-en-classes",
+    "sectionTitle": "Découper une variable numérique en classes",
+    "snippet": "> 🏋️ Pratique immédiate 1.3.5 > (a) Calcule le salaire médian par poste. (b) Ajoute une colonne donnant le rang du salaire de chaque personne au sein de sa ville (indice : ). (c) Quelle est la part d..."
   },
   {
-    "id": "1-objectif",
+    "id": "1-etapes-1-a-5-inspecter",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "objectif",
-    "sectionTitle": "Objectif",
-    "snippet": "Construire un projet IA complet, versionné et dockerisé : 1. Entraîner un modèle de classification sur le dataset Titanic (Scikit-learn) 2. Créer une API FastAPI pour servir le modèle 3. Versionner le..."
+    "sectionId": "etapes-1-a-5-inspecter",
+    "sectionTitle": "Étapes 1 à 5 — Inspecter",
+    "snippet": ""
   },
   {
-    "id": "1-corrige",
+    "id": "1-etapes-6-a-8-distributions",
     "moduleId": 1,
     "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
-    "sectionId": "corrige",
-    "sectionTitle": "📝 Corrigé",
-    "snippet": "1. — carrés des nombres pairs entre 0 et 4. 2. Une liste est modifiable (mutable), un tuple est immuable ; les tuples sont utilisés pour des données fixes (ex. coordonnées). 3. Calcule la moyenne de p..."
+    "sectionId": "etapes-6-a-8-distributions",
+    "sectionTitle": "Étapes 6 à 8 — Distributions",
+    "snippet": ""
+  },
+  {
+    "id": "1-etape-9-relations-avec-la-cible-survived",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "etape-9-relations-avec-la-cible-survived",
+    "sectionTitle": "Étape 9 — Relations avec la cible (`survived`)",
+    "snippet": ""
+  },
+  {
+    "id": "1-etape-10-interpreter-avec-honnetete",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "etape-10-interpreter-avec-honnetete",
+    "sectionTitle": "Étape 10 — Interpréter avec honnêteté",
+    "snippet": "Ce que les données montrent : les femmes et les passagers de première classe ont survécu bien plus souvent (« les femmes et les enfants d'abord », et l'accès aux canots selon le pont). Ce qu'elles ne ..."
+  },
+  {
+    "id": "1-series-temporelles-resample-et-rolling",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "series-temporelles-resample-et-rolling",
+    "sectionTitle": "Séries temporelles : `resample` et `rolling`",
+    "snippet": ""
+  },
+  {
+    "id": "1-gros-fichiers-lire-par-morceaux-et-surveiller-la-memoire",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "gros-fichiers-lire-par-morceaux-et-surveiller-la-memoire",
+    "sectionTitle": "Gros fichiers : lire par morceaux et surveiller la mémoire",
+    "snippet": "--- 🏋️ EXERCICES — CHAPITRE 1.3"
+  },
+  {
+    "id": "1-exercice-1-3-a-analyse-des-ventes",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-3-a-analyse-des-ventes",
+    "sectionTitle": "Exercice 1.3.A — Analyse des ventes ⭐⭐",
+    "snippet": "Crée un DataFrame de 100 ventes (produit ∈ {Laptop, Phone, Tablet, Écouteurs}, région ∈ {Nord, Sud, Est, Ouest}, quantité 1–10, prix unitaire dépendant du produit, dates sur 6 mois). Réponds à : (1) c..."
+  },
+  {
+    "id": "1-exercice-1-3-b-nettoyage-guide",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-3-b-nettoyage-guide",
+    "sectionTitle": "Exercice 1.3.B — Nettoyage guidé ⭐⭐",
+    "snippet": "Le DataFrame ci-dessous est volontairement sale. Nettoie-le : espaces/casse des villes, âges non numériques ou impossibles (< 0 ou > 100), doublons, salaire au format « 45 000 € ». <details><summary>S..."
+  },
+  {
+    "id": "1-exercice-1-3-c-jointures",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-3-c-jointures",
+    "sectionTitle": "Exercice 1.3.C — Jointures ⭐⭐",
+    "snippet": "Avec et (1.3.6), construis un tableau incluant les clients sans commande (0). Puis liste les commandes orphelines. <details><summary>Solution</summary> </details>"
+  },
+  {
+    "id": "1-exercice-1-3-d-vectorisation-mesuree",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-3-d-vectorisation-mesuree",
+    "sectionTitle": "Exercice 1.3.D — Vectorisation mesurée ⭐⭐",
+    "snippet": "Sur un DataFrame de 500 000 lignes avec une colonne aléatoire, calcule de trois façons ( , , boucle sur 20 000 lignes seulement) et compare les temps. <details><summary>Solution</summary> </details>"
+  },
+  {
+    "id": "1-exercice-1-3-e-detecter-les-valeurs-aberrantes",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-3-e-detecter-les-valeurs-aberrantes",
+    "sectionTitle": "Exercice 1.3.E — Détecter les valeurs aberrantes ⭐⭐",
+    "snippet": "Écris qui, pour chaque colonne numérique, renvoie le nombre de valeurs hors des bornes IQR et le pourcentage correspondant. <details><summary>Solution</summary> </details> ---"
+  },
+  {
+    "id": "1-quiz-de-fin-de-chapitre-1-3-15-questions",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "quiz-de-fin-de-chapitre-1-3-15-questions",
+    "sectionTitle": "🧠 Quiz de fin de Chapitre 1.3 (15 questions)",
+    "snippet": "1. Quelle est la différence entre une et un ? <details><summary>Réponse</summary>Une Series est une colonne étiquetée (1D) ; un DataFrame est un tableau 2D dont chaque colonne est une Series.</details..."
+  },
+  {
+    "id": "1-mini-projet-1-3-rapport-de-qualite-des-donnees",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "mini-projet-1-3-rapport-de-qualite-des-donnees",
+    "sectionTitle": "🎯 MINI-PROJET 1.3 — Rapport de qualité des données",
+    "snippet": "> Objectif. Nettoyer un fichier CSV « sale » et produire un rapport de qualité montrant l'état des données avant/après. > > Le fichier (à enregistrer sous , ou à lire directement avec ) : > À produire..."
+  },
+  {
+    "id": "1-intuition-9",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "intuition-9",
+    "sectionTitle": "💡 Intuition",
+    "snippet": "Un tableau de 10 000 lignes est illisible ; un bon graphique révèle en une seconde une tendance, une anomalie, un groupe. La visualisation sert à explorer (toi, pendant l'EDA) puis à communiquer (les ..."
+  },
+  {
+    "id": "1-quel-graphique-pour-quelle-question",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "quel-graphique-pour-quelle-question",
+    "sectionTitle": "Quel graphique pour quelle question ?",
+    "snippet": "Question Graphique Outil Comment évolue une valeur dans le temps ? Courbe (line plot) , Comment est distribuée une variable numérique ? Histogramme, boxplot, violon , , Deux variables numériques sont-..."
+  },
+  {
+    "id": "1-anatomie-dune-figure-matplotlib",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "anatomie-dune-figure-matplotlib",
+    "sectionTitle": "Anatomie d'une figure Matplotlib",
+    "snippet": "Deux styles d'écriture existent : - (implicite) : , — rapide pour un graphique simple. - Orienté objet (explicite) : puis , — à privilégier dès qu'il y a plusieurs graphiques ou que tu veux du contrôl..."
+  },
+  {
+    "id": "1-regles-pour-un-graphique-honnete-et-lisible",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "regles-pour-un-graphique-honnete-et-lisible",
+    "sectionTitle": "Règles pour un graphique honnête et lisible",
+    "snippet": "1. Un titre qui énonce le message, des axes étiquetés avec unités. 2. Axe des barres = toujours à partir de 0 (une barre tronquée exagère les écarts). 3. Pas trop de séries (au-delà de 5-6 couleurs, l..."
+  },
+  {
+    "id": "1-courbe",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "courbe",
+    "sectionTitle": "Courbe",
+    "snippet": "Que lire ? La tendance (monte/descend), les cycles, les ruptures. Une courbe suppose que l'ordre des points a un sens (le temps, typiquement)."
+  },
+  {
+    "id": "1-nuage-de-points-scatter",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "nuage-de-points-scatter",
+    "sectionTitle": "Nuage de points (*scatter*)",
+    "snippet": "Que lire ? La forme du nuage : une montée régulière indique une relation positive ; un nuage sans direction, pas de relation linéaire ; des groupes séparés, des sous-populations ; des points isolés, d..."
+  },
+  {
+    "id": "1-barres",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "barres",
+    "sectionTitle": "Barres",
+    "snippet": "Pourquoi éviter le camembert ? L'œil compare mal des angles et des surfaces ; des barres alignées rendent les écarts évidents. Garde le camembert pour 2-3 parts très différentes, au plus."
+  },
+  {
+    "id": "1-histogramme-la-distribution-dune-variable",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "histogramme-la-distribution-dune-variable",
+    "sectionTitle": "Histogramme : la distribution d'une variable",
+    "snippet": "💡 Intuition. On découpe l'intervalle des valeurs en classes (bins) de même largeur et on compte combien de valeurs tombent dans chacune. La hauteur d'une barre = l'effectif de la classe. Que lire ? L..."
+  },
+  {
+    "id": "1-boxplot-boite-a-moustaches",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "boxplot-boite-a-moustaches",
+    "sectionTitle": "Boxplot (boîte à moustaches)",
+    "snippet": "Anatomie : la boîte va de Q1 à Q3 (50 % des données), le trait central est la médiane, les moustaches s'étendent jusqu'à 1,5 × IQR, et les points au-delà sont des outliers (les mêmes bornes qu'au chap..."
+  },
+  {
+    "id": "1-carte-de-chaleur-heatmap-et-correlation",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "carte-de-chaleur-heatmap-et-correlation",
+    "sectionTitle": "Carte de chaleur (*heatmap*) et corrélation",
+    "snippet": "Que lire ? Le coefficient de corrélation de Pearson mesure une relation linéaire entre deux variables : proche de 1 (elles montent ensemble), de −1 (l'une monte quand l'autre baisse), de 0 (pas de rel..."
+  },
+  {
+    "id": "1-plusieurs-graphiques-subplots-un-tableau-de-bord",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "plusieurs-graphiques-subplots-un-tableau-de-bord",
+    "sectionTitle": "Plusieurs graphiques : `subplots` (un « tableau de bord »)",
+    "snippet": "Annoter un point important : > 🏋️ Pratique immédiate 1.4.1 > Génère 300 tailles (loi normale moyenne 170, écart-type 10). Trace (a) un histogramme à 20 classes avec une ligne verticale à la médiane, ..."
+  },
+  {
+    "id": "1-le-format-tidy",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "le-format-tidy",
+    "sectionTitle": "Le format « tidy »",
+    "snippet": "Seaborn attend des données ordonnées (tidy) : une variable par colonne, une observation par ligne. Pour comparer trois groupes, on n'a pas trois colonnes , , : on a une colonne et une colonne . Cette ..."
+  },
+  {
+    "id": "1-distributions",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "distributions",
+    "sectionTitle": "Distributions",
+    "snippet": "KDE (Kernel Density Estimation) : une version lissée de l'histogramme (une courbe de densité). Que lire ? Les trois espèces ont des longueurs de pétales très différentes : setosa est nettement séparée..."
+  },
+  {
+    "id": "1-comparer-des-categories-et-relations",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "comparer-des-categories-et-relations",
+    "sectionTitle": "Comparer des catégories et relations",
+    "snippet": "Toujours vérifier l'équilibre des classes ( ) avant de modéliser : nous verrons au chapitre 1.5 pourquoi un déséquilibre change tout."
+  },
+  {
+    "id": "1-correlations",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "correlations",
+    "sectionTitle": "Corrélations",
+    "snippet": ""
+  },
+  {
+    "id": "1-axes-level-vs-figure-level-comprendre-pour-eviter-les-surprises",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "axes-level-vs-figure-level-comprendre-pour-eviter-les-surprises",
+    "sectionTitle": "Axes-level vs figure-level : comprendre pour éviter les surprises",
+    "snippet": "Famille Exemples Se comporte comme… Dessine dans… Axes-level , , , , une fonction Matplotlib un existant ( ) Figure-level , , , crée sa propre figure (grille de graphiques) sa propre (pas de ) est l'o..."
+  },
+  {
+    "id": "1-exercice-1-4-a-reproduire-un-graphique",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-4-a-reproduire-un-graphique",
+    "sectionTitle": "Exercice 1.4.A — Reproduire un graphique ⭐",
+    "snippet": "Reproduis exactement ce graphique : une courbe verte pointillée de pour , le titre « Parabole », les axes étiquetés, une grille légère, et un point rouge annoté « minimum » en (0, 0). <details><summar..."
+  },
+  {
+    "id": "1-exercice-1-4-b-corriger-un-mauvais-graphique",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-4-b-corriger-un-mauvais-graphique",
+    "sectionTitle": "Exercice 1.4.B — Corriger un mauvais graphique ⭐⭐",
+    "snippet": "Ce graphique cumule quatre défauts. Liste-les puis corrige-le. <details><summary>Solution</summary> Défauts : (1) axe tronqué à 95–96, qui exagère des écarts minuscules ; (2) aucun titre ; (3) aucun l..."
+  },
+  {
+    "id": "1-exercice-1-4-c-dashboard-danalyse",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-4-c-dashboard-danalyse",
+    "sectionTitle": "Exercice 1.4.C — Dashboard d'analyse ⭐⭐⭐",
+    "snippet": "À partir du DataFrame de l'exercice 1.3.A, construis un dashboard 2×2 : CA par mois (courbe), CA par produit (barres), répartition des quantités (histogramme), CA par région (boxplot Seaborn). Sauvega..."
+  },
+  {
+    "id": "1-quiz-de-fin-de-chapitre-1-4-12-questions",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "quiz-de-fin-de-chapitre-1-4-12-questions",
+    "sectionTitle": "🧠 Quiz de fin de Chapitre 1.4 (12 questions)",
+    "snippet": "1. Quel graphique pour montrer l'évolution d'une valeur dans le temps ? <details><summary>Réponse</summary>Une courbe.</details> 2. Quelle différence entre et ? <details><summary>Réponse</summary>La F..."
+  },
+  {
+    "id": "1-mini-projet-1-4-un-generateur-de-rapport-eda-automatique",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "mini-projet-1-4-un-generateur-de-rapport-eda-automatique",
+    "sectionTitle": "🎯 MINI-PROJET 1.4 — Un générateur de rapport EDA automatique",
+    "snippet": "> Objectif. Écrire une fonction qui, pour n'importe quel DataFrame, produit une planche de graphiques résumant les données. > > Cahier des charges : > 1. Détecte automatiquement les colonnes numérique..."
+  },
+  {
+    "id": "1-intuition-10",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "intuition-10",
+    "sectionTitle": "💡 Intuition",
+    "snippet": "En programmation classique, tu écris des règles : « si le solde est négatif, alors envoyer une alerte ». En Machine Learning, tu donnes des exemples (données + réponses attendues) et l'algorithme déco..."
+  },
+  {
+    "id": "1-le-vocabulaire-indispensable",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "le-vocabulaire-indispensable",
+    "sectionTitle": "Le vocabulaire indispensable",
+    "snippet": "Terme Définition Exemple (prédire si un client quitte la banque) Échantillon (sample) une ligne du jeu de données un client Caractéristiques (features), notées X les variables d'entrée âge, ancienneté..."
+  },
+  {
+    "id": "1-les-grandes-familles-de-problemes",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "les-grandes-familles-de-problemes",
+    "sectionTitle": "Les grandes familles de problèmes",
+    "snippet": "- Apprentissage supervisé : on dispose de la cible pour chaque exemple. - Classification : prédire une catégorie (spam / non-spam ; maligne / bénigne). - Régression : prédire un nombre (prix d'une mai..."
+  },
+  {
+    "id": "1-ce-qui-compte-vraiment-la-generalisation",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "ce-qui-compte-vraiment-la-generalisation",
+    "sectionTitle": "Ce qui compte vraiment : la généralisation",
+    "snippet": "Un modèle n'est pas bon parce qu'il réussit sur les données qu'il a déjà vues (il pourrait les avoir apprises par cœur), mais parce qu'il réussit sur des données nouvelles. D'où la règle fondamentale ..."
+  },
+  {
+    "id": "1-lapi-unifiee-trois-types-dobjets",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "lapi-unifiee-trois-types-dobjets",
+    "sectionTitle": "L'API unifiée : trois types d'objets",
+    "snippet": "Type d'objet Méthodes Rôle Exemples Estimateur (estimator) apprend à partir des données tous Prédicteur (predictor) , prédit , Transformateur (transformer) , , transforme les données , , Le schéma est..."
+  },
+  {
+    "id": "1-premier-modele-predire-levolution-dune-maladie-regression",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "premier-modele-predire-levolution-dune-maladie-regression",
+    "sectionTitle": "Premier modèle : prédire l'évolution d'une maladie (régression)",
+    "snippet": "Le jeu de données diabetes (fourni avec Scikit-learn, 442 patients, 10 caractéristiques cliniques standardisées) a pour cible un indice d'évolution de la maladie un an après. fixe la graine du mélange..."
+  },
+  {
+    "id": "1-les-metriques-de-regression-expliquees",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "les-metriques-de-regression-expliquees",
+    "sectionTitle": "Les métriques de régression expliquées",
+    "snippet": "Soient les vraies valeurs, les prédictions, la moyenne des vraies valeurs, le nombre d'échantillons. Métrique Formule Interprétation MAE (erreur absolue moyenne) l'erreur typique, dans l'unité de la c..."
+  },
+  {
+    "id": "1-un-jeu-de-donnees-reel-le-diagnostic-du-cancer-du-sein",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "un-jeu-de-donnees-reel-le-diagnostic-du-cancer-du-sein",
+    "sectionTitle": "Un jeu de données réel : le diagnostic du cancer du sein",
+    "snippet": "breastcancer (569 tumeurs, 30 mesures issues d'images de biopsies). On définit la classe positive = tumeur maligne (le cas qu'on veut détecter). impose que les proportions de classes soient les mêmes ..."
+  },
+  {
+    "id": "1-la-matrice-de-confusion-la-base-de-toutes-les-metriques",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "la-matrice-de-confusion-la-base-de-toutes-les-metriques",
+    "sectionTitle": "La matrice de confusion : la base de toutes les métriques",
+    "snippet": "Pour un problème binaire, on croise la réalité et la prédiction : - VP (vrai positif) : maligne, prédite maligne ✅ - VN (vrai négatif) : bénigne, prédite bénigne ✅ - FP (faux positif) : bénigne, prédi..."
+  },
+  {
+    "id": "1-les-metriques-construites-a-partir-de-la-matrice",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "les-metriques-construites-a-partir-de-la-matrice",
+    "sectionTitle": "Les métriques, construites à partir de la matrice",
+    "snippet": "Métrique Formule Question à laquelle elle répond Accuracy « Quelle proportion de prédictions sont justes ? » Précision « Quand je prédis positif, quelle proportion l'est vraiment ? » Rappel (recall, s..."
+  },
+  {
+    "id": "1-le-paradoxe-de-laccuracy-quand-90-ne-veut-rien-dire",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "le-paradoxe-de-laccuracy-quand-90-ne-veut-rien-dire",
+    "sectionTitle": "Le paradoxe de l'accuracy : quand 90 % ne veut rien dire",
+    "snippet": "Reprenons le problème « prédire le départ d'un client » (churn), où seuls ≈ 9 % des clients partent. Voici un générateur de données simulées que nous réutiliserons jusqu'à la fin du chapitre : Un modè..."
+  },
+  {
+    "id": "1-entrainer-de-vrais-classifieurs-sur-le-cancer",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "entrainer-de-vrais-classifieurs-sur-le-cancer",
+    "sectionTitle": "Entraîner de vrais classifieurs (sur le cancer)",
+    "snippet": "Les seront expliqués en 1.5.4 : pour l'instant, retiens que « standardiser puis modéliser » se fait en un seul objet."
+  },
+  {
+    "id": "1-probabilites-et-seuil-de-decision",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "probabilites-et-seuil-de-decision",
+    "sectionTitle": "Probabilités et seuil de décision",
+    "snippet": "Un classifieur renvoie d'abord une probabilité ; applique un seuil (0,5 par défaut). Le seuil est un levier : l'abaisser détecte plus de positifs (rappel ↑) au prix de plus de fausses alertes (précisi..."
+  },
+  {
+    "id": "1-matrice-de-confusion-et-courbe-roc-visualisations-devaluation",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "matrice-de-confusion-et-courbe-roc-visualisations-devaluation",
+    "sectionTitle": "Matrice de confusion et courbe ROC (visualisations d'évaluation)",
+    "snippet": "La courbe ROC, expliquée. Pour chaque seuil possible, on calcule le taux de vrais positifs (= rappel) et le taux de faux positifs ( ), et on trace l'un en fonction de l'autre. Un modèle au hasard suit..."
+  },
+  {
+    "id": "1-comprendre-un-peu-chaque-modele-intuition-uniquement",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "comprendre-un-peu-chaque-modele-intuition-uniquement",
+    "sectionTitle": "Comprendre un peu chaque modèle (intuition uniquement)",
+    "snippet": "- Régression logistique : malgré son nom, un classifieur. Calcule une somme pondérée des caractéristiques puis la transforme en probabilité (fonction sigmoïde). Simple, rapide, interprétable. - k plus..."
+  },
+  {
+    "id": "1-le-probleme-dune-seule-decoupe",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "le-probleme-dune-seule-decoupe",
+    "sectionTitle": "Le problème d'une seule découpe",
+    "snippet": "Un seul donne un score qui dépend du hasard du découpage. La validation croisée (cross-validation, CV) répète l'évaluation sur plusieurs découpages : L'écart-type des scores donne une idée de l'incert..."
+  },
+  {
+    "id": "1-les-trois-jeux-de-donnees-et-la-regle-dor",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "les-trois-jeux-de-donnees-et-la-regle-dor",
+    "sectionTitle": "Les trois jeux de données, et la règle d'or",
+    "snippet": "Jeu Rôle Combien de fois l'utilise-t-on ? Entraînement ajuster les paramètres du modèle autant que nécessaire Validation (plis de la CV) comparer les modèles, régler les hyperparamètres autant que néc..."
+  },
+  {
+    "id": "1-la-fuite-de-donnees-data-leakage-demonstration-chiffree",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "la-fuite-de-donnees-data-leakage-demonstration-chiffree",
+    "sectionTitle": "La fuite de données (*data leakage*) : démonstration chiffrée",
+    "snippet": "Il y a fuite quand une information du jeu de validation/test a influencé l'entraînement. Expérience : on génère des données de pur bruit (aucun signal !) — aucun modèle ne devrait faire mieux que le h..."
+  },
+  {
+    "id": "1-pourquoi-pretraiter",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "pourquoi-pretraiter",
+    "sectionTitle": "Pourquoi prétraiter ?",
+    "snippet": "Modèle Sensible à l'échelle des variables ? Standardisation nécessaire ? Régression linéaire / logistique, SVM, k-NN, réseaux de neurones Oui Oui (ou fortement recommandée) Arbres, forêts, gradient bo..."
+  },
+  {
+    "id": "1-encoder-les-variables-categorielles",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "encoder-les-variables-categorielles",
+    "sectionTitle": "Encoder les variables catégorielles",
+    "snippet": "Un modèle ne comprend que des nombres. Deux stratégies principales : Encodage Principe Quand l'utiliser One-hot une colonne 0/1 par catégorie ( , …) catégories sans ordre (pays, couleur) Ordinal un en..."
+  },
+  {
+    "id": "1-le-columntransformer-un-traitement-par-type-de-colonne",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "le-columntransformer-un-traitement-par-type-de-colonne",
+    "sectionTitle": "Le `ColumnTransformer` : un traitement par type de colonne",
+    "snippet": ""
+  },
+  {
+    "id": "1-ce-que-garantit-un-pipeline",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "ce-que-garantit-un-pipeline",
+    "sectionTitle": "Ce que garantit un `Pipeline`",
+    "snippet": "1. Zéro fuite : dans , chaque étape est ré-apprise sur chaque pli d'entraînement uniquement. 2. Un seul objet à sauvegarder, à déployer (chapitre 1.7) : on ne risque plus d'oublier le scaler en produc..."
+  },
+  {
+    "id": "1-intuition-letudiant-et-les-annales",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "intuition-letudiant-et-les-annales",
+    "sectionTitle": "💡 Intuition : l'étudiant et les annales",
+    "snippet": "- Sous-apprentissage (underfitting) : l'étudiant n'a presque rien retenu ; il échoue aux annales et à l'examen. Modèle trop simple. - Sur-apprentissage (overfitting) : l'étudiant a appris les annales ..."
+  },
+  {
+    "id": "1-mesurer-la-courbe-de-validation",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "mesurer-la-courbe-de-validation",
+    "sectionTitle": "Mesurer : la courbe de validation",
+    "snippet": "On fait varier un hyperparamètre de complexité (la profondeur maximale d'un arbre) et on compare les scores sur l'entraînement et en validation croisée : Lecture : l'arbre profond atteint 100 % sur l'..."
+  },
+  {
+    "id": "1-gridsearchcv-chercher-les-meilleurs-hyperparametres",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "gridsearchcv-chercher-les-meilleurs-hyperparametres",
+    "sectionTitle": "`GridSearchCV` : chercher les meilleurs hyperparamètres",
+    "snippet": "La recherche par grille essaie toutes les combinaisons d'une grille, évalue chacune en validation croisée, garde la meilleure. ré-entraîne ensuite le meilleur modèle sur tout l'entraînement ( par défa..."
+  },
+  {
+    "id": "1-les-methodes-densemble-lunion-fait-la-force-intuition",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "les-methodes-densemble-lunion-fait-la-force-intuition",
+    "sectionTitle": "Les méthodes d'ensemble : l'union fait la force (intuition)",
+    "snippet": "- Forêt aléatoire (bagging) : on entraîne beaucoup d'arbres indépendants, chacun sur un échantillon différent des données et des variables, puis on moyenne/vote. Les erreurs individuelles, indépendant..."
+  },
+  {
+    "id": "1-importance-des-variables-par-permutation",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "importance-des-variables-par-permutation",
+    "sectionTitle": "Importance des variables par permutation",
+    "snippet": "Idée : pour mesurer l'utilité d'une variable, on mélange aléatoirement ses valeurs dans le jeu d'évaluation et on regarde de combien la performance chute. Si le score s'effondre, le modèle dépendait d..."
+  },
+  {
+    "id": "1-sauvegarder-et-recharger-un-modele-joblib",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "sauvegarder-et-recharger-un-modele-joblib",
+    "sectionTitle": "Sauvegarder et recharger un modèle : `joblib`",
+    "snippet": "⚠️ Sécurité : (comme ) peut exécuter du code à la lecture. Ne charge jamais un fichier de modèle dont tu ne connais pas la source. Autre limite : le fichier n'est compatible qu'avec des versions proch..."
+  },
+  {
+    "id": "1-ethique-les-variables-sensibles",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "ethique-les-variables-sensibles",
+    "sectionTitle": "Éthique : les variables sensibles",
+    "snippet": "Le jeu de données churn contient ; un jeu de données réel contient souvent le genre, l'âge, l'origine… Un modèle entraîné sur ces variables peut discriminer, même sans intention : refuser un crédit ou..."
+  },
+  {
+    "id": "1-exercice-1-5-a-regression-complete",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-5-a-regression-complete",
+    "sectionTitle": "Exercice 1.5.A — Régression complète ⭐⭐",
+    "snippet": "Sur , compare en validation croisée 5 plis (R²) : , , . Puis évalue uniquement le meilleur une fois sur le test. Justifie ton choix. <details><summary>Solution</summary> On choisit sur la validation c..."
+  },
+  {
+    "id": "1-exercice-1-5-b-metriques-a-la-main",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-5-b-metriques-a-la-main",
+    "sectionTitle": "Exercice 1.5.B — Métriques à la main ⭐⭐",
+    "snippet": "Un modèle de détection de fraude a produit : VP = 30, FP = 70, FN = 10, VN = 9 890. Calcule accuracy, précision, rappel, F1 à la main, puis vérifie avec Scikit-learn en reconstruisant les vecteurs / ...."
+  },
+  {
+    "id": "1-exercice-1-5-c-trouver-et-corriger-les-fuites",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-5-c-trouver-et-corriger-les-fuites",
+    "sectionTitle": "Exercice 1.5.C — Trouver et corriger les fuites ⭐⭐",
+    "snippet": "Ce code annonce un score excellent. Trouve trois problèmes de méthode et réécris-le correctement. <details><summary>Solution</summary> Problèmes : (1) imputation par la moyenne et standardisation calc..."
+  },
+  {
+    "id": "1-exercice-1-5-d-comparer-des-modeles-proprement",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-5-d-comparer-des-modeles-proprement",
+    "sectionTitle": "Exercice 1.5.D — Comparer des modèles proprement ⭐⭐⭐",
+    "snippet": "Compare en validation croisée (AUC, 5 plis stratifiés, sur l'entraînement) quatre modèles sur le churn, avec le même prétraitement : régression logistique, régression logistique équilibrée ( ), forêt ..."
+  },
+  {
+    "id": "1-quiz-de-fin-de-chapitre-1-5-15-questions",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "quiz-de-fin-de-chapitre-1-5-15-questions",
+    "sectionTitle": "🧠 Quiz de fin de Chapitre 1.5 (15 questions)",
+    "snippet": "1. Quelle différence entre un paramètre et un hyperparamètre ? <details><summary>Réponse</summary>Un paramètre est appris par le modèle (coefficients) ; un hyperparamètre est choisi avant l'entraîneme..."
+  },
+  {
+    "id": "1-mini-projet-1-5-predire-le-depart-des-clients-churn",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "mini-projet-1-5-predire-le-depart-des-clients-churn",
+    "sectionTitle": "🎯 MINI-PROJET 1.5 — Prédire le départ des clients (churn)",
+    "snippet": "> Contexte. Une banque veut identifier les clients susceptibles de partir pour leur proposer une offre de fidélisation. Contacter un client coûte du temps ; en rater un coûte cher. > > Cahier des char..."
+  },
+  {
+    "id": "1-intuition-11",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "intuition-11",
+    "sectionTitle": "💡 Intuition",
+    "snippet": "Tu as sûrement déjà vu cela : Git est un système de contrôle de version : il garde l'historique complet de ton projet, te permet de revenir à n'importe quel état passé, d'essayer une idée sans risque ..."
+  },
+  {
+    "id": "1-les-quatre-zones-de-git",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "les-quatre-zones-de-git",
+    "sectionTitle": "Les quatre zones de Git",
+    "snippet": "- Répertoire de travail : les fichiers tels que tu les vois et les modifies. - Index (staging area) : la « salle d'embarquement » : tu y mets les modifications que tu veux inclure dans le prochain com..."
+  },
+  {
+    "id": "1-quest-ce-quun-commit",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "quest-ce-quun-commit",
+    "sectionTitle": "Qu'est-ce qu'un commit ?",
+    "snippet": "Un commit est un instantané (snapshot) de tout ton projet à un instant donné, avec : - un identifiant unique (un hash comme ), - un message qui explique le changement, - un auteur et une date, - un po..."
+  },
+  {
+    "id": "1-ecrire-de-bons-messages-de-commit",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "ecrire-de-bons-messages-de-commit",
+    "sectionTitle": "Écrire de bons messages de commit",
+    "snippet": "Un message dit pourquoi/quoi en une ligne (≤ 72 caractères), à l'impératif ou au présent. La convention Conventional Commits préfixe chaque message par un type : Préfixe Usage Exemple nouvelle fonctio..."
+  },
+  {
+    "id": "1-le-filet-de-securite-git-reflog",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "le-filet-de-securite-git-reflog",
+    "sectionTitle": "Le filet de sécurité : `git reflog`",
+    "snippet": "Même après un malheureux, Git garde pendant un certain temps la trace de où pointait : > 🏋️ Pratique immédiate 1.6.3 > Dans : (a) ajoute une ligne à sans l'ajouter et annule-la ; (b) ajoute une ligne..."
+  },
+  {
+    "id": "1-les-secrets-cles-dapi-mots-de-passe",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "les-secrets-cles-dapi-mots-de-passe",
+    "sectionTitle": "Les secrets : clés d'API, mots de passe",
+    "snippet": "Une clé d'API poussée sur GitHub public est compromise en quelques minutes (des robots scannent en continu). La bonne pratique : 1. Mets les secrets dans un fichier (ignoré par Git) ; 2. Commite un fi..."
+  },
+  {
+    "id": "1-jai-commite-un-secret-que-faire",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "jai-commite-un-secret-que-faire",
+    "sectionTitle": "🚨 « J'ai commité un secret ! » — que faire",
+    "snippet": "1. Révoque/régénère immédiatement la clé chez le fournisseur. C'est l'étape n°1 : supprimer le fichier de Git ne suffit pas, le secret reste dans l'historique et dans les copies. 2. Retire le fichier ..."
+  },
+  {
+    "id": "1-notebooks-et-gros-fichiers",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "notebooks-et-gros-fichiers",
+    "sectionTitle": "Notebooks et gros fichiers",
+    "snippet": "- Les sont du JSON qui contient aussi les sorties (et des images) : les diffs sont illisibles. Vide les sorties avant de commiter (Kernel → Clear All Outputs) ou utilise l'outil . - Git est conçu pour..."
+  },
+  {
+    "id": "1-intuition-12",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "intuition-12",
+    "sectionTitle": "💡 Intuition",
+    "snippet": "Une branche est une ligne de développement parallèle. La branche contient la version stable ; pour une nouvelle fonctionnalité, tu crées une branche, tu y travailles en toute sécurité, puis tu la fusi..."
+  },
+  {
+    "id": "1-deux-types-de-fusion",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "deux-types-de-fusion",
+    "sectionTitle": "Deux types de fusion",
+    "snippet": "1) Fast-forward — n'a pas bougé depuis la création de la branche : Git avance simplement le pointeur . Aucun nouveau commit. 2) Fusion à trois voies (three-way merge) — et la branche ont chacune avanc..."
+  },
+  {
+    "id": "1-mettre-en-place-la-connexion",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "mettre-en-place-la-connexion",
+    "sectionTitle": "Mettre en place la connexion",
+    "snippet": "1. Crée un compte sur github.com. 2. Authentification (GitHub n'accepte plus le mot de passe pour pousser du code). Deux options : - Clé SSH (recommandée) : , puis copie le contenu de dans GitHub → Se..."
+  },
+  {
+    "id": "1-publier-un-depot-existant",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "publier-un-depot-existant",
+    "sectionTitle": "Publier un dépôt existant",
+    "snippet": "Récupérer un dépôt existant : ."
+  },
+  {
+    "id": "1-synchroniser-fetch-pull-push",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "synchroniser-fetch-pull-push",
+    "sectionTitle": "Synchroniser : `fetch`, `pull`, `push`",
+    "snippet": "Commande Effet envoie tes nouveaux commits vers GitHub télécharge les nouveautés du distant sans toucher à tes fichiers + : télécharge puis intègre dans ta branche comme , mais rejoue tes commits par-..."
+  },
+  {
+    "id": "1-le-workflow-collaboratif-la-pull-request",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "le-workflow-collaboratif-la-pull-request",
+    "sectionTitle": "Le workflow collaboratif : la Pull Request",
+    "snippet": "Dans une équipe, on ne pousse pas directement sur . Le flux standard : La relecture de code (code review) est une compétence professionnelle majeure : lis les modifications ligne par ligne, pose des q..."
+  },
+  {
+    "id": "1-autres-elements-github-a-connaitre",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "autres-elements-github-a-connaitre",
+    "sectionTitle": "Autres éléments GitHub à connaître",
+    "snippet": "- README.md : la vitrine du projet (objectif, installation, exemple d'utilisation). C'est la première chose que voit un recruteur. - Issues : suivre bugs et idées. Fork : copier le dépôt d'un autre so..."
+  },
+  {
+    "id": "1-exercice-1-6-a-workflow-solo-complet",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-6-a-workflow-solo-complet",
+    "sectionTitle": "Exercice 1.6.A — Workflow solo complet ⭐",
+    "snippet": "Crée un dépôt , avec un (venv, , , ), un et un script . Fais au moins 4 commits avec des messages conventionnels. Affiche l'historique et vérifie qu'un fichier créé ensuite n'apparaît pas dans . <deta..."
+  },
+  {
+    "id": "1-exercice-1-6-b-conflit-a-resoudre",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-6-b-conflit-a-resoudre",
+    "sectionTitle": "Exercice 1.6.B — Conflit à résoudre ⭐⭐",
+    "snippet": "Provoque un conflit comme en 1.6.6, mais sur un fichier Python : deux branches modifient la même ligne (l'une en , l'autre en ). Résous-le en choisissant et en ajoutant un commentaire explicatif. <det..."
+  },
+  {
+    "id": "1-exercice-1-6-c-sauvetage-5-situations",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-6-c-sauvetage-5-situations",
+    "sectionTitle": "Exercice 1.6.C — Sauvetage : 5 situations ⭐⭐",
+    "snippet": "Pour chaque situation, donne la commande la plus adaptée (et sûre). 1. Tu as modifié et veux annuler toutes tes modifications non commitées. 2. Tu as fait et réalises que tu ne veux pas inclure . 3. T..."
+  },
+  {
+    "id": "1-quiz-de-fin-de-chapitre-1-6-12-questions",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "quiz-de-fin-de-chapitre-1-6-12-questions",
+    "sectionTitle": "🧠 Quiz de fin de Chapitre 1.6 (12 questions)",
+    "snippet": "1. Quelle est la différence entre Git et GitHub ? <details><summary>Réponse</summary>Git est l'outil de versionnement local ; GitHub est un service en ligne qui héberge des dépôts Git.</details> 2. Ci..."
+  },
+  {
+    "id": "1-mini-projet-1-6-publier-ton-projet-sur-github-comme-un-pro",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "mini-projet-1-6-publier-ton-projet-sur-github-comme-un-pro",
+    "sectionTitle": "🎯 MINI-PROJET 1.6 — Publier ton projet sur GitHub comme un pro",
+    "snippet": "> Objectif. Publier le Mini-projet 1.1 (système de suivi de formation) sur GitHub avec un historique propre et une Pull Request relue. > > Cahier des charges : > 1. Dépôt avec la structure : , , , , ,..."
+  },
+  {
+    "id": "1-intuition-le-restaurant",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "intuition-le-restaurant",
+    "sectionTitle": "💡 Intuition : le restaurant",
+    "snippet": "Un modèle entraîné dans un notebook n'est utile qu'à toi. Pour que d'autres programmes (un site web, une application mobile) l'utilisent, on le met derrière une API (Application Programming Interface)..."
+  },
+  {
+    "id": "1-les-elements-dune-requete",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "les-elements-dune-requete",
+    "sectionTitle": "Les éléments d'une requête",
+    "snippet": "Élément Rôle Exemples URL / endpoint l'adresse de la ressource ( = ta propre machine ; = le port) Méthode l'intention (lire), (envoyer des données/créer), / (modifier), (supprimer) En-têtes (headers) ..."
+  },
+  {
+    "id": "1-les-codes-de-statut-de-la-reponse",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "les-codes-de-statut-de-la-reponse",
+    "sectionTitle": "Les codes de statut de la réponse",
+    "snippet": "Code Signification Exemple 200 OK la prédiction a réussi 201 créé une ressource a été créée 400 / 422 requête invalide / données incorrectes un champ manquant ou de mauvais type 404 introuvable endpoi..."
+  },
+  {
+    "id": "1-une-mini-api-en-25-lignes-pour-voir-ce-qui-se-passe",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "une-mini-api-en-25-lignes-pour-voir-ce-qui-se-passe",
+    "sectionTitle": "Une mini-API en 25 lignes (pour voir ce qui se passe)",
+    "snippet": "Sans aucune bibliothèque externe, on peut créer un serveur HTTP local et l'interroger. Exécute ce bloc : En pratique, on n'écrit pas un serveur à la main : on utilise un framework comme FastAPI. Pour ..."
+  },
+  {
+    "id": "1-structure-du-projet",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "structure-du-projet",
+    "sectionTitle": "Structure du projet",
+    "snippet": "— le générateur du chapitre 1.5, dans son propre module (pour ne pas dupliquer de code) : — entraîne et sauvegarde le pipeline (comme dans le mini-projet 1.5) : — l'API :"
+  },
+  {
+    "id": "1-lancer-et-tester-en-local",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "lancer-et-tester-en-local",
+    "sectionTitle": "Lancer et tester en local",
+    "snippet": "- Ouvre http://127.0.0.1:8000/docs : une interface interactive générée automatiquement te permet d'essayer l'API depuis le navigateur. - Essaye d'envoyer : FastAPI répond 422 avec un message précis — ..."
+  },
+  {
+    "id": "1-sous-le-capot-tester-la-logique-sans-serveur",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "sous-le-capot-tester-la-logique-sans-serveur",
+    "sectionTitle": "🔍 Sous le capot : tester la logique sans serveur",
+    "snippet": "La partie « prédiction » ne dépend pas de FastAPI : on peut la vérifier directement en Python. > 🏋️ Pratique immédiate 1.7.1 > Ajoute un endpoint qui reçoit une liste de clients ( ) et renvoie la lis..."
+  },
+  {
+    "id": "1-intuition-ca-marche-sur-ma-machine",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "intuition-ca-marche-sur-ma-machine",
+    "sectionTitle": "💡 Intuition : « Ça marche sur ma machine ! »",
+    "snippet": "Tu as un projet qui tourne chez toi. Un collègue l'installe : « erreur de version de Python », « bibliothèque manquante », « ça ne marche pas sous Windows ». Un serveur de production a encore un autre..."
+  },
+  {
+    "id": "1-conteneurs-vs-machines-virtuelles",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "conteneurs-vs-machines-virtuelles",
+    "sectionTitle": "Conteneurs vs machines virtuelles",
+    "snippet": "Une VM embarque un système d'exploitation complet ; un conteneur partage le noyau de l'hôte et n'embarque que ce qui lui est propre : plus léger, plus rapide."
+  },
+  {
+    "id": "1-le-vocabulaire",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "le-vocabulaire",
+    "sectionTitle": "Le vocabulaire",
+    "snippet": "Terme Définition Analogie Image un modèle en lecture seule contenant tout ce qu'il faut pour exécuter l'application la recette + tous les ingrédients, figés Conteneur une instance en cours d'exécution..."
+  },
+  {
+    "id": "1-pourquoi-lordre-des-instructions-est-crucial",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "pourquoi-lordre-des-instructions-est-crucial",
+    "sectionTitle": "Pourquoi l'ordre des instructions est crucial",
+    "snippet": "On copie d'abord et on installe, puis on copie le code. Ainsi, quand tu ne modifies que , Docker réutilise la couche (longue) d'installation des dépendances : la reconstruction prend 2 secondes au lie..."
+  },
+  {
+    "id": "1-host-0-0-0-0-un-detail-qui-piege-tout-le-monde",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "host-0-0-0-0-un-detail-qui-piege-tout-le-monde",
+    "sectionTitle": "`--host 0.0.0.0` : un détail qui piège tout le monde",
+    "snippet": "Dans le conteneur, doit écouter sur (toutes les interfaces). Avec (la valeur par défaut), il n'accepterait que les connexions venant de l'intérieur du conteneur : ton navigateur ne pourrait jamais l'a..."
+  },
+  {
+    "id": "1-le-fichier-dockerignore",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "le-fichier-dockerignore",
+    "sectionTitle": "Le fichier `.dockerignore`",
+    "snippet": "Comme , il liste ce qu'on n'envoie pas à Docker lors du build (plus rapide, et évite d'embarquer des secrets ou des fichiers inutiles) :"
+  },
+  {
+    "id": "1-construire-et-lancer",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "construire-et-lancer",
+    "sectionTitle": "Construire et lancer",
+    "snippet": "Le fichier du projet (les versions de l'ML sont à fixer à celles avec lesquelles tu as entraîné : te les donne, car un modèle sauvegardé n'est garanti compatible que pour des versions proches) :"
+  },
+  {
+    "id": "1-bonnes-pratiques",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "bonnes-pratiques",
+    "sectionTitle": "Bonnes pratiques",
+    "snippet": "1. Image de base légère et versionnée ( , jamais ). 2. Dépendances avant le code (cache). 3. avec (image plus petite). 4. Ne pas tourner en (instruction ). 5. Jamais de secrets dans l'image : ni dans ..."
+  },
+  {
+    "id": "1-volumes-faire-persister-des-donnees",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "volumes-faire-persister-des-donnees",
+    "sectionTitle": "Volumes : faire persister des données",
+    "snippet": "Le système de fichiers d'un conteneur disparaît avec lui. Pour conserver des données (une base de données, des résultats) ou partager un dossier de ton ordinateur :"
+  },
+  {
+    "id": "1-variables-denvironnement-configurer-sans-reconstruire",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "variables-denvironnement-configurer-sans-reconstruire",
+    "sectionTitle": "Variables d'environnement : configurer sans reconstruire",
+    "snippet": "Notre lit et dans l'environnement. On peut donc changer le comportement sans toucher à l'image : Fichier (commité, valeurs factices/par défaut) ; le vrai est dans et (cohérent avec le chapitre 1.6.4) ..."
+  },
+  {
+    "id": "1-exercice-1-7-a-utiliser-une-image-existante",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-7-a-utiliser-une-image-existante",
+    "sectionTitle": "Exercice 1.7.A — Utiliser une image existante ⭐",
+    "snippet": "(1) Lance un conteneur interactif et affiche la version de Python. (2) Lance en arrière-plan, liste-le avec , lis ses logs puis arrête-le. <details><summary>Solution</summary> </details>"
+  },
+  {
+    "id": "1-exercice-1-7-b-dockeriser-un-script",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-7-b-dockeriser-un-script",
+    "sectionTitle": "Exercice 1.7.B — Dockeriser un script ⭐⭐",
+    "snippet": "Écris un script qui lit un entier via une variable d'environnement (défaut 10), génère nombres aléatoires (graine 0) et affiche leur moyenne. Écris son (sans dépendance externe), construis l'image et ..."
+  },
+  {
+    "id": "1-exercice-1-7-c-dockeriser-lapi-du-modele",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "exercice-1-7-c-dockeriser-lapi-du-modele",
+    "sectionTitle": "Exercice 1.7.C — Dockeriser l'API du modèle ⭐⭐⭐",
+    "snippet": "Avec les fichiers de 1.7.1 : construis l'image, lance le conteneur, envoie une requête avec , puis relance le conteneur avec et compare le champ pour un même client. Que constates-tu ? <details><summa..."
+  },
+  {
+    "id": "1-quiz-de-fin-de-chapitre-1-7-12-questions",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "quiz-de-fin-de-chapitre-1-7-12-questions",
+    "sectionTitle": "🧠 Quiz de fin de Chapitre 1.7 (12 questions)",
+    "snippet": "1. Que signifie le code HTTP 422 ? Et 404 ? Et 500 ? <details><summary>Réponse</summary>422 : données de la requête invalides (faute du client) ; 404 : ressource introuvable ; 500 : erreur côté serveu..."
+  },
+  {
+    "id": "1-mini-projet-1-7-conteneuriser-le-modele-de-churn",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "mini-projet-1-7-conteneuriser-le-modele-de-churn",
+    "sectionTitle": "🎯 MINI-PROJET 1.7 — Conteneuriser le modèle de churn",
+    "snippet": "> Objectif. Livrer un service de prédiction qui démarre avec une seule commande sur n'importe quelle machine. > > Cahier des charges : > 1. Reprends le pipeline de ton mini-projet 1.5 (ou celui de ) e..."
+  },
+  {
+    "id": "1-structure-cible-du-depot",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "structure-cible-du-depot",
+    "sectionTitle": "Structure cible du dépôt",
+    "snippet": "--- Jalon 1 — Le package Python (chapitres 1.0 et 1.1) À réaliser : 1. Environnement virtuel, dépôt Git, , structure ci-dessus. 2. : - une exception personnalisée ; - : tente , et sinon utilise la ver..."
+  },
+  {
+    "id": "1-chapitre-1-0-demarrer",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "chapitre-1-0-demarrer",
+    "sectionTitle": "Chapitre 1.0 — Démarrer",
+    "snippet": "1. Pourquoi utiliser un environnement virtuel ? <details><summary>Réponse</summary>Isoler les dépendances de chaque projet pour éviter les conflits et garantir la reproductibilité (1.0.5).</details> 2..."
+  },
+  {
+    "id": "1-chapitre-1-1-python",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "chapitre-1-1-python",
+    "sectionTitle": "Chapitre 1.1 — Python",
+    "snippet": "6. Que valent , , ? <details><summary>Réponse</summary> , (chaîne non vide), .</details> 7. Pourquoi modifie-t-il aussi ? <details><summary>Réponse</summary>Une variable est une étiquette : et désigne..."
+  },
+  {
+    "id": "1-chapitre-1-2-numpy",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "chapitre-1-2-numpy",
+    "sectionTitle": "Chapitre 1.2 — NumPy",
+    "snippet": "15. Pourquoi NumPy est-il plus rapide qu'une boucle Python ? <details><summary>Réponse</summary>Type unique, mémoire contiguë, boucle exécutée en C (vectorisation).</details> 16. Shape de ? <details><..."
+  },
+  {
+    "id": "1-chapitre-1-3-pandas",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "chapitre-1-3-pandas",
+    "sectionTitle": "Chapitre 1.3 — Pandas",
+    "snippet": "20. vs : combien de lignes ? <details><summary>Réponse</summary> : 3 (fin incluse) ; : 2 (fin exclue).</details> 21. Pourquoi la médiane est-elle souvent préférée à la moyenne pour imputer ? <details>..."
+  },
+  {
+    "id": "1-chapitre-1-4-visualisation",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "chapitre-1-4-visualisation",
+    "sectionTitle": "Chapitre 1.4 — Visualisation",
+    "snippet": "25. Quel graphique pour comparer la distribution d'une variable entre plusieurs groupes ? <details><summary>Réponse</summary>Des boxplots ou violons côte à côte.</details> 26. Pourquoi l'axe d'un diag..."
+  },
+  {
+    "id": "1-chapitre-1-5-scikit-learn",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "chapitre-1-5-scikit-learn",
+    "sectionTitle": "Chapitre 1.5 — Scikit-learn",
+    "snippet": "29. Paramètre vs hyperparamètre ? <details><summary>Réponse</summary>Paramètre : appris par le modèle. Hyperparamètre : choisi avant l'entraînement.</details> 30. Un modèle prédit toujours la classe m..."
+  },
+  {
+    "id": "1-chapitre-1-6-git",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "chapitre-1-6-git",
+    "sectionTitle": "Chapitre 1.6 — Git",
+    "snippet": "35. Différence entre et ? <details><summary>Réponse</summary> ajoute un commit d'annulation (sûr) ; réécrit l'historique (dangereux).</details> 36. Tu as poussé une clé d'API. Que fais-tu en premier ?..."
+  },
+  {
+    "id": "1-chapitre-1-7-docker-et-api",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "chapitre-1-7-docker-et-api",
+    "sectionTitle": "Chapitre 1.7 — Docker et API",
+    "snippet": "38. Image vs conteneur ? <details><summary>Réponse</summary>Image : modèle figé. Conteneur : instance en cours d'exécution.</details> 39. Pourquoi copier avant le code dans le Dockerfile ? <details><s..."
+  },
+  {
+    "id": "1-python",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "python",
+    "sectionTitle": "Python",
+    "snippet": ""
+  },
+  {
+    "id": "1-numpy",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "numpy",
+    "sectionTitle": "NumPy",
+    "snippet": ""
+  },
+  {
+    "id": "1-pandas",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "pandas",
+    "sectionTitle": "Pandas",
+    "snippet": ""
+  },
+  {
+    "id": "1-scikit-learn",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "scikit-learn",
+    "sectionTitle": "Scikit-learn",
+    "snippet": ""
+  },
+  {
+    "id": "1-git",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "git",
+    "sectionTitle": "Git",
+    "snippet": ""
+  },
+  {
+    "id": "1-docker",
+    "moduleId": 1,
+    "moduleTitle": "Python & Outils Essentiels pour l'Intelligence Artificielle",
+    "sectionId": "docker",
+    "sectionTitle": "Docker",
+    "snippet": "--- ⚠️ ERREURS FRÉQUENTES : LE TOP 15 # Erreur Conséquence Bonne pratique 1 Oublier d'activer le bibliothèques globales, conflits vérifier avant 2 Copier une liste avec modifications « fantômes » / 3 ..."
   },
   {
     "id": "2-addition-et-soustraction-de-vecteurs",

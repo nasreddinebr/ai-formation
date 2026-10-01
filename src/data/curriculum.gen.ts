@@ -213,9 +213,80 @@ export const CURRICULUM: Record<number, CurriculumData> = {
     "title": "Python & Outils Essentiels pour l'Intelligence Artificielle",
     "chapters": [
       {
+        "id": "chapitre-1-0-demarrer-terminal-python-et-environnement-de-travail",
+        "title": "📘 CHAPITRE 1.0 — DÉMARRER : TERMINAL, PYTHON ET ENVIRONNEMENT DE TRAVAIL",
+        "sections": [
+          {
+            "id": "intuition",
+            "title": "💡 Intuition",
+            "level": 3
+          },
+          {
+            "id": "les-commandes-de-navigation",
+            "title": "Les commandes de navigation",
+            "level": 3
+          },
+          {
+            "id": "chemins-absolus-et-relatifs",
+            "title": "Chemins absolus et relatifs",
+            "level": 3
+          },
+          {
+            "id": "pieges-frequents",
+            "title": "⚠️ Pièges fréquents",
+            "level": 3
+          },
+          {
+            "id": "intuition-2",
+            "title": "💡 Intuition",
+            "level": 3
+          },
+          {
+            "id": "intuition-3",
+            "title": "💡 Intuition",
+            "level": 3
+          },
+          {
+            "id": "sous-le-capot-que-fait-activer",
+            "title": "🔍 Sous le capot : que fait « activer » ?",
+            "level": 3
+          },
+          {
+            "id": "pieges-frequents-2",
+            "title": "⚠️ Pièges fréquents",
+            "level": 3
+          },
+          {
+            "id": "quiz-de-fin-de-chapitre-1-0",
+            "title": "🧠 Quiz de fin de Chapitre 1.0",
+            "level": 3
+          },
+          {
+            "id": "mini-projet-1-0-ton-atelier-pret-a-lemploi",
+            "title": "🎯 MINI-PROJET 1.0 — Ton atelier prêt à l'emploi",
+            "level": 3
+          }
+        ]
+      },
+      {
         "id": "chapitre-1-1-python-fondations-absolues",
         "title": "📘 CHAPITRE 1.1 — PYTHON : FONDATIONS ABSOLUES",
         "sections": [
+          {
+            "id": "1-1-0-ton-premier-programme",
+            "title": "1.1.0 — Ton premier programme",
+            "level": 3
+          },
+          {
+            "id": "lindentation-en-python-elle-fait-partie-de-la-syntaxe",
+            "title": "L'indentation : en Python, elle fait partie de la syntaxe",
+            "level": 3
+          },
+          {
+            "id": "bien-ecrire-du-code-pep-8-lessentiel",
+            "title": "Bien écrire du code : PEP 8 (l'essentiel)",
+            "level": 3
+          },
           {
             "id": "1-1-1-variables-et-types-de-donnees",
             "title": "1.1.1 — Variables et Types de Données",
@@ -262,18 +333,48 @@ export const CURRICULUM: Record<number, CurriculumData> = {
             "level": 3
           },
           {
-            "id": "exercice-1-1-a-calcul-de-statistiques",
-            "title": "Exercice 1.1.A — Calcul de statistiques",
+            "id": "1-1-10-qualite-du-code-tests-types-et-formatage",
+            "title": "1.1.10 — Qualité du code : tests, types et formatage 🔸",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-1-a-statistiques-a-la-main",
+            "title": "Exercice 1.1.A — Statistiques à la main ⭐⭐",
             "level": 3
           },
           {
             "id": "exercice-1-1-b-analyseur-de-texte",
-            "title": "Exercice 1.1.B — Analyseur de texte",
+            "title": "Exercice 1.1.B — Analyseur de texte ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-1-c-exceptions-et-tracebacks",
+            "title": "Exercice 1.1.C — Exceptions et tracebacks ⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-1-d-du-texte-au-jsonl",
+            "title": "Exercice 1.1.D — Du texte au JSONL ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-1-e-compte-bancaire-poo-exceptions",
+            "title": "Exercice 1.1.E — Compte bancaire (POO + exceptions) ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-1-f-pipeline-de-generateurs",
+            "title": "Exercice 1.1.F — Pipeline de générateurs ⭐⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "quiz-de-fin-de-chapitre-1-1-20-questions",
+            "title": "🧠 Quiz de fin de Chapitre 1.1 (20 questions)",
             "level": 3
           },
           {
             "id": "mini-projet-1-1-systeme-de-suivi-de-formation-ia",
-            "title": "🎯 MINI-PROJET 1.1 — Système de Suivi de Formation IA",
+            "title": "🎯 MINI-PROJET 1.1 — Système de suivi de formation IA",
             "level": 3
           }
         ]
@@ -283,43 +384,108 @@ export const CURRICULUM: Record<number, CurriculumData> = {
         "title": "📘 CHAPITRE 1.2 — NUMPY : LE CALCUL VECTORIEL",
         "sections": [
           {
-            "id": "1-2-1-creer-des-arrays",
-            "title": "1.2.1 — Créer des Arrays",
+            "id": "intuition-vecteurs-matrices-tenseurs",
+            "title": "💡 Intuition : vecteurs, matrices, tenseurs",
             "level": 3
           },
           {
-            "id": "1-2-2-indexation-et-slicing",
-            "title": "1.2.2 — Indexation et Slicing",
+            "id": "pourquoi-une-liste-python-ne-suffit-pas",
+            "title": "Pourquoi une liste Python ne suffit pas",
             "level": 3
           },
           {
-            "id": "1-2-3-operations-mathematiques",
-            "title": "1.2.3 — Opérations Mathématiques",
+            "id": "sous-le-capot-la-vectorisation",
+            "title": "🔍 Sous le capot : la vectorisation",
             "level": 3
           },
           {
-            "id": "1-2-4-broadcasting-la-magie-de-numpy",
-            "title": "1.2.4 — Broadcasting — La Magie de NumPy",
+            "id": "le-dtype-le-type-des-elements",
+            "title": "Le `dtype` : le type des éléments",
             "level": 3
           },
           {
-            "id": "1-2-5-algebre-lineaire-avec-numpy",
-            "title": "1.2.5 — Algèbre Linéaire avec NumPy",
+            "id": "les-axes-la-notion-qui-trompe-tout-le-monde",
+            "title": "Les axes : la notion qui trompe tout le monde",
             "level": 3
           },
           {
-            "id": "1-2-6-manipulation-de-formes",
-            "title": "1.2.6 — Manipulation de Formes",
+            "id": "vue-ou-copie-un-piege-de-memoire",
+            "title": "Vue ou copie ? Un piège de mémoire",
             "level": 3
           },
           {
-            "id": "1-2-7-nombres-aleatoires-et-reproductibilite",
-            "title": "1.2.7 — Nombres Aléatoires et Reproductibilité",
+            "id": "le-masque-booleen-filtrer-avec-une-condition",
+            "title": "Le masque booléen : filtrer avec une condition",
             "level": 3
           },
           {
-            "id": "exercice-1-2-a-regression-lineaire-from-scratch-avec-numpy",
-            "title": "Exercice 1.2.A — Régression Linéaire from Scratch avec NumPy",
+            "id": "np-where-argsort-argmax-unique",
+            "title": "`np.where`, `argsort`, `argmax`, `unique`",
+            "level": 3
+          },
+          {
+            "id": "operations-terme-a-terme",
+            "title": "Opérations terme à terme",
+            "level": 3
+          },
+          {
+            "id": "statistiques-et-agregations",
+            "title": "Statistiques et agrégations",
+            "level": 3
+          },
+          {
+            "id": "produit-terme-a-terme-vs-produit-matriciel",
+            "title": "Produit terme à terme vs produit matriciel",
+            "level": 3
+          },
+          {
+            "id": "deux-fonctions-de-ml-ecrites-en-numpy",
+            "title": "Deux fonctions de ML écrites en NumPy",
+            "level": 3
+          },
+          {
+            "id": "intuition-7",
+            "title": "💡 Intuition",
+            "level": 3
+          },
+          {
+            "id": "les-regles-a-lire-de-droite-a-gauche",
+            "title": "Les règles (à lire de droite à gauche)",
+            "level": 3
+          },
+          {
+            "id": "application-normaliser-standardiser-des-donnees",
+            "title": "Application : normaliser (standardiser) des données",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-2-a-vectoriser-trois-boucles",
+            "title": "Exercice 1.2.A — Vectoriser trois boucles ⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-2-b-standardisation-a-la-main",
+            "title": "Exercice 1.2.B — Standardisation à la main ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-2-c-k-plus-proches-voisins-from-scratch",
+            "title": "Exercice 1.2.C — k plus proches voisins *from scratch* ⭐⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-2-d-regression-lineaire-multi-variables",
+            "title": "Exercice 1.2.D — Régression linéaire multi-variables ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "quiz-de-fin-de-chapitre-1-2-15-questions",
+            "title": "🧠 Quiz de fin de Chapitre 1.2 (15 questions)",
+            "level": 3
+          },
+          {
+            "id": "mini-projet-1-2-un-moteur-de-recherche-semantique-en-numpy",
+            "title": "🎯 MINI-PROJET 1.2 — Un moteur de recherche sémantique en NumPy",
             "level": 3
           }
         ]
@@ -329,43 +495,143 @@ export const CURRICULUM: Record<number, CurriculumData> = {
         "title": "📘 CHAPITRE 1.3 — PANDAS : LA MANIPULATION DE DONNÉES",
         "sections": [
           {
-            "id": "1-3-1-creer-et-charger-des-dataframes",
-            "title": "1.3.1 — Créer et Charger des DataFrames",
+            "id": "intuition-8",
+            "title": "💡 Intuition",
             "level": 3
           },
           {
-            "id": "1-3-2-exploration-des-donnees-eda",
-            "title": "1.3.2 — Exploration des Données (EDA)",
+            "id": "la-demarche-dexploration-eda",
+            "title": "La démarche d'exploration (EDA)",
             "level": 3
           },
           {
-            "id": "1-3-3-selection-et-filtrage",
-            "title": "1.3.3 — Sélection et Filtrage",
+            "id": "le-premier-diagnostic-en-5-lignes",
+            "title": "Le premier diagnostic en 5 lignes",
             "level": 3
           },
           {
-            "id": "1-3-4-nettoyage-des-donnees",
-            "title": "1.3.4 — Nettoyage des Données",
+            "id": "loc-par-etiquette-et-iloc-par-position",
+            "title": "`loc` (par étiquette) et `iloc` (par position)",
             "level": 3
           },
           {
-            "id": "1-3-5-transformation-et-ingenierie-de-features",
-            "title": "1.3.5 — Transformation et Ingénierie de Features",
+            "id": "filtrer-avec-des-conditions-masques-booleens",
+            "title": "Filtrer avec des conditions (masques booléens)",
             "level": 3
           },
           {
-            "id": "1-3-6-merge-et-join-fusionner-des-dataframes",
-            "title": "1.3.6 — Merge et Join (Fusionner des DataFrames)",
+            "id": "le-piege-settingwithcopywarning-et-le-copy-on-write",
+            "title": "Le piège : `SettingWithCopyWarning` et le Copy-on-Write",
             "level": 3
           },
           {
-            "id": "1-3-7-pipeline-complet-analyse-du-dataset-titanic",
-            "title": "1.3.7 — Pipeline Complet : Analyse du Dataset Titanic",
+            "id": "les-valeurs-manquantes",
+            "title": "Les valeurs manquantes",
             "level": 3
           },
           {
-            "id": "exercice-1-3-a-analyse-dun-dataset-ia",
-            "title": "Exercice 1.3.A — Analyse d'un Dataset IA",
+            "id": "les-doublons",
+            "title": "Les doublons",
+            "level": 3
+          },
+          {
+            "id": "corriger-les-types",
+            "title": "Corriger les types",
+            "level": 3
+          },
+          {
+            "id": "texte-sale-et-dates",
+            "title": "Texte sale et dates",
+            "level": 3
+          },
+          {
+            "id": "les-valeurs-aberrantes-outliers",
+            "title": "Les valeurs aberrantes (outliers)",
+            "level": 3
+          },
+          {
+            "id": "appliquer-une-fonction-la-hierarchie-des-performances",
+            "title": "Appliquer une fonction : la hiérarchie des performances",
+            "level": 3
+          },
+          {
+            "id": "groupby-la-logique-decouper-appliquer-combiner",
+            "title": "`groupby` : la logique « découper – appliquer – combiner »",
+            "level": 3
+          },
+          {
+            "id": "tableaux-croises-pivot-table-et-crosstab",
+            "title": "Tableaux croisés : `pivot_table` et `crosstab`",
+            "level": 3
+          },
+          {
+            "id": "decouper-une-variable-numerique-en-classes",
+            "title": "Découper une variable numérique en classes",
+            "level": 3
+          },
+          {
+            "id": "etapes-1-a-5-inspecter",
+            "title": "Étapes 1 à 5 — Inspecter",
+            "level": 3
+          },
+          {
+            "id": "etapes-6-a-8-distributions",
+            "title": "Étapes 6 à 8 — Distributions",
+            "level": 3
+          },
+          {
+            "id": "etape-9-relations-avec-la-cible-survived",
+            "title": "Étape 9 — Relations avec la cible (`survived`)",
+            "level": 3
+          },
+          {
+            "id": "etape-10-interpreter-avec-honnetete",
+            "title": "Étape 10 — Interpréter avec honnêteté",
+            "level": 3
+          },
+          {
+            "id": "series-temporelles-resample-et-rolling",
+            "title": "Séries temporelles : `resample` et `rolling`",
+            "level": 3
+          },
+          {
+            "id": "gros-fichiers-lire-par-morceaux-et-surveiller-la-memoire",
+            "title": "Gros fichiers : lire par morceaux et surveiller la mémoire",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-3-a-analyse-des-ventes",
+            "title": "Exercice 1.3.A — Analyse des ventes ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-3-b-nettoyage-guide",
+            "title": "Exercice 1.3.B — Nettoyage guidé ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-3-c-jointures",
+            "title": "Exercice 1.3.C — Jointures ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-3-d-vectorisation-mesuree",
+            "title": "Exercice 1.3.D — Vectorisation mesurée ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-3-e-detecter-les-valeurs-aberrantes",
+            "title": "Exercice 1.3.E — Détecter les valeurs aberrantes ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "quiz-de-fin-de-chapitre-1-3-15-questions",
+            "title": "🧠 Quiz de fin de Chapitre 1.3 (15 questions)",
+            "level": 3
+          },
+          {
+            "id": "mini-projet-1-3-rapport-de-qualite-des-donnees",
+            "title": "🎯 MINI-PROJET 1.3 — Rapport de qualité des données",
             "level": 3
           }
         ]
@@ -375,137 +641,657 @@ export const CURRICULUM: Record<number, CurriculumData> = {
         "title": "📘 CHAPITRE 1.4 — MATPLOTLIB & SEABORN : LA VISUALISATION",
         "sections": [
           {
-            "id": "1-4-1-matplotlib-la-base",
-            "title": "1.4.1 — Matplotlib : La Base",
+            "id": "intuition-9",
+            "title": "💡 Intuition",
             "level": 3
           },
           {
-            "id": "1-4-2-seaborn-la-visualisation-statistique",
-            "title": "1.4.2 — Seaborn : La Visualisation Statistique",
+            "id": "quel-graphique-pour-quelle-question",
+            "title": "Quel graphique pour quelle question ?",
             "level": 3
           },
           {
-            "id": "1-4-3-visualisations-specifiques-a-lia",
-            "title": "1.4.3 — Visualisations Spécifiques à l'IA",
+            "id": "anatomie-dune-figure-matplotlib",
+            "title": "Anatomie d'une figure Matplotlib",
             "level": 3
           },
           {
-            "id": "exercice-1-4-a-dashboard-de-suivi-dentrainement",
-            "title": "Exercice 1.4.A — Dashboard de Suivi d'Entraînement",
+            "id": "regles-pour-un-graphique-honnete-et-lisible",
+            "title": "Règles pour un graphique honnête et lisible",
             "level": 3
           },
           {
-            "id": "exercice-1-4-b-comparaison-visuelle-de-modeles-seaborn",
-            "title": "Exercice 1.4.B — Comparaison Visuelle de Modèles (Seaborn)",
+            "id": "courbe",
+            "title": "Courbe",
+            "level": 3
+          },
+          {
+            "id": "nuage-de-points-scatter",
+            "title": "Nuage de points (*scatter*)",
+            "level": 3
+          },
+          {
+            "id": "barres",
+            "title": "Barres",
+            "level": 3
+          },
+          {
+            "id": "histogramme-la-distribution-dune-variable",
+            "title": "Histogramme : la distribution d'une variable",
+            "level": 3
+          },
+          {
+            "id": "boxplot-boite-a-moustaches",
+            "title": "Boxplot (boîte à moustaches)",
+            "level": 3
+          },
+          {
+            "id": "carte-de-chaleur-heatmap-et-correlation",
+            "title": "Carte de chaleur (*heatmap*) et corrélation",
+            "level": 3
+          },
+          {
+            "id": "plusieurs-graphiques-subplots-un-tableau-de-bord",
+            "title": "Plusieurs graphiques : `subplots` (un « tableau de bord »)",
+            "level": 3
+          },
+          {
+            "id": "le-format-tidy",
+            "title": "Le format « tidy »",
+            "level": 3
+          },
+          {
+            "id": "distributions",
+            "title": "Distributions",
+            "level": 3
+          },
+          {
+            "id": "comparer-des-categories-et-relations",
+            "title": "Comparer des catégories et relations",
+            "level": 3
+          },
+          {
+            "id": "correlations",
+            "title": "Corrélations",
+            "level": 3
+          },
+          {
+            "id": "axes-level-vs-figure-level-comprendre-pour-eviter-les-surprises",
+            "title": "Axes-level vs figure-level : comprendre pour éviter les surprises",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-4-a-reproduire-un-graphique",
+            "title": "Exercice 1.4.A — Reproduire un graphique ⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-4-b-corriger-un-mauvais-graphique",
+            "title": "Exercice 1.4.B — Corriger un mauvais graphique ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-4-c-dashboard-danalyse",
+            "title": "Exercice 1.4.C — Dashboard d'analyse ⭐⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "quiz-de-fin-de-chapitre-1-4-12-questions",
+            "title": "🧠 Quiz de fin de Chapitre 1.4 (12 questions)",
+            "level": 3
+          },
+          {
+            "id": "mini-projet-1-4-un-generateur-de-rapport-eda-automatique",
+            "title": "🎯 MINI-PROJET 1.4 — Un générateur de rapport EDA automatique",
             "level": 3
           }
         ]
       },
       {
-        "id": "chapitre-1-5-scikit-learn-premier-contact-avec-le-ml",
-        "title": "📘 CHAPITRE 1.5 — SCIKIT-LEARN : PREMIER CONTACT AVEC LE ML",
+        "id": "chapitre-1-5-scikit-learn-premier-contact-avec-le-machine-learning",
+        "title": "📘 CHAPITRE 1.5 — SCIKIT-LEARN : PREMIER CONTACT AVEC LE MACHINE LEARNING",
         "sections": [
           {
-            "id": "1-5-1-le-pipeline-ml-complet",
-            "title": "1.5.1 — Le Pipeline ML Complet",
+            "id": "intuition-10",
+            "title": "💡 Intuition",
             "level": 3
           },
           {
-            "id": "1-5-2-pipeline-scikit-learn-production-ready",
-            "title": "1.5.2 — Pipeline Scikit-learn (Production Ready)",
+            "id": "le-vocabulaire-indispensable",
+            "title": "Le vocabulaire indispensable",
             "level": 3
           },
           {
-            "id": "1-5-3-comprendre-loverfitting-et-le-underfitting",
-            "title": "1.5.3 — Comprendre l'Overfitting et le Underfitting",
+            "id": "les-grandes-familles-de-problemes",
+            "title": "Les grandes familles de problèmes",
             "level": 3
           },
           {
-            "id": "projet-final-module-1-5-prediction-de-churn-bancaire",
-            "title": "🎯 PROJET FINAL MODULE 1.5 — Prédiction de Churn Bancaire",
+            "id": "ce-qui-compte-vraiment-la-generalisation",
+            "title": "Ce qui compte vraiment : la généralisation",
+            "level": 3
+          },
+          {
+            "id": "lapi-unifiee-trois-types-dobjets",
+            "title": "L'API unifiée : trois types d'objets",
+            "level": 3
+          },
+          {
+            "id": "premier-modele-predire-levolution-dune-maladie-regression",
+            "title": "Premier modèle : prédire l'évolution d'une maladie (régression)",
+            "level": 3
+          },
+          {
+            "id": "les-metriques-de-regression-expliquees",
+            "title": "Les métriques de régression expliquées",
+            "level": 3
+          },
+          {
+            "id": "un-jeu-de-donnees-reel-le-diagnostic-du-cancer-du-sein",
+            "title": "Un jeu de données réel : le diagnostic du cancer du sein",
+            "level": 3
+          },
+          {
+            "id": "la-matrice-de-confusion-la-base-de-toutes-les-metriques",
+            "title": "La matrice de confusion : la base de toutes les métriques",
+            "level": 3
+          },
+          {
+            "id": "les-metriques-construites-a-partir-de-la-matrice",
+            "title": "Les métriques, construites à partir de la matrice",
+            "level": 3
+          },
+          {
+            "id": "le-paradoxe-de-laccuracy-quand-90-ne-veut-rien-dire",
+            "title": "Le paradoxe de l'accuracy : quand 90 % ne veut rien dire",
+            "level": 3
+          },
+          {
+            "id": "entrainer-de-vrais-classifieurs-sur-le-cancer",
+            "title": "Entraîner de vrais classifieurs (sur le cancer)",
+            "level": 3
+          },
+          {
+            "id": "probabilites-et-seuil-de-decision",
+            "title": "Probabilités et seuil de décision",
+            "level": 3
+          },
+          {
+            "id": "matrice-de-confusion-et-courbe-roc-visualisations-devaluation",
+            "title": "Matrice de confusion et courbe ROC (visualisations d'évaluation)",
+            "level": 3
+          },
+          {
+            "id": "comprendre-un-peu-chaque-modele-intuition-uniquement",
+            "title": "Comprendre un peu chaque modèle (intuition uniquement)",
+            "level": 3
+          },
+          {
+            "id": "le-probleme-dune-seule-decoupe",
+            "title": "Le problème d'une seule découpe",
+            "level": 3
+          },
+          {
+            "id": "les-trois-jeux-de-donnees-et-la-regle-dor",
+            "title": "Les trois jeux de données, et la règle d'or",
+            "level": 3
+          },
+          {
+            "id": "la-fuite-de-donnees-data-leakage-demonstration-chiffree",
+            "title": "La fuite de données (*data leakage*) : démonstration chiffrée",
+            "level": 3
+          },
+          {
+            "id": "pourquoi-pretraiter",
+            "title": "Pourquoi prétraiter ?",
+            "level": 3
+          },
+          {
+            "id": "encoder-les-variables-categorielles",
+            "title": "Encoder les variables catégorielles",
+            "level": 3
+          },
+          {
+            "id": "le-columntransformer-un-traitement-par-type-de-colonne",
+            "title": "Le `ColumnTransformer` : un traitement par type de colonne",
+            "level": 3
+          },
+          {
+            "id": "ce-que-garantit-un-pipeline",
+            "title": "Ce que garantit un `Pipeline`",
+            "level": 3
+          },
+          {
+            "id": "intuition-letudiant-et-les-annales",
+            "title": "💡 Intuition : l'étudiant et les annales",
+            "level": 3
+          },
+          {
+            "id": "mesurer-la-courbe-de-validation",
+            "title": "Mesurer : la courbe de validation",
+            "level": 3
+          },
+          {
+            "id": "gridsearchcv-chercher-les-meilleurs-hyperparametres",
+            "title": "`GridSearchCV` : chercher les meilleurs hyperparamètres",
+            "level": 3
+          },
+          {
+            "id": "les-methodes-densemble-lunion-fait-la-force-intuition",
+            "title": "Les méthodes d'ensemble : l'union fait la force (intuition)",
+            "level": 3
+          },
+          {
+            "id": "importance-des-variables-par-permutation",
+            "title": "Importance des variables par permutation",
+            "level": 3
+          },
+          {
+            "id": "sauvegarder-et-recharger-un-modele-joblib",
+            "title": "Sauvegarder et recharger un modèle : `joblib`",
+            "level": 3
+          },
+          {
+            "id": "ethique-les-variables-sensibles",
+            "title": "Éthique : les variables sensibles",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-5-a-regression-complete",
+            "title": "Exercice 1.5.A — Régression complète ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-5-b-metriques-a-la-main",
+            "title": "Exercice 1.5.B — Métriques à la main ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-5-c-trouver-et-corriger-les-fuites",
+            "title": "Exercice 1.5.C — Trouver et corriger les fuites ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-5-d-comparer-des-modeles-proprement",
+            "title": "Exercice 1.5.D — Comparer des modèles proprement ⭐⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "quiz-de-fin-de-chapitre-1-5-15-questions",
+            "title": "🧠 Quiz de fin de Chapitre 1.5 (15 questions)",
+            "level": 3
+          },
+          {
+            "id": "mini-projet-1-5-predire-le-depart-des-clients-churn",
+            "title": "🎯 MINI-PROJET 1.5 — Prédire le départ des clients (churn)",
             "level": 3
           }
         ]
       },
       {
-        "id": "chapitre-1-6-git-github",
-        "title": "📘 CHAPITRE 1.6 — GIT & GITHUB",
+        "id": "chapitre-1-6-git-github-versionner-son-travail",
+        "title": "📘 CHAPITRE 1.6 — GIT & GITHUB : VERSIONNER SON TRAVAIL",
         "sections": [
           {
-            "id": "1-6-1-concepts-fondamentaux",
-            "title": "1.6.1 — Concepts Fondamentaux",
+            "id": "intuition-11",
+            "title": "💡 Intuition",
             "level": 3
           },
           {
-            "id": "1-6-2-commandes-essentielles",
-            "title": "1.6.2 — Commandes Essentielles",
+            "id": "les-quatre-zones-de-git",
+            "title": "Les quatre zones de Git",
             "level": 3
           },
           {
-            "id": "1-6-3-conventions-de-commit",
-            "title": "1.6.3 — Conventions de Commit",
+            "id": "quest-ce-quun-commit",
+            "title": "Qu'est-ce qu'un commit ?",
             "level": 3
           },
           {
-            "id": "1-6-4-le-gitignore-ce-quon-ne-versionne-pas",
-            "title": "1.6.4 — Le .gitignore — Ce qu'on ne versionne PAS",
+            "id": "ecrire-de-bons-messages-de-commit",
+            "title": "Écrire de bons messages de commit",
             "level": 3
           },
           {
-            "id": "1-6-5-workflow-professionnel",
-            "title": "1.6.5 — Workflow Professionnel",
+            "id": "le-filet-de-securite-git-reflog",
+            "title": "Le filet de sécurité : `git reflog`",
             "level": 3
           },
           {
-            "id": "exercice-1-6-a-scenario-de-collaboration",
-            "title": "Exercice 1.6.A — Scénario de Collaboration",
+            "id": "les-secrets-cles-dapi-mots-de-passe",
+            "title": "Les secrets : clés d'API, mots de passe",
+            "level": 3
+          },
+          {
+            "id": "jai-commite-un-secret-que-faire",
+            "title": "🚨 « J'ai commité un secret ! » — que faire",
+            "level": 3
+          },
+          {
+            "id": "notebooks-et-gros-fichiers",
+            "title": "Notebooks et gros fichiers",
+            "level": 3
+          },
+          {
+            "id": "intuition-12",
+            "title": "💡 Intuition",
+            "level": 3
+          },
+          {
+            "id": "deux-types-de-fusion",
+            "title": "Deux types de fusion",
+            "level": 3
+          },
+          {
+            "id": "mettre-en-place-la-connexion",
+            "title": "Mettre en place la connexion",
+            "level": 3
+          },
+          {
+            "id": "publier-un-depot-existant",
+            "title": "Publier un dépôt existant",
+            "level": 3
+          },
+          {
+            "id": "synchroniser-fetch-pull-push",
+            "title": "Synchroniser : `fetch`, `pull`, `push`",
+            "level": 3
+          },
+          {
+            "id": "le-workflow-collaboratif-la-pull-request",
+            "title": "Le workflow collaboratif : la Pull Request",
+            "level": 3
+          },
+          {
+            "id": "autres-elements-github-a-connaitre",
+            "title": "Autres éléments GitHub à connaître",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-6-a-workflow-solo-complet",
+            "title": "Exercice 1.6.A — Workflow solo complet ⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-6-b-conflit-a-resoudre",
+            "title": "Exercice 1.6.B — Conflit à résoudre ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-6-c-sauvetage-5-situations",
+            "title": "Exercice 1.6.C — Sauvetage : 5 situations ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "quiz-de-fin-de-chapitre-1-6-12-questions",
+            "title": "🧠 Quiz de fin de Chapitre 1.6 (12 questions)",
+            "level": 3
+          },
+          {
+            "id": "mini-projet-1-6-publier-ton-projet-sur-github-comme-un-pro",
+            "title": "🎯 MINI-PROJET 1.6 — Publier ton projet sur GitHub comme un pro",
             "level": 3
           }
         ]
       },
       {
-        "id": "chapitre-1-7-docker",
-        "title": "📘 CHAPITRE 1.7 — DOCKER",
+        "id": "chapitre-1-7-docker-encapsuler-son-environnement-et-servir-un-modele-par-api",
+        "title": "📘 CHAPITRE 1.7 — DOCKER : ENCAPSULER SON ENVIRONNEMENT (ET SERVIR UN MODÈLE PAR API)",
         "sections": [
           {
-            "id": "1-7-1-concepts-cles",
-            "title": "1.7.1 — Concepts Clés",
+            "id": "intuition-le-restaurant",
+            "title": "💡 Intuition : le restaurant",
             "level": 3
           },
           {
-            "id": "1-7-2-ton-premier-dockerfile",
-            "title": "1.7.2 — Ton Premier Dockerfile",
+            "id": "les-elements-dune-requete",
+            "title": "Les éléments d'une requête",
             "level": 3
           },
           {
-            "id": "1-7-3-lapi-fastapi-a-dockeriser",
-            "title": "1.7.3 — L'API FastAPI à Dockeriser",
+            "id": "les-codes-de-statut-de-la-reponse",
+            "title": "Les codes de statut de la réponse",
             "level": 3
           },
           {
-            "id": "1-7-4-construire-et-lancer-le-conteneur",
-            "title": "1.7.4 — Construire et Lancer le Conteneur",
+            "id": "une-mini-api-en-25-lignes-pour-voir-ce-qui-se-passe",
+            "title": "Une mini-API en 25 lignes (pour voir ce qui se passe)",
             "level": 3
           },
           {
-            "id": "1-7-5-docker-compose-orchestrer-plusieurs-services",
-            "title": "1.7.5 — Docker Compose — Orchestrer plusieurs services",
+            "id": "structure-du-projet",
+            "title": "Structure du projet",
             "level": 3
           },
           {
-            "id": "objectif",
-            "title": "Objectif",
+            "id": "lancer-et-tester-en-local",
+            "title": "Lancer et tester en local",
             "level": 3
           },
           {
-            "id": "corrige",
-            "title": "📝 Corrigé",
+            "id": "sous-le-capot-tester-la-logique-sans-serveur",
+            "title": "🔍 Sous le capot : tester la logique sans serveur",
+            "level": 3
+          },
+          {
+            "id": "intuition-ca-marche-sur-ma-machine",
+            "title": "💡 Intuition : « Ça marche sur ma machine ! »",
+            "level": 3
+          },
+          {
+            "id": "conteneurs-vs-machines-virtuelles",
+            "title": "Conteneurs vs machines virtuelles",
+            "level": 3
+          },
+          {
+            "id": "le-vocabulaire",
+            "title": "Le vocabulaire",
+            "level": 3
+          },
+          {
+            "id": "pourquoi-lordre-des-instructions-est-crucial",
+            "title": "Pourquoi l'ordre des instructions est crucial",
+            "level": 3
+          },
+          {
+            "id": "host-0-0-0-0-un-detail-qui-piege-tout-le-monde",
+            "title": "`--host 0.0.0.0` : un détail qui piège tout le monde",
+            "level": 3
+          },
+          {
+            "id": "le-fichier-dockerignore",
+            "title": "Le fichier `.dockerignore`",
+            "level": 3
+          },
+          {
+            "id": "construire-et-lancer",
+            "title": "Construire et lancer",
+            "level": 3
+          },
+          {
+            "id": "bonnes-pratiques",
+            "title": "Bonnes pratiques",
+            "level": 3
+          },
+          {
+            "id": "volumes-faire-persister-des-donnees",
+            "title": "Volumes : faire persister des données",
+            "level": 3
+          },
+          {
+            "id": "variables-denvironnement-configurer-sans-reconstruire",
+            "title": "Variables d'environnement : configurer sans reconstruire",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-7-a-utiliser-une-image-existante",
+            "title": "Exercice 1.7.A — Utiliser une image existante ⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-7-b-dockeriser-un-script",
+            "title": "Exercice 1.7.B — Dockeriser un script ⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "exercice-1-7-c-dockeriser-lapi-du-modele",
+            "title": "Exercice 1.7.C — Dockeriser l'API du modèle ⭐⭐⭐",
+            "level": 3
+          },
+          {
+            "id": "quiz-de-fin-de-chapitre-1-7-12-questions",
+            "title": "🧠 Quiz de fin de Chapitre 1.7 (12 questions)",
+            "level": 3
+          },
+          {
+            "id": "mini-projet-1-7-conteneuriser-le-modele-de-churn",
+            "title": "🎯 MINI-PROJET 1.7 — Conteneuriser le modèle de churn",
+            "level": 3
+          },
+          {
+            "id": "structure-cible-du-depot",
+            "title": "Structure cible du dépôt",
+            "level": 3
+          },
+          {
+            "id": "chapitre-1-0-demarrer",
+            "title": "Chapitre 1.0 — Démarrer",
+            "level": 3
+          },
+          {
+            "id": "chapitre-1-1-python",
+            "title": "Chapitre 1.1 — Python",
+            "level": 3
+          },
+          {
+            "id": "chapitre-1-2-numpy",
+            "title": "Chapitre 1.2 — NumPy",
+            "level": 3
+          },
+          {
+            "id": "chapitre-1-3-pandas",
+            "title": "Chapitre 1.3 — Pandas",
+            "level": 3
+          },
+          {
+            "id": "chapitre-1-4-visualisation",
+            "title": "Chapitre 1.4 — Visualisation",
+            "level": 3
+          },
+          {
+            "id": "chapitre-1-5-scikit-learn",
+            "title": "Chapitre 1.5 — Scikit-learn",
+            "level": 3
+          },
+          {
+            "id": "chapitre-1-6-git",
+            "title": "Chapitre 1.6 — Git",
+            "level": 3
+          },
+          {
+            "id": "chapitre-1-7-docker-et-api",
+            "title": "Chapitre 1.7 — Docker et API",
+            "level": 3
+          },
+          {
+            "id": "python",
+            "title": "Python",
+            "level": 3
+          },
+          {
+            "id": "numpy",
+            "title": "NumPy",
+            "level": 3
+          },
+          {
+            "id": "pandas",
+            "title": "Pandas",
+            "level": 3
+          },
+          {
+            "id": "scikit-learn",
+            "title": "Scikit-learn",
+            "level": 3
+          },
+          {
+            "id": "git",
+            "title": "Git",
+            "level": 3
+          },
+          {
+            "id": "docker",
+            "title": "Docker",
             "level": 3
           }
         ]
       }
     ],
     "sections": [
+      {
+        "id": "intuition",
+        "title": "💡 Intuition",
+        "level": 3
+      },
+      {
+        "id": "les-commandes-de-navigation",
+        "title": "Les commandes de navigation",
+        "level": 3
+      },
+      {
+        "id": "chemins-absolus-et-relatifs",
+        "title": "Chemins absolus et relatifs",
+        "level": 3
+      },
+      {
+        "id": "pieges-frequents",
+        "title": "⚠️ Pièges fréquents",
+        "level": 3
+      },
+      {
+        "id": "intuition-2",
+        "title": "💡 Intuition",
+        "level": 3
+      },
+      {
+        "id": "intuition-3",
+        "title": "💡 Intuition",
+        "level": 3
+      },
+      {
+        "id": "sous-le-capot-que-fait-activer",
+        "title": "🔍 Sous le capot : que fait « activer » ?",
+        "level": 3
+      },
+      {
+        "id": "pieges-frequents-2",
+        "title": "⚠️ Pièges fréquents",
+        "level": 3
+      },
+      {
+        "id": "quiz-de-fin-de-chapitre-1-0",
+        "title": "🧠 Quiz de fin de Chapitre 1.0",
+        "level": 3
+      },
+      {
+        "id": "mini-projet-1-0-ton-atelier-pret-a-lemploi",
+        "title": "🎯 MINI-PROJET 1.0 — Ton atelier prêt à l'emploi",
+        "level": 3
+      },
+      {
+        "id": "1-1-0-ton-premier-programme",
+        "title": "1.1.0 — Ton premier programme",
+        "level": 3
+      },
+      {
+        "id": "lindentation-en-python-elle-fait-partie-de-la-syntaxe",
+        "title": "L'indentation : en Python, elle fait partie de la syntaxe",
+        "level": 3
+      },
+      {
+        "id": "bien-ecrire-du-code-pep-8-lessentiel",
+        "title": "Bien écrire du code : PEP 8 (l'essentiel)",
+        "level": 3
+      },
       {
         "id": "1-1-1-variables-et-types-de-donnees",
         "title": "1.1.1 — Variables et Types de Données",
@@ -552,212 +1338,862 @@ export const CURRICULUM: Record<number, CurriculumData> = {
         "level": 3
       },
       {
-        "id": "exercice-1-1-a-calcul-de-statistiques",
-        "title": "Exercice 1.1.A — Calcul de statistiques",
+        "id": "1-1-10-qualite-du-code-tests-types-et-formatage",
+        "title": "1.1.10 — Qualité du code : tests, types et formatage 🔸",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-1-a-statistiques-a-la-main",
+        "title": "Exercice 1.1.A — Statistiques à la main ⭐⭐",
         "level": 3
       },
       {
         "id": "exercice-1-1-b-analyseur-de-texte",
-        "title": "Exercice 1.1.B — Analyseur de texte",
+        "title": "Exercice 1.1.B — Analyseur de texte ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-1-c-exceptions-et-tracebacks",
+        "title": "Exercice 1.1.C — Exceptions et tracebacks ⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-1-d-du-texte-au-jsonl",
+        "title": "Exercice 1.1.D — Du texte au JSONL ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-1-e-compte-bancaire-poo-exceptions",
+        "title": "Exercice 1.1.E — Compte bancaire (POO + exceptions) ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-1-f-pipeline-de-generateurs",
+        "title": "Exercice 1.1.F — Pipeline de générateurs ⭐⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "quiz-de-fin-de-chapitre-1-1-20-questions",
+        "title": "🧠 Quiz de fin de Chapitre 1.1 (20 questions)",
         "level": 3
       },
       {
         "id": "mini-projet-1-1-systeme-de-suivi-de-formation-ia",
-        "title": "🎯 MINI-PROJET 1.1 — Système de Suivi de Formation IA",
+        "title": "🎯 MINI-PROJET 1.1 — Système de suivi de formation IA",
         "level": 3
       },
       {
-        "id": "1-2-1-creer-des-arrays",
-        "title": "1.2.1 — Créer des Arrays",
+        "id": "intuition-vecteurs-matrices-tenseurs",
+        "title": "💡 Intuition : vecteurs, matrices, tenseurs",
         "level": 3
       },
       {
-        "id": "1-2-2-indexation-et-slicing",
-        "title": "1.2.2 — Indexation et Slicing",
+        "id": "pourquoi-une-liste-python-ne-suffit-pas",
+        "title": "Pourquoi une liste Python ne suffit pas",
         "level": 3
       },
       {
-        "id": "1-2-3-operations-mathematiques",
-        "title": "1.2.3 — Opérations Mathématiques",
+        "id": "sous-le-capot-la-vectorisation",
+        "title": "🔍 Sous le capot : la vectorisation",
         "level": 3
       },
       {
-        "id": "1-2-4-broadcasting-la-magie-de-numpy",
-        "title": "1.2.4 — Broadcasting — La Magie de NumPy",
+        "id": "le-dtype-le-type-des-elements",
+        "title": "Le `dtype` : le type des éléments",
         "level": 3
       },
       {
-        "id": "1-2-5-algebre-lineaire-avec-numpy",
-        "title": "1.2.5 — Algèbre Linéaire avec NumPy",
+        "id": "les-axes-la-notion-qui-trompe-tout-le-monde",
+        "title": "Les axes : la notion qui trompe tout le monde",
         "level": 3
       },
       {
-        "id": "1-2-6-manipulation-de-formes",
-        "title": "1.2.6 — Manipulation de Formes",
+        "id": "vue-ou-copie-un-piege-de-memoire",
+        "title": "Vue ou copie ? Un piège de mémoire",
         "level": 3
       },
       {
-        "id": "1-2-7-nombres-aleatoires-et-reproductibilite",
-        "title": "1.2.7 — Nombres Aléatoires et Reproductibilité",
+        "id": "le-masque-booleen-filtrer-avec-une-condition",
+        "title": "Le masque booléen : filtrer avec une condition",
         "level": 3
       },
       {
-        "id": "exercice-1-2-a-regression-lineaire-from-scratch-avec-numpy",
-        "title": "Exercice 1.2.A — Régression Linéaire from Scratch avec NumPy",
+        "id": "np-where-argsort-argmax-unique",
+        "title": "`np.where`, `argsort`, `argmax`, `unique`",
         "level": 3
       },
       {
-        "id": "1-3-1-creer-et-charger-des-dataframes",
-        "title": "1.3.1 — Créer et Charger des DataFrames",
+        "id": "operations-terme-a-terme",
+        "title": "Opérations terme à terme",
         "level": 3
       },
       {
-        "id": "1-3-2-exploration-des-donnees-eda",
-        "title": "1.3.2 — Exploration des Données (EDA)",
+        "id": "statistiques-et-agregations",
+        "title": "Statistiques et agrégations",
         "level": 3
       },
       {
-        "id": "1-3-3-selection-et-filtrage",
-        "title": "1.3.3 — Sélection et Filtrage",
+        "id": "produit-terme-a-terme-vs-produit-matriciel",
+        "title": "Produit terme à terme vs produit matriciel",
         "level": 3
       },
       {
-        "id": "1-3-4-nettoyage-des-donnees",
-        "title": "1.3.4 — Nettoyage des Données",
+        "id": "deux-fonctions-de-ml-ecrites-en-numpy",
+        "title": "Deux fonctions de ML écrites en NumPy",
         "level": 3
       },
       {
-        "id": "1-3-5-transformation-et-ingenierie-de-features",
-        "title": "1.3.5 — Transformation et Ingénierie de Features",
+        "id": "intuition-7",
+        "title": "💡 Intuition",
         "level": 3
       },
       {
-        "id": "1-3-6-merge-et-join-fusionner-des-dataframes",
-        "title": "1.3.6 — Merge et Join (Fusionner des DataFrames)",
+        "id": "les-regles-a-lire-de-droite-a-gauche",
+        "title": "Les règles (à lire de droite à gauche)",
         "level": 3
       },
       {
-        "id": "1-3-7-pipeline-complet-analyse-du-dataset-titanic",
-        "title": "1.3.7 — Pipeline Complet : Analyse du Dataset Titanic",
+        "id": "application-normaliser-standardiser-des-donnees",
+        "title": "Application : normaliser (standardiser) des données",
         "level": 3
       },
       {
-        "id": "exercice-1-3-a-analyse-dun-dataset-ia",
-        "title": "Exercice 1.3.A — Analyse d'un Dataset IA",
+        "id": "exercice-1-2-a-vectoriser-trois-boucles",
+        "title": "Exercice 1.2.A — Vectoriser trois boucles ⭐",
         "level": 3
       },
       {
-        "id": "1-4-1-matplotlib-la-base",
-        "title": "1.4.1 — Matplotlib : La Base",
+        "id": "exercice-1-2-b-standardisation-a-la-main",
+        "title": "Exercice 1.2.B — Standardisation à la main ⭐⭐",
         "level": 3
       },
       {
-        "id": "1-4-2-seaborn-la-visualisation-statistique",
-        "title": "1.4.2 — Seaborn : La Visualisation Statistique",
+        "id": "exercice-1-2-c-k-plus-proches-voisins-from-scratch",
+        "title": "Exercice 1.2.C — k plus proches voisins *from scratch* ⭐⭐⭐",
         "level": 3
       },
       {
-        "id": "1-4-3-visualisations-specifiques-a-lia",
-        "title": "1.4.3 — Visualisations Spécifiques à l'IA",
+        "id": "exercice-1-2-d-regression-lineaire-multi-variables",
+        "title": "Exercice 1.2.D — Régression linéaire multi-variables ⭐⭐",
         "level": 3
       },
       {
-        "id": "exercice-1-4-a-dashboard-de-suivi-dentrainement",
-        "title": "Exercice 1.4.A — Dashboard de Suivi d'Entraînement",
+        "id": "quiz-de-fin-de-chapitre-1-2-15-questions",
+        "title": "🧠 Quiz de fin de Chapitre 1.2 (15 questions)",
         "level": 3
       },
       {
-        "id": "exercice-1-4-b-comparaison-visuelle-de-modeles-seaborn",
-        "title": "Exercice 1.4.B — Comparaison Visuelle de Modèles (Seaborn)",
+        "id": "mini-projet-1-2-un-moteur-de-recherche-semantique-en-numpy",
+        "title": "🎯 MINI-PROJET 1.2 — Un moteur de recherche sémantique en NumPy",
         "level": 3
       },
       {
-        "id": "1-5-1-le-pipeline-ml-complet",
-        "title": "1.5.1 — Le Pipeline ML Complet",
+        "id": "intuition-8",
+        "title": "💡 Intuition",
         "level": 3
       },
       {
-        "id": "1-5-2-pipeline-scikit-learn-production-ready",
-        "title": "1.5.2 — Pipeline Scikit-learn (Production Ready)",
+        "id": "la-demarche-dexploration-eda",
+        "title": "La démarche d'exploration (EDA)",
         "level": 3
       },
       {
-        "id": "1-5-3-comprendre-loverfitting-et-le-underfitting",
-        "title": "1.5.3 — Comprendre l'Overfitting et le Underfitting",
+        "id": "le-premier-diagnostic-en-5-lignes",
+        "title": "Le premier diagnostic en 5 lignes",
         "level": 3
       },
       {
-        "id": "projet-final-module-1-5-prediction-de-churn-bancaire",
-        "title": "🎯 PROJET FINAL MODULE 1.5 — Prédiction de Churn Bancaire",
+        "id": "loc-par-etiquette-et-iloc-par-position",
+        "title": "`loc` (par étiquette) et `iloc` (par position)",
         "level": 3
       },
       {
-        "id": "1-6-1-concepts-fondamentaux",
-        "title": "1.6.1 — Concepts Fondamentaux",
+        "id": "filtrer-avec-des-conditions-masques-booleens",
+        "title": "Filtrer avec des conditions (masques booléens)",
         "level": 3
       },
       {
-        "id": "1-6-2-commandes-essentielles",
-        "title": "1.6.2 — Commandes Essentielles",
+        "id": "le-piege-settingwithcopywarning-et-le-copy-on-write",
+        "title": "Le piège : `SettingWithCopyWarning` et le Copy-on-Write",
         "level": 3
       },
       {
-        "id": "1-6-3-conventions-de-commit",
-        "title": "1.6.3 — Conventions de Commit",
+        "id": "les-valeurs-manquantes",
+        "title": "Les valeurs manquantes",
         "level": 3
       },
       {
-        "id": "1-6-4-le-gitignore-ce-quon-ne-versionne-pas",
-        "title": "1.6.4 — Le .gitignore — Ce qu'on ne versionne PAS",
+        "id": "les-doublons",
+        "title": "Les doublons",
         "level": 3
       },
       {
-        "id": "1-6-5-workflow-professionnel",
-        "title": "1.6.5 — Workflow Professionnel",
+        "id": "corriger-les-types",
+        "title": "Corriger les types",
         "level": 3
       },
       {
-        "id": "exercice-1-6-a-scenario-de-collaboration",
-        "title": "Exercice 1.6.A — Scénario de Collaboration",
+        "id": "texte-sale-et-dates",
+        "title": "Texte sale et dates",
         "level": 3
       },
       {
-        "id": "1-7-1-concepts-cles",
-        "title": "1.7.1 — Concepts Clés",
+        "id": "les-valeurs-aberrantes-outliers",
+        "title": "Les valeurs aberrantes (outliers)",
         "level": 3
       },
       {
-        "id": "1-7-2-ton-premier-dockerfile",
-        "title": "1.7.2 — Ton Premier Dockerfile",
+        "id": "appliquer-une-fonction-la-hierarchie-des-performances",
+        "title": "Appliquer une fonction : la hiérarchie des performances",
         "level": 3
       },
       {
-        "id": "1-7-3-lapi-fastapi-a-dockeriser",
-        "title": "1.7.3 — L'API FastAPI à Dockeriser",
+        "id": "groupby-la-logique-decouper-appliquer-combiner",
+        "title": "`groupby` : la logique « découper – appliquer – combiner »",
         "level": 3
       },
       {
-        "id": "1-7-4-construire-et-lancer-le-conteneur",
-        "title": "1.7.4 — Construire et Lancer le Conteneur",
+        "id": "tableaux-croises-pivot-table-et-crosstab",
+        "title": "Tableaux croisés : `pivot_table` et `crosstab`",
         "level": 3
       },
       {
-        "id": "1-7-5-docker-compose-orchestrer-plusieurs-services",
-        "title": "1.7.5 — Docker Compose — Orchestrer plusieurs services",
+        "id": "decouper-une-variable-numerique-en-classes",
+        "title": "Découper une variable numérique en classes",
         "level": 3
       },
       {
-        "id": "objectif",
-        "title": "Objectif",
+        "id": "etapes-1-a-5-inspecter",
+        "title": "Étapes 1 à 5 — Inspecter",
         "level": 3
       },
       {
-        "id": "corrige",
-        "title": "📝 Corrigé",
+        "id": "etapes-6-a-8-distributions",
+        "title": "Étapes 6 à 8 — Distributions",
+        "level": 3
+      },
+      {
+        "id": "etape-9-relations-avec-la-cible-survived",
+        "title": "Étape 9 — Relations avec la cible (`survived`)",
+        "level": 3
+      },
+      {
+        "id": "etape-10-interpreter-avec-honnetete",
+        "title": "Étape 10 — Interpréter avec honnêteté",
+        "level": 3
+      },
+      {
+        "id": "series-temporelles-resample-et-rolling",
+        "title": "Séries temporelles : `resample` et `rolling`",
+        "level": 3
+      },
+      {
+        "id": "gros-fichiers-lire-par-morceaux-et-surveiller-la-memoire",
+        "title": "Gros fichiers : lire par morceaux et surveiller la mémoire",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-3-a-analyse-des-ventes",
+        "title": "Exercice 1.3.A — Analyse des ventes ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-3-b-nettoyage-guide",
+        "title": "Exercice 1.3.B — Nettoyage guidé ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-3-c-jointures",
+        "title": "Exercice 1.3.C — Jointures ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-3-d-vectorisation-mesuree",
+        "title": "Exercice 1.3.D — Vectorisation mesurée ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-3-e-detecter-les-valeurs-aberrantes",
+        "title": "Exercice 1.3.E — Détecter les valeurs aberrantes ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "quiz-de-fin-de-chapitre-1-3-15-questions",
+        "title": "🧠 Quiz de fin de Chapitre 1.3 (15 questions)",
+        "level": 3
+      },
+      {
+        "id": "mini-projet-1-3-rapport-de-qualite-des-donnees",
+        "title": "🎯 MINI-PROJET 1.3 — Rapport de qualité des données",
+        "level": 3
+      },
+      {
+        "id": "intuition-9",
+        "title": "💡 Intuition",
+        "level": 3
+      },
+      {
+        "id": "quel-graphique-pour-quelle-question",
+        "title": "Quel graphique pour quelle question ?",
+        "level": 3
+      },
+      {
+        "id": "anatomie-dune-figure-matplotlib",
+        "title": "Anatomie d'une figure Matplotlib",
+        "level": 3
+      },
+      {
+        "id": "regles-pour-un-graphique-honnete-et-lisible",
+        "title": "Règles pour un graphique honnête et lisible",
+        "level": 3
+      },
+      {
+        "id": "courbe",
+        "title": "Courbe",
+        "level": 3
+      },
+      {
+        "id": "nuage-de-points-scatter",
+        "title": "Nuage de points (*scatter*)",
+        "level": 3
+      },
+      {
+        "id": "barres",
+        "title": "Barres",
+        "level": 3
+      },
+      {
+        "id": "histogramme-la-distribution-dune-variable",
+        "title": "Histogramme : la distribution d'une variable",
+        "level": 3
+      },
+      {
+        "id": "boxplot-boite-a-moustaches",
+        "title": "Boxplot (boîte à moustaches)",
+        "level": 3
+      },
+      {
+        "id": "carte-de-chaleur-heatmap-et-correlation",
+        "title": "Carte de chaleur (*heatmap*) et corrélation",
+        "level": 3
+      },
+      {
+        "id": "plusieurs-graphiques-subplots-un-tableau-de-bord",
+        "title": "Plusieurs graphiques : `subplots` (un « tableau de bord »)",
+        "level": 3
+      },
+      {
+        "id": "le-format-tidy",
+        "title": "Le format « tidy »",
+        "level": 3
+      },
+      {
+        "id": "distributions",
+        "title": "Distributions",
+        "level": 3
+      },
+      {
+        "id": "comparer-des-categories-et-relations",
+        "title": "Comparer des catégories et relations",
+        "level": 3
+      },
+      {
+        "id": "correlations",
+        "title": "Corrélations",
+        "level": 3
+      },
+      {
+        "id": "axes-level-vs-figure-level-comprendre-pour-eviter-les-surprises",
+        "title": "Axes-level vs figure-level : comprendre pour éviter les surprises",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-4-a-reproduire-un-graphique",
+        "title": "Exercice 1.4.A — Reproduire un graphique ⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-4-b-corriger-un-mauvais-graphique",
+        "title": "Exercice 1.4.B — Corriger un mauvais graphique ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-4-c-dashboard-danalyse",
+        "title": "Exercice 1.4.C — Dashboard d'analyse ⭐⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "quiz-de-fin-de-chapitre-1-4-12-questions",
+        "title": "🧠 Quiz de fin de Chapitre 1.4 (12 questions)",
+        "level": 3
+      },
+      {
+        "id": "mini-projet-1-4-un-generateur-de-rapport-eda-automatique",
+        "title": "🎯 MINI-PROJET 1.4 — Un générateur de rapport EDA automatique",
+        "level": 3
+      },
+      {
+        "id": "intuition-10",
+        "title": "💡 Intuition",
+        "level": 3
+      },
+      {
+        "id": "le-vocabulaire-indispensable",
+        "title": "Le vocabulaire indispensable",
+        "level": 3
+      },
+      {
+        "id": "les-grandes-familles-de-problemes",
+        "title": "Les grandes familles de problèmes",
+        "level": 3
+      },
+      {
+        "id": "ce-qui-compte-vraiment-la-generalisation",
+        "title": "Ce qui compte vraiment : la généralisation",
+        "level": 3
+      },
+      {
+        "id": "lapi-unifiee-trois-types-dobjets",
+        "title": "L'API unifiée : trois types d'objets",
+        "level": 3
+      },
+      {
+        "id": "premier-modele-predire-levolution-dune-maladie-regression",
+        "title": "Premier modèle : prédire l'évolution d'une maladie (régression)",
+        "level": 3
+      },
+      {
+        "id": "les-metriques-de-regression-expliquees",
+        "title": "Les métriques de régression expliquées",
+        "level": 3
+      },
+      {
+        "id": "un-jeu-de-donnees-reel-le-diagnostic-du-cancer-du-sein",
+        "title": "Un jeu de données réel : le diagnostic du cancer du sein",
+        "level": 3
+      },
+      {
+        "id": "la-matrice-de-confusion-la-base-de-toutes-les-metriques",
+        "title": "La matrice de confusion : la base de toutes les métriques",
+        "level": 3
+      },
+      {
+        "id": "les-metriques-construites-a-partir-de-la-matrice",
+        "title": "Les métriques, construites à partir de la matrice",
+        "level": 3
+      },
+      {
+        "id": "le-paradoxe-de-laccuracy-quand-90-ne-veut-rien-dire",
+        "title": "Le paradoxe de l'accuracy : quand 90 % ne veut rien dire",
+        "level": 3
+      },
+      {
+        "id": "entrainer-de-vrais-classifieurs-sur-le-cancer",
+        "title": "Entraîner de vrais classifieurs (sur le cancer)",
+        "level": 3
+      },
+      {
+        "id": "probabilites-et-seuil-de-decision",
+        "title": "Probabilités et seuil de décision",
+        "level": 3
+      },
+      {
+        "id": "matrice-de-confusion-et-courbe-roc-visualisations-devaluation",
+        "title": "Matrice de confusion et courbe ROC (visualisations d'évaluation)",
+        "level": 3
+      },
+      {
+        "id": "comprendre-un-peu-chaque-modele-intuition-uniquement",
+        "title": "Comprendre un peu chaque modèle (intuition uniquement)",
+        "level": 3
+      },
+      {
+        "id": "le-probleme-dune-seule-decoupe",
+        "title": "Le problème d'une seule découpe",
+        "level": 3
+      },
+      {
+        "id": "les-trois-jeux-de-donnees-et-la-regle-dor",
+        "title": "Les trois jeux de données, et la règle d'or",
+        "level": 3
+      },
+      {
+        "id": "la-fuite-de-donnees-data-leakage-demonstration-chiffree",
+        "title": "La fuite de données (*data leakage*) : démonstration chiffrée",
+        "level": 3
+      },
+      {
+        "id": "pourquoi-pretraiter",
+        "title": "Pourquoi prétraiter ?",
+        "level": 3
+      },
+      {
+        "id": "encoder-les-variables-categorielles",
+        "title": "Encoder les variables catégorielles",
+        "level": 3
+      },
+      {
+        "id": "le-columntransformer-un-traitement-par-type-de-colonne",
+        "title": "Le `ColumnTransformer` : un traitement par type de colonne",
+        "level": 3
+      },
+      {
+        "id": "ce-que-garantit-un-pipeline",
+        "title": "Ce que garantit un `Pipeline`",
+        "level": 3
+      },
+      {
+        "id": "intuition-letudiant-et-les-annales",
+        "title": "💡 Intuition : l'étudiant et les annales",
+        "level": 3
+      },
+      {
+        "id": "mesurer-la-courbe-de-validation",
+        "title": "Mesurer : la courbe de validation",
+        "level": 3
+      },
+      {
+        "id": "gridsearchcv-chercher-les-meilleurs-hyperparametres",
+        "title": "`GridSearchCV` : chercher les meilleurs hyperparamètres",
+        "level": 3
+      },
+      {
+        "id": "les-methodes-densemble-lunion-fait-la-force-intuition",
+        "title": "Les méthodes d'ensemble : l'union fait la force (intuition)",
+        "level": 3
+      },
+      {
+        "id": "importance-des-variables-par-permutation",
+        "title": "Importance des variables par permutation",
+        "level": 3
+      },
+      {
+        "id": "sauvegarder-et-recharger-un-modele-joblib",
+        "title": "Sauvegarder et recharger un modèle : `joblib`",
+        "level": 3
+      },
+      {
+        "id": "ethique-les-variables-sensibles",
+        "title": "Éthique : les variables sensibles",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-5-a-regression-complete",
+        "title": "Exercice 1.5.A — Régression complète ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-5-b-metriques-a-la-main",
+        "title": "Exercice 1.5.B — Métriques à la main ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-5-c-trouver-et-corriger-les-fuites",
+        "title": "Exercice 1.5.C — Trouver et corriger les fuites ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-5-d-comparer-des-modeles-proprement",
+        "title": "Exercice 1.5.D — Comparer des modèles proprement ⭐⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "quiz-de-fin-de-chapitre-1-5-15-questions",
+        "title": "🧠 Quiz de fin de Chapitre 1.5 (15 questions)",
+        "level": 3
+      },
+      {
+        "id": "mini-projet-1-5-predire-le-depart-des-clients-churn",
+        "title": "🎯 MINI-PROJET 1.5 — Prédire le départ des clients (churn)",
+        "level": 3
+      },
+      {
+        "id": "intuition-11",
+        "title": "💡 Intuition",
+        "level": 3
+      },
+      {
+        "id": "les-quatre-zones-de-git",
+        "title": "Les quatre zones de Git",
+        "level": 3
+      },
+      {
+        "id": "quest-ce-quun-commit",
+        "title": "Qu'est-ce qu'un commit ?",
+        "level": 3
+      },
+      {
+        "id": "ecrire-de-bons-messages-de-commit",
+        "title": "Écrire de bons messages de commit",
+        "level": 3
+      },
+      {
+        "id": "le-filet-de-securite-git-reflog",
+        "title": "Le filet de sécurité : `git reflog`",
+        "level": 3
+      },
+      {
+        "id": "les-secrets-cles-dapi-mots-de-passe",
+        "title": "Les secrets : clés d'API, mots de passe",
+        "level": 3
+      },
+      {
+        "id": "jai-commite-un-secret-que-faire",
+        "title": "🚨 « J'ai commité un secret ! » — que faire",
+        "level": 3
+      },
+      {
+        "id": "notebooks-et-gros-fichiers",
+        "title": "Notebooks et gros fichiers",
+        "level": 3
+      },
+      {
+        "id": "intuition-12",
+        "title": "💡 Intuition",
+        "level": 3
+      },
+      {
+        "id": "deux-types-de-fusion",
+        "title": "Deux types de fusion",
+        "level": 3
+      },
+      {
+        "id": "mettre-en-place-la-connexion",
+        "title": "Mettre en place la connexion",
+        "level": 3
+      },
+      {
+        "id": "publier-un-depot-existant",
+        "title": "Publier un dépôt existant",
+        "level": 3
+      },
+      {
+        "id": "synchroniser-fetch-pull-push",
+        "title": "Synchroniser : `fetch`, `pull`, `push`",
+        "level": 3
+      },
+      {
+        "id": "le-workflow-collaboratif-la-pull-request",
+        "title": "Le workflow collaboratif : la Pull Request",
+        "level": 3
+      },
+      {
+        "id": "autres-elements-github-a-connaitre",
+        "title": "Autres éléments GitHub à connaître",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-6-a-workflow-solo-complet",
+        "title": "Exercice 1.6.A — Workflow solo complet ⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-6-b-conflit-a-resoudre",
+        "title": "Exercice 1.6.B — Conflit à résoudre ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-6-c-sauvetage-5-situations",
+        "title": "Exercice 1.6.C — Sauvetage : 5 situations ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "quiz-de-fin-de-chapitre-1-6-12-questions",
+        "title": "🧠 Quiz de fin de Chapitre 1.6 (12 questions)",
+        "level": 3
+      },
+      {
+        "id": "mini-projet-1-6-publier-ton-projet-sur-github-comme-un-pro",
+        "title": "🎯 MINI-PROJET 1.6 — Publier ton projet sur GitHub comme un pro",
+        "level": 3
+      },
+      {
+        "id": "intuition-le-restaurant",
+        "title": "💡 Intuition : le restaurant",
+        "level": 3
+      },
+      {
+        "id": "les-elements-dune-requete",
+        "title": "Les éléments d'une requête",
+        "level": 3
+      },
+      {
+        "id": "les-codes-de-statut-de-la-reponse",
+        "title": "Les codes de statut de la réponse",
+        "level": 3
+      },
+      {
+        "id": "une-mini-api-en-25-lignes-pour-voir-ce-qui-se-passe",
+        "title": "Une mini-API en 25 lignes (pour voir ce qui se passe)",
+        "level": 3
+      },
+      {
+        "id": "structure-du-projet",
+        "title": "Structure du projet",
+        "level": 3
+      },
+      {
+        "id": "lancer-et-tester-en-local",
+        "title": "Lancer et tester en local",
+        "level": 3
+      },
+      {
+        "id": "sous-le-capot-tester-la-logique-sans-serveur",
+        "title": "🔍 Sous le capot : tester la logique sans serveur",
+        "level": 3
+      },
+      {
+        "id": "intuition-ca-marche-sur-ma-machine",
+        "title": "💡 Intuition : « Ça marche sur ma machine ! »",
+        "level": 3
+      },
+      {
+        "id": "conteneurs-vs-machines-virtuelles",
+        "title": "Conteneurs vs machines virtuelles",
+        "level": 3
+      },
+      {
+        "id": "le-vocabulaire",
+        "title": "Le vocabulaire",
+        "level": 3
+      },
+      {
+        "id": "pourquoi-lordre-des-instructions-est-crucial",
+        "title": "Pourquoi l'ordre des instructions est crucial",
+        "level": 3
+      },
+      {
+        "id": "host-0-0-0-0-un-detail-qui-piege-tout-le-monde",
+        "title": "`--host 0.0.0.0` : un détail qui piège tout le monde",
+        "level": 3
+      },
+      {
+        "id": "le-fichier-dockerignore",
+        "title": "Le fichier `.dockerignore`",
+        "level": 3
+      },
+      {
+        "id": "construire-et-lancer",
+        "title": "Construire et lancer",
+        "level": 3
+      },
+      {
+        "id": "bonnes-pratiques",
+        "title": "Bonnes pratiques",
+        "level": 3
+      },
+      {
+        "id": "volumes-faire-persister-des-donnees",
+        "title": "Volumes : faire persister des données",
+        "level": 3
+      },
+      {
+        "id": "variables-denvironnement-configurer-sans-reconstruire",
+        "title": "Variables d'environnement : configurer sans reconstruire",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-7-a-utiliser-une-image-existante",
+        "title": "Exercice 1.7.A — Utiliser une image existante ⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-7-b-dockeriser-un-script",
+        "title": "Exercice 1.7.B — Dockeriser un script ⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "exercice-1-7-c-dockeriser-lapi-du-modele",
+        "title": "Exercice 1.7.C — Dockeriser l'API du modèle ⭐⭐⭐",
+        "level": 3
+      },
+      {
+        "id": "quiz-de-fin-de-chapitre-1-7-12-questions",
+        "title": "🧠 Quiz de fin de Chapitre 1.7 (12 questions)",
+        "level": 3
+      },
+      {
+        "id": "mini-projet-1-7-conteneuriser-le-modele-de-churn",
+        "title": "🎯 MINI-PROJET 1.7 — Conteneuriser le modèle de churn",
+        "level": 3
+      },
+      {
+        "id": "structure-cible-du-depot",
+        "title": "Structure cible du dépôt",
+        "level": 3
+      },
+      {
+        "id": "chapitre-1-0-demarrer",
+        "title": "Chapitre 1.0 — Démarrer",
+        "level": 3
+      },
+      {
+        "id": "chapitre-1-1-python",
+        "title": "Chapitre 1.1 — Python",
+        "level": 3
+      },
+      {
+        "id": "chapitre-1-2-numpy",
+        "title": "Chapitre 1.2 — NumPy",
+        "level": 3
+      },
+      {
+        "id": "chapitre-1-3-pandas",
+        "title": "Chapitre 1.3 — Pandas",
+        "level": 3
+      },
+      {
+        "id": "chapitre-1-4-visualisation",
+        "title": "Chapitre 1.4 — Visualisation",
+        "level": 3
+      },
+      {
+        "id": "chapitre-1-5-scikit-learn",
+        "title": "Chapitre 1.5 — Scikit-learn",
+        "level": 3
+      },
+      {
+        "id": "chapitre-1-6-git",
+        "title": "Chapitre 1.6 — Git",
+        "level": 3
+      },
+      {
+        "id": "chapitre-1-7-docker-et-api",
+        "title": "Chapitre 1.7 — Docker et API",
+        "level": 3
+      },
+      {
+        "id": "python",
+        "title": "Python",
+        "level": 3
+      },
+      {
+        "id": "numpy",
+        "title": "NumPy",
+        "level": 3
+      },
+      {
+        "id": "pandas",
+        "title": "Pandas",
+        "level": 3
+      },
+      {
+        "id": "scikit-learn",
+        "title": "Scikit-learn",
+        "level": 3
+      },
+      {
+        "id": "git",
+        "title": "Git",
+        "level": 3
+      },
+      {
+        "id": "docker",
+        "title": "Docker",
         "level": 3
       }
     ],
-    "readingMinutes": 15
+    "readingMinutes": 146
   },
   2: {
     "moduleId": 2,

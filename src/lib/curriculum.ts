@@ -99,8 +99,14 @@ export function collectHeadings(md: string): Heading[] {
   const heads: Heading[] = [];
 
   let chapterIndex = -1;
+  let inCode = false;
 
   for (const line of lines) {
+    if (/^```/.test(line)) {
+      inCode = !inCode;
+      continue;
+    }
+    if (inCode) continue;
     const match = HEADING_RE.exec(line);
     if (!match) continue;
     const text = match[2].trim();
@@ -231,13 +237,19 @@ export function sectionBlocks(md: string): SectionBlock[] {
   const level3: Array<{ heading: Heading; startLine: number }> = [];
   let headingIdx = 0;
 
+  let inCode = false;
   lines.forEach((line, ln) => {
+    if (/^```/.test(line)) {
+      inCode = !inCode;
+      return;
+    }
+    if (inCode) return;
     const match = HEADING_RE.exec(line);
     if (!match) return;
     if (isSeparatorLine(line)) return;
     const heading = headings[headingIdx];
     headingIdx += 1;
-    if (heading.level === 3) level3.push({ heading, startLine: ln });
+    if (heading && heading.level === 3) level3.push({ heading, startLine: ln });
   });
 
   return level3.map((s, i) => {

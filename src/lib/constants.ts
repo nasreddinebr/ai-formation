@@ -14,7 +14,6 @@ export const NAV_LINKS = [
   { label: "Accueil", href: "/" },
   { label: "Modules", href: "/#modules" },
   { label: "Profil", href: "/profile" },
-  { label: "Connexion", href: "/auth/signin" },
 ] as const;
 
 export const DIFFICULTY_LABELS: Record<string, string> = {

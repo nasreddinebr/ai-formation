@@ -1,0 +1,25 @@
+# Python build artefacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local environment / secrets — never baked into the image
+.env
+.env.*
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Tests are not needed in the production image
+tests/

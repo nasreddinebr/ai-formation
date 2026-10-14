@@ -1,4 +1,5 @@
-﻿import { ProgressCard } from "@/components/profile/ProgressCard";
+﻿import { AccountPanel } from "@/components/profile/AccountPanel";
+import { ProgressCard } from "@/components/profile/ProgressCard";
 import { SectionChecklist } from "@/components/profile/SectionChecklist";
 
 export const metadata = {
@@ -19,6 +20,10 @@ export default function ProfilePage() {
         Suivez vos sections terminées et reprenez chaque étape du parcours là où
         vous en êtes resté.
       </p>
+
+      <section className="mb-10">
+        <AccountPanel />
+      </section>
 
       <div className="grid gap-8 lg:grid-cols-2">
         <ProgressCard />

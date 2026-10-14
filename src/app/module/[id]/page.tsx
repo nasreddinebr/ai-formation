@@ -7,6 +7,7 @@ import { DIFFICULTY_LABELS, DIFFICULTY_COLORS } from "@/lib/constants";
 import { ChapterContent } from "@/components/chapter/ChapterContent";
 import { TableOfContents } from "@/components/chapter/TableOfContents";
 import { SaveBookmark } from "@/components/chapter/SaveBookmark";
+import { ProgressTracker } from "@/components/chapter/ProgressTracker";
 import { ReadingTime } from "@/components/chapter/ReadingTime";
 import { BackToTop } from "@/components/chapter/BackToTop";
 
@@ -83,6 +84,13 @@ export default async function ModulePage({ params }: PageProps) {
       </header>
 
       <SaveBookmark moduleId={mod.id} moduleTitle={mod.title} />
+      {chapterData && (
+        <ProgressTracker
+          moduleId={mod.id}
+          moduleTitle={mod.title}
+          chapters={chapterData.data.chapters}
+        />
+      )}
 
       <div className="grid gap-10 lg:grid-cols-[15rem_1fr]">
         <aside className="hidden lg:block">

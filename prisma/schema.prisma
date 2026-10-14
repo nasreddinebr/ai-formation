@@ -7,33 +7,59 @@ datasource db {
   provider = "postgresql"
 }
 
-enum UserRole {
-  LEARNER
-  ADMIN
+/// Role catalog for the hierarchical RBAC system.
+///
+/// `level` encodes the inheritance hierarchy: a role inherits every permission
+/// granted to roles with a strictly lower level. Parallel roles (same level)
+/// never inherit from each other.
+///
+///   id 1 ADMIN       level 3  (highest — inherits everything)
+///   id 2 CONTRIBUTOR level 2
+///   id 3 MODERATOR   level 2
+///   id 4 USER        level 1  (default for registered accounts)
+///   id 5 ANONYMOUS   level 0  (public / unauthenticated)
+model Role {
+  id          Int      @id
+  name        String   @unique
+  level       Int      @default(0)
+  description String?
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  users User[]
+
+  @@map("roles")
 }
 
 model User {
-  id        String   @id @default(cuid())
-  email     String   @unique
-  name      String?
-  role      UserRole @default(LEARNER)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  passwordHash String   @map("password_hash")
+  firstName    String?  @map("first_name")
+  lastName     String?  @map("last_name")
+  phone        String?
+  roleId       Int      @default(4) @map("role_id")
+  isActive     Boolean  @default(true) @map("is_active")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
 
-  bookmarks Bookmark[]
-  progress  Progress[]
+  role          Role           @relation(fields: [roleId], references: [id])
+  progress      Progress[]
+  bookmarks     Bookmark[]
+  userProgress  UserProgress[]
+  refreshTokens RefreshToken[]
 
+  @@index([roleId])
   @@map("users")
 }
 
 model Progress {
-  id        String   @id @default(cuid())
-  userId    String
-  moduleId  Int
-  sectionId String
+  id        Int      @id @default(autoincrement())
+  userId    Int      @map("user_id")
+  moduleId  Int      @map("module_id")
+  sectionId String   @map("section_id")
   completed Boolean  @default(true)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -44,14 +70,51 @@ model Progress {
 }
 
 model Bookmark {
-  id        String   @id @default(cuid())
-  userId    String
-  moduleId  Int
-  createdAt DateTime @default(now())
+  id        Int      @id @default(autoincrement())
+  userId    Int      @map("user_id")
+  moduleId  Int      @map("module_id")
+  createdAt DateTime @default(now()) @map("created_at")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, moduleId])
   @@index([userId])
   @@map("bookmarks")
+}
+
+/// Training progress: one row per (user, course), storing the last visited
+/// chapter so the dashboard can deep-link straight back into the course.
+model UserProgress {
+  id            Int      @id @default(autoincrement())
+  userId        Int      @map("user_id")
+  courseId      Int      @map("course_id")
+  courseTitle   String   @map("course_title")
+  chapterId     String   @map("chapter_id")
+  chapterTitle  String   @map("chapter_title")
+  chapterUrl    String   @map("chapter_url")
+  lastVisitedAt DateTime @default(now()) @map("last_visited_at")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, courseId])
+  @@index([userId])
+  @@map("user_progress")
+}
+
+/// Server-side refresh sessions. Only the SHA-256 hash of the opaque token is
+/// persisted; the raw value lives exclusively in the HttpOnly cookie.
+model RefreshToken {
+  id        Int      @id @default(autoincrement())
+  userId    Int      @map("user_id")
+  tokenHash String   @unique @map("token_hash")
+  expiresAt DateTime @map("expires_at")
+  revoked   Boolean  @default(false)
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("refresh_tokens")
 }

@@ -1,7 +1,7 @@
 ﻿# DOCUMENTATION.md — AI Formation Website
 
-> Last updated: September 15, 2026
-> Version: 2.0.0
+> Last updated: October 14, 2026
+> Version: 3.0.0
 
 ---
 
@@ -23,8 +23,10 @@
 ### Prerequisites
 
 - **Node.js** 24.x LTS (Krypton) — [Download](https://nodejs.org/)
-- **npm** 10.x or higher
+- **npm** 10.x or higher (or **pnpm** 11)
 - **Git** — [Download](https://git-scm.com/)
+- **Docker Desktop** — recommended (runs web + backend + PostgreSQL)
+- **Python** 3.14 (only for running the FastAPI backend outside Docker)
 
 ### Quick Start
 
@@ -52,6 +54,11 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm run lint` | Run ESLint |
 | `npm run build:search` | Re-run the content generator only |
 | `npx tsc --noEmit` | TypeScript type check |
+| `pnpm backend:dev` | Run the FastAPI backend locally (uvicorn --reload) |
+| `pnpm backend:test` | Run backend tests (pytest, SQLite in-memory) |
+| `pnpm backend:lint` | Lint the backend (ruff check) |
+| `pnpm backend:format` | Format the backend (ruff format) |
+| `pnpm docker:backend-logs` | Tail the backend container logs |
 
 ### Project Structure
 
@@ -61,11 +68,24 @@ ai-formation/
 │   ├── formation-ia-complete.md    # module-0 inline anchor
 │   ├── Module_01..10_*.md          # 10 technical modules
 │   └── Section_A/B/C_*.md          # 3 transversal sections
+├── backend/                  # FastAPI back-office (layered architecture)
+│   ├── app/
+│   │   ├── main.py           # create_app: middleware + routers + lifespan (seed/schema)
+│   │   ├── core/             # config, constants, errors, security (Argon2id, JWT)
+│   │   ├── db/               # base, session, models (mirror of prisma/schema.prisma), seed
+│   │   ├── rbac/             # role levels + permission inheritance
+│   │   ├── schemas/          # Pydantic v2 (auth, user, progress)
+│   │   ├── repositories/     # data access per aggregate
+│   │   ├── services/         # auth, profile, progress, admin
+│   │   ├── api/              # routes (auth, profile, progress, admin) + cookies/deps
+│   │   └── middleware/       # csrf + error handling
+│   └── tests/                # pytest suite
+├── prisma/                   # schema.prisma + migrations (schema source of truth)
 ├── src/
-│   ├── app/                  # layout, homepage, module/[id], profile, auth
-│   ├── components/           # layout, home, chapter, search, profile
+│   ├── app/                  # layout, homepage, module/[id], backend proxy, profile, auth, global-error
+│   ├── components/           # layout, home, chapter, search, providers, profile
 │   ├── data/                 # modules.ts (meta) + curriculum.gen.ts (GENERATED)
-│   ├── lib/                  # parse-chapter, curriculum, markdown, highlight…
+│   ├── lib/                  # api/ (client+types), parse-chapter, curriculum, markdown, highlight…
 │   └── hooks/                # use-bookmark, use-theme, use-progress
 ├── scripts/
 │   └── build-content.ts      # generator: gen data + search index
@@ -82,8 +102,8 @@ The curriculum lives in `sources/`. Build order:
 
 1. `scripts/build-content.ts` (via `predev` / `build` / `build:search`):
    - Parses each source, builds chapter/section structure (`src/lib/curriculum.ts`)
-   - Emits `src/data/curriculum.gen.ts` (14 modules, 78 chapters, 666 sections)
-   - Emits `public/search-index.json` (666 entries)
+   - Emits `src/data/curriculum.gen.ts` (14 modules, 79 chapters, 816 sections)
+   - Emits `public/search-index.json` (804 entries)
 2. SSG during `next build`:
    - Each `/module/[id]` page calls `getChapterContent(id)` (`src/lib/parse-chapter.ts`)
    - `MODULE_SOURCES` maps ids 0–13 → per-module file or the inline `module-0` anchor
@@ -114,7 +134,18 @@ npm run start        # serve the production build
 | Variable | Description | Default |
 |---|---|---|
 | `NEXT_PUBLIC_SITE_URL` | Public site URL for SEO | `https://ai-formation.dev` |
+| `NEXT_PUBLIC_API_BASE` | API base used by the browser (empty → same-origin `/backend`) | `` (empty) |
+| `API_PROXY_TARGET` | Server-side target of the `/backend/*` proxy | `http://backend:8000` |
 | `NEXT_TELEMETRY_DISABLED` | Disable Next.js telemetry | `1` |
+| `DATABASE_URL` | Postgres URL (shared with Prisma; backend normalizes to asyncpg) | — |
+| `JWT_SECRET_KEY` | Access/refresh signing secret (**required in production**) | dev auto-generated |
+| `ACCESS_TOKEN_EXPIRE_MINUTES` | Access token lifetime | `15` |
+| `REFRESH_TOKEN_EXPIRE_DAYS` | Refresh token lifetime | `14` |
+| `COOKIE_SECURE` / `COOKIE_DOMAIN` | Cookie flags (`Secure` in production) | env-derived |
+| `CORS_ORIGINS` | Extra allowed origins (comma-separated) | `http://localhost:3000` |
+| `AUTO_CREATE_SCHEMA` | Backend `create_all` at startup (dev) | `true` |
+| `SEED_ON_STARTUP` | Seed the default admin at startup | `true` |
+| `ADMIN_EMAIL` / `ADMIN_PASSWORD` | Bootstrap admin credentials | see README |
 
 ### Deploy to Vercel (Recommended)
 
@@ -137,8 +168,27 @@ npm run start        # serve the production build
 ### Profile & progress
 
 - `useProgress` (useSyncExternalStore + localStorage, key `ai-formation-progress`)
-- `/profile`: ProgressCard (overall + per-module bars) and a collapsible SectionChecklist (per-section checkboxes)
-- Auth skeletons at `/auth/signin` & `/auth/signup` (disabled forms, link to `/profile`)
+- `/profile`: `AccountPanel` (info, started courses, change password) for signed-in
+  users, plus `ProgressCard` (overall + per-module bars) and a collapsible
+  `SectionChecklist` (per-section checkboxes) as the guest/local view
+- Auth forms at `/auth/signin` & `/auth/signup` call `useAuth()`
+  (`AuthProvider` → `src/lib/api/client.ts`)
+
+### Back-office (FastAPI)
+
+- **Auth**: `POST /api/auth/register|login|logout|refresh`, `GET /api/auth/csrf|me`.
+  Sessions use HttpOnly cookies (`af_access`, `af_refresh`) and a CSRF
+  double-submit cookie (`af_csrf`, echoed via the `x-csrf-token` header).
+- **RBAC**: fixed roles — `ADMIN` (level 3), `CONTRIBUTOR`/`MODERATOR` (level 2),
+  `USER` (level 1, default), `ANONYMOUS` (level 0). A role inherits the union of
+  permissions of roles with a **strictly lower** level (parallel roles do not
+  inherit each other).
+- **Profile**: `GET/PATCH /api/profile`, `POST /api/profile/password`
+  (current + new password).
+- **Dashboard**: `GET /api/progress` lists started courses with a deep link to
+  the last visited chapter; `PUT/DELETE /api/progress/{course_id}` upsert/remove.
+- **Admin**: `GET /api/admin/users`, `GET /api/admin/roles`, role/active toggles
+  (requires an ADMIN session).
 
 ### Search
 
@@ -161,14 +211,19 @@ Build time:
   sources/ → build-content.ts → curriculum.gen.ts + search-index.json
   sources/ → getChapterContent() → markdown.ts + highlight.ts + reading-time.ts → static HTML
 
-Runtime:
+Runtime (web):
   Homepage    → RouteMap (SVG) + Hero + Manifest + 14 stage cards + ResumeBanner
-  /module/[id]→ TOC scroll-spy, ChapterContent, ReadingTime, resources, prev/next, BackToTop
-  Header      → SearchModal (Cmd+K) + theme toggle
-  /profile    → ProgressCard + SectionChecklist
+  /module/[id]→ TOC scroll-spy, ChapterContent, ProgressTracker, ReadingTime, resources, prev/next
+  Header      → SearchModal (Cmd+K) + theme toggle + auth cluster
+  /profile    → AccountPanel + ProgressCard + SectionChecklist
+
+Runtime (API):
+  Browser → /backend/* (route handler) → API_PROXY_TARGET → FastAPI → Postgres
+  Auth (csrf/login/register/refresh/logout) · Profile · Progress · Admin
 ```
 
-State hooks all use `useSyncExternalStore` (React 19) and persist to `localStorage`.
+State hooks all use `useSyncExternalStore` (React 19) and persist to `localStorage`;
+signed-in progress is additionally synced to the API (`src/lib/api/client.ts`).
 
 ---
 
@@ -200,12 +255,19 @@ State hooks all use `useSyncExternalStore` (React 19) and persist to `localStora
 
 ### Testing
 
-No test framework configured. Build-time verification:
+Frontend build-time verification:
 
 ```bash
 npm run lint
 npx tsc --noEmit
 npm run build
+```
+
+Backend (pytest + ruff):
+
+```bash
+pnpm backend:lint
+pnpm backend:test      # 30 tests, SQLite in-memory, no Postgres required
 ```
 
 ---

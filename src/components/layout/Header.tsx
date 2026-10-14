@@ -2,13 +2,23 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useTheme } from "@/hooks/use-theme";
+import { useAuth } from "@/components/providers/AuthProvider";
 import { NAV_LINKS } from "@/lib/constants";
 import { SearchModal } from "@/components/search/SearchModal";
 
 export function Header() {
   const { theme, toggleTheme, mounted } = useTheme();
+  const { user, status, signOut } = useAuth();
+  const router = useRouter();
   const [searchOpen, setSearchOpen] = useState(false);
+
+  const handleSignOut = useCallback(async () => {
+    await signOut();
+    router.push("/");
+    router.refresh();
+  }, [signOut, router]);
 
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if ((e.metaKey || e.ctrlKey) && e.key === "k") {
@@ -21,6 +31,11 @@ export function Header() {
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [handleKeyDown]);
+
+  const displayName = user ? user.first_name || user.email : "";
+  const initials = user
+    ? (user.first_name?.[0] ?? user.email[0] ?? "?").toUpperCase()
+    : "";
 
   return (
     <>
@@ -82,6 +97,42 @@ export function Header() {
                 ⌘K
               </kbd>
             </button>
+
+            {status === "loading" ? (
+              <span
+                className="hidden h-9 w-24 animate-pulse rounded-md bg-paper2 sm:block"
+                aria-hidden="true"
+              />
+            ) : user ? (
+              <div className="flex items-center gap-2">
+                <Link
+                  href="/profile"
+                  className="flex items-center gap-2 rounded-md border border-hair bg-card px-3 py-1.5 text-sm text-ink transition-colors hover:border-route hover:bg-paper2"
+                  aria-label="Ouvrir mon profil"
+                >
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-route font-mono text-[0.6rem] font-semibold text-card">
+                    {initials}
+                  </span>
+                  <span className="hidden max-w-[10rem] truncate sm:inline">{displayName}</span>
+                </Link>
+                <button
+                  onClick={handleSignOut}
+                  className="rounded-md border border-hair bg-card px-3 py-1.5 text-sm text-ink2 transition-colors hover:border-route hover:text-ink"
+                >
+                  <span className="hidden sm:inline">Déconnexion</span>
+                  <span className="sm:hidden" aria-hidden="true">
+                    ⎋
+                  </span>
+                </button>
+              </div>
+            ) : (
+              <Link
+                href="/auth/signin"
+                className="rounded-md bg-ink px-3 py-1.5 text-sm font-medium text-paper transition-colors hover:bg-route"
+              >
+                Connexion
+              </Link>
+            )}
 
             {mounted && (
               <button

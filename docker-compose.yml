@@ -2,10 +2,12 @@
 # ai-formation — stack local de developpement
 #
 #   cp .env.example .env
-#   docker compose up -d --build          # web (dev) + postgres
+#   docker compose up -d --build          # web (dev) + backend + postgres
 #   pnpm db:deploy                       # applique les migrations
 #
-# Pour la production (VPS) : voir docker-compose.prod.yml.
+# Le service `web` proxifie `/backend/*` vers le service `backend` (FastAPI) :
+# voir src/app/backend/[...path]/route.ts. Pour la production (VPS) : voir
+# docker-compose.prod.yml.
 # ---------------------------------------------------------------------------
 
 services:
@@ -24,12 +26,50 @@ services:
       PORT: "3000"
       DATABASE_URL: postgresql://${POSTGRES_USER:-ai_formation}:${POSTGRES_PASSWORD:-ai_formation_dev}@db:5432/${POSTGRES_DB:-ai_formation}?schema=public
       NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-https://ai-formation.dev}
+      # Destination serveur du rewrite Next.js `/backend/*`.
+      API_PROXY_TARGET: ${API_PROXY_TARGET:-http://backend:8000}
+      NEXT_PUBLIC_API_BASE: ${NEXT_PUBLIC_API_BASE:-}
     volumes:
       # Rechargement a chaud : le code source est monte depuis l'hote.
       - .:/app
       # Masque le node_modules monte par l'hote pour ne pas ecraser la
       # resolution symlinkee de pnpm installee dans l'image.
       - web_node_modules:/app/node_modules
+    depends_on:
+      db:
+        condition: service_healthy
+      backend:
+        condition: service_healthy
+    networks:
+      - ai-formation
+
+  backend:
+    build:
+      context: ./backend
+      target: dev
+    container_name: ai-formation-backend
+    restart: unless-stopped
+    ports:
+      # Expose pour tester l'API directement (Swagger : /docs).
+      - "${BACKEND_PORT:-8000}:8000"
+    environment:
+      ENVIRONMENT: development
+      DATABASE_URL: postgresql://${POSTGRES_USER:-ai_formation}:${POSTGRES_PASSWORD:-ai_formation_dev}@db:5432/${POSTGRES_DB:-ai_formation}?schema=public
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-}
+      ACCESS_TOKEN_EXPIRE_MINUTES: ${ACCESS_TOKEN_EXPIRE_MINUTES:-15}
+      REFRESH_TOKEN_EXPIRE_DAYS: ${REFRESH_TOKEN_EXPIRE_DAYS:-14}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      COOKIE_DOMAIN: ${COOKIE_DOMAIN:-}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000}
+      AUTO_CREATE_SCHEMA: ${AUTO_CREATE_SCHEMA:-true}
+      SEED_ON_STARTUP: ${SEED_ON_STARTUP:-true}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@ai-formation.dev}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-Admin_Formation_2026!}
+      ADMIN_FIRST_NAME: ${ADMIN_FIRST_NAME:-Platform}
+      ADMIN_LAST_NAME: ${ADMIN_LAST_NAME:-Administrator}
+    volumes:
+      # Rechargement a chaud (uvicorn --reload).
+      - ./backend:/app
     depends_on:
       db:
         condition: service_healthy

@@ -1,5 +1,6 @@
 ﻿import Link from "next/link";
 import type { Module } from "@/data/modules";
+import { ModuleSeal } from "@/components/media/module-art";
 import {
   DIFFICULTY_LABELS,
   DIFFICULTY_COLORS,
@@ -27,9 +28,7 @@ export function ModuleCard({ module, index }: ModuleCardProps) {
         >
           {waypoint(index + 1)}
         </span>
-        <span className="text-[1.4rem] leading-none" aria-hidden="true">
-          {module.icon}
-        </span>
+        <ModuleSeal moduleId={module.id} className="h-8 w-8 shrink-0" />
         <span className="min-w-0 text-left">
           <span className="block text-base font-semibold tracking-[-0.01em] text-ink">
             {module.title}

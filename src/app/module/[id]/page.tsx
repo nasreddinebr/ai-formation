@@ -10,6 +10,8 @@ import { SaveBookmark } from "@/components/chapter/SaveBookmark";
 import { ProgressTracker } from "@/components/chapter/ProgressTracker";
 import { ReadingTime } from "@/components/chapter/ReadingTime";
 import { BackToTop } from "@/components/chapter/BackToTop";
+import { ArtFrame } from "@/components/media/ArtFrame";
+import { getArtMeta } from "@/components/media/module-art";
 
 export function generateStaticParams() {
   return modules.map((m) => ({ id: String(m.id) }));
@@ -82,6 +84,14 @@ export default async function ModulePage({ params }: PageProps) {
           {chapterData && <ReadingTime time={chapterData.readingTime} />}
         </div>
       </header>
+
+      <ArtFrame
+        moduleId={mod.id}
+        plateNumber={modIndex + 1}
+        caption={`Planche — ${getArtMeta(mod.id).caption}`}
+        aspect="aspect-[8/5] sm:aspect-[16/7]"
+        className="mb-10"
+      />
 
       <SaveBookmark moduleId={mod.id} moduleTitle={mod.title} />
       {chapterData && (

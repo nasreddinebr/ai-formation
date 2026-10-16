@@ -83,7 +83,7 @@ ai-formation/
 ├── prisma/                   # schema.prisma + migrations (schema source of truth)
 ├── src/
 │   ├── app/                  # layout, homepage, module/[id], backend proxy, profile, auth, global-error
-│   ├── components/           # layout, home, chapter, search, providers, profile
+│   ├── components/           # layout, home, media, chapter, search, providers, profile
 │   ├── data/                 # modules.ts (meta) + curriculum.gen.ts (GENERATED)
 │   ├── lib/                  # api/ (client+types), parse-chapter, curriculum, markdown, highlight…
 │   └── hooks/                # use-bookmark, use-theme, use-progress
@@ -165,6 +165,19 @@ npm run start        # serve the production build
 - **Back-to-top:** appears after 400px, smooth-scroll, `aria-label="Retour en haut"`.
 - **Markdown renderer:** hand-rolled (`markdown.ts`) — headings, paragraphs, blockquotes, tables, nested lists + task checks, horizontal rules, and inline code/bold/italic/strikethrough/links/images.
 
+### Media & illustrations
+
+- **Plate set:** `src/components/media/module-art.tsx` renders one hand-authored SVG
+  “atlas plate” per module (0–13) and a matching compact seal, inline and driven by the
+  Atlas CSS tokens so light and dark mode stay in sync — no binary assets, no extra requests.
+- **Frames & formats:** `ArtFrame` wraps a plate with its plate number, tag and caption,
+  and accepts a Tailwind aspect ratio (used for the wide module cover).
+- **Slider:** `MediaSlider` is the homepage carousel of journey highlights (auto-advance,
+  pause on hover/focus, arrow-key navigation, `prefers-reduced-motion` aware).
+- **Motion banner:** `MotionBanner` is an animated SVG “film” of the route — the path draws
+  itself, milestones appear in sequence and a dot travels the path; play/pause drives SMIL
+  via `pauseAnimations()`.
+
 ### Profile & progress
 
 - `useProgress` (useSyncExternalStore + localStorage, key `ai-formation-progress`)
@@ -212,7 +225,7 @@ Build time:
   sources/ → getChapterContent() → markdown.ts + highlight.ts + reading-time.ts → static HTML
 
 Runtime (web):
-  Homepage    → RouteMap (SVG) + Hero + Manifest + 14 stage cards + ResumeBanner
+  Homepage    → Hero (+ plate) + RouteMap (SVG) + MediaSlider + Manifest + 14 stage cards + MotionBanner
   /module/[id]→ TOC scroll-spy, ChapterContent, ProgressTracker, ReadingTime, resources, prev/next
   Header      → SearchModal (Cmd+K) + theme toggle + auth cluster
   /profile    → AccountPanel + ProgressCard + SectionChecklist
@@ -235,6 +248,7 @@ signed-in progress is additionally synced to the API (`src/lib/api/client.ts`).
 - **Legacy aliases** (`primary`, `secondary`, `accent`, `neutral`, `background`, `foreground`, `muted`, `border`, `card`) map onto the palette
 - **Fonts:** Fraunces (display), Inter (body), IBM Plex Mono (labels)
 - **Article typography:** `.atlas-article` in `globals.css` styles the rendered markdown (chapter/section headings, code `pre`, task lists, tables)
+- **Illustrations:** all imagery is generated inline SVG (`src/components/media/`) painted with the Atlas tokens (`--color-route`, `--color-moss`, `--color-hair`…), so it inherits both themes automatically
 
 ---
 

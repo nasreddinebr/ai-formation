@@ -1,5 +1,6 @@
 ﻿import Link from "next/link";
 import { modules } from "@/data/modules";
+import { ArtFrame } from "@/components/media/ArtFrame";
 import { RouteMap } from "./RouteMap";
 
 export function Hero() {
@@ -15,34 +16,43 @@ export function Hero() {
           WebkitMaskImage: "linear-gradient(to bottom, black, transparent 70%)",
         }}
       />
-      <div className="relative max-w-[56rem]">
-        <p className="mb-4 font-mono text-xs uppercase tracking-[0.14em] text-route-deep">
-          Carte du parcours · Édition 2026
-        </p>
-        <h1 className="font-display text-[2.8rem] font-medium leading-[1.02] tracking-[-0.02em] sm:text-6xl lg:text-[5.2rem]">
-          De zéro à
-          <br />
-          <em className="italic text-route">ingénieur IA.</em>
-        </h1>
-        <p className="mt-6 max-w-[42rem] text-base leading-relaxed text-ink2 sm:text-lg">
-          Un itinéraire complet, progressif et professionnalisant. Python,
-          Machine Learning, Deep Learning, LLMs, agents et MLOps — étape par
-          étape, jusqu’à la maîtrise.
-        </p>
-        <div className="mt-8 flex flex-wrap gap-4">
-          <Link
-            href="/#modules"
-            className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-paper transition-all hover:-translate-y-px hover:bg-route"
-          >
-            Commencer la formation
-          </Link>
-          <Link
-            href="/#parcours"
-            className="rounded-full border border-ink px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-card"
-          >
-            Voir l’itinéraire
-          </Link>
+      <div className="relative grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+        <div className="max-w-[42rem]">
+          <p className="mb-4 font-mono text-xs uppercase tracking-[0.14em] text-route-deep">
+            Carte du parcours · Édition 2026
+          </p>
+          <h1 className="font-display text-[2.8rem] font-medium leading-[1.02] tracking-[-0.02em] sm:text-6xl lg:text-[4.6rem]">
+            De zéro à
+            <br />
+            <em className="italic text-route">ingénieur IA.</em>
+          </h1>
+          <p className="mt-6 max-w-[42rem] text-base leading-relaxed text-ink2 sm:text-lg">
+            Un itinéraire complet, progressif et professionnalisant. Python,
+            Machine Learning, Deep Learning, LLMs, agents et MLOps — étape par
+            étape, jusqu’à la maîtrise.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link
+              href="/#modules"
+              className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-paper transition-all hover:-translate-y-px hover:bg-route"
+            >
+              Commencer la formation
+            </Link>
+            <Link
+              href="/#parcours"
+              className="rounded-full border border-ink px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-card"
+            >
+              Voir l’itinéraire
+            </Link>
+          </div>
         </div>
+
+        <ArtFrame
+          moduleId={0}
+          plateNumber={1}
+          caption="Boussole — s’orienter dans le champ de l’IA"
+          className="hidden shadow-[8px_8px_0_0_var(--color-hair)] lg:block"
+        />
       </div>
 
       <RouteMap count={modules.length} />

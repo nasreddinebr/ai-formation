@@ -44,6 +44,7 @@ BUILD TIME (generator + SSG)
 
 RUNTIME (CLIENT)
   Homepage -> RouteMap SVG + HERO + ResumeBanner (useBookmark)
+  Homepage -> MediaSlider (planches + carrousel) + MotionBanner (SMIL play/pause)
   Module page -> TOC scroll-spy (IntersectionObserver) + ChapterContent + ReadingTime
   Module page -> SaveBookmark(visited) + ProgressTracker(API) + section checkmarks
   Header -> useTheme() toggles dark class on <html>
@@ -98,6 +99,8 @@ ai-formation/
 │   ├── components/
 │   │   ├── layout/  Header.tsx (auth cluster), Footer.tsx
 │   │   ├── home/    Hero.tsx, RouteMap.tsx, ManifestSection.tsx, ModuleCard.tsx, ResumeBanner.tsx
+│   │   ├── media/   module-art.tsx (14 planches + sceaux SVG), ArtFrame.tsx,
+│   │   │            MediaSlider.tsx (carrousel), MotionBanner.tsx (film SVG animé)
 │   │   ├── chapter/ ChapterContent.tsx, TableOfContents.tsx, SaveBookmark.tsx,
 │   │   │            ProgressTracker.tsx (API sync), ReadingTime.tsx, BackToTop.tsx
 │   │   ├── search/  SearchModal.tsx

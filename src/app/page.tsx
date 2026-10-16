@@ -2,13 +2,36 @@
 import { ManifestSection } from "@/components/home/ManifestSection";
 import { ModuleCard } from "@/components/home/ModuleCard";
 import { ResumeBanner } from "@/components/home/ResumeBanner";
+import { MediaSlider, type MediaSlide } from "@/components/media/MediaSlider";
+import { MotionBanner } from "@/components/media/MotionBanner";
 import { modules } from "@/data/modules";
+import { DIFFICULTY_LABELS } from "@/lib/constants";
+
+const HIGHLIGHT_IDS = [1, 3, 4, 5, 8, 9];
+
+const slides: MediaSlide[] = modules
+  .map((mod, position) => ({ mod, position }))
+  .filter(({ mod }) => HIGHLIGHT_IDS.includes(mod.id))
+  .map(({ mod, position }) => ({
+    moduleId: mod.id,
+    plateNumber: position + 1,
+    href: `/module/${mod.id}`,
+    eyebrow: `Étape ${String(position + 1).padStart(2, "0")} · ${mod.estimatedTime}`,
+    title: mod.title,
+    description: mod.description,
+    tags: [
+      DIFFICULTY_LABELS[mod.difficulty],
+      `${mod.chapters.length} chapitres`,
+      `${mod.sections.length} sections`,
+    ],
+  }));
 
 export default function Home() {
   return (
     <>
       <Hero />
       <ResumeBanner />
+      <MediaSlider slides={slides} />
       <ManifestSection />
 
       <section id="modules" className="px-4 py-10 sm:px-8 lg:px-14 lg:py-16" aria-labelledby="modules-title">
@@ -27,6 +50,8 @@ export default function Home() {
           ))}
         </ol>
       </section>
+
+      <MotionBanner />
     </>
   );
 }
